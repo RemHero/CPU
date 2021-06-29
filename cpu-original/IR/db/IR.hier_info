@@ -1,0 +1,35 @@
+|IR
+a[0] => temp[0].DATAIN
+a[1] => temp[1].DATAIN
+a[2] => temp[2].DATAIN
+a[3] => temp[3].DATAIN
+a[4] => temp[4].DATAIN
+a[5] => temp[5].DATAIN
+a[6] => temp[6].DATAIN
+a[7] => temp[7].DATAIN
+clk => temp[7].CLK
+clk => temp[6].CLK
+clk => temp[5].CLK
+clk => temp[4].CLK
+clk => temp[3].CLK
+clk => temp[2].CLK
+clk => temp[1].CLK
+clk => temp[0].CLK
+ld => temp[0].ENA
+ld => temp[7].ENA
+ld => temp[6].ENA
+ld => temp[5].ENA
+ld => temp[4].ENA
+ld => temp[3].ENA
+ld => temp[2].ENA
+ld => temp[1].ENA
+x[0] <= temp[0].DB_MAX_OUTPUT_PORT_TYPE
+x[1] <= temp[1].DB_MAX_OUTPUT_PORT_TYPE
+x[2] <= temp[2].DB_MAX_OUTPUT_PORT_TYPE
+x[3] <= temp[3].DB_MAX_OUTPUT_PORT_TYPE
+x[4] <= temp[4].DB_MAX_OUTPUT_PORT_TYPE
+x[5] <= temp[5].DB_MAX_OUTPUT_PORT_TYPE
+x[6] <= temp[6].DB_MAX_OUTPUT_PORT_TYPE
+x[7] <= temp[7].DB_MAX_OUTPUT_PORT_TYPE
+
+

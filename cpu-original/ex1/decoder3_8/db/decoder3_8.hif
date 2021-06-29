@@ -1,0 +1,139 @@
+Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+41
+2959
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+decoder3_8
+# storage
+db|decoder3_8.(0).cnf
+db|decoder3_8.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+decoder3_8.vhd
+f0aba3e95380ac63ad243f34bd5196
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+|
+}
+# lmf
+..|..|..|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+decoder2_4
+# storage
+db|decoder3_8.(1).cnf
+db|decoder3_8.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+decoder3_8.vhd
+f0aba3e95380ac63ad243f34bd5196
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(a)
+1 downto 0
+PARAMETER_STRING
+USR
+ constraint(d)
+3 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+decoder2_4:g0
+}
+# lmf
+..|..|..|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+decoder1_2
+# storage
+db|decoder3_8.(2).cnf
+db|decoder3_8.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+decoder3_8.vhd
+f0aba3e95380ac63ad243f34bd5196
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(d)
+1 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+decoder2_4:g0|decoder1_2:g0
+decoder2_4:g0|decoder1_2:g1
+decoder1_2:g1
+}
+# lmf
+..|..|..|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# complete
+

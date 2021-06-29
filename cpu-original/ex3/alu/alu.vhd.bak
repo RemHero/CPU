@@ -1,0 +1,160 @@
+library ieee;
+use ieee.std_logic_1164.all;
+entity fulladd is
+port(x,y,z: in std_logic;
+S,C: out std_logic);
+end fulladd;
+
+architecture SS of fulladd is
+signal t: std_logic;
+begin
+t<=(x xor y);
+s<=t xor z;
+c<=(x and y) or (t and z);
+end SS;
+------------------------------------
+library ieee;
+use ieee.std_logic_1164.all;
+entity ebaad is
+port(a,b: in std_logic_vector(7 downto 0);
+c: out std_logic_vector(7 downto 0);
+jcc: out std_logic);
+end ebaad;
+
+architecture SS of ebaad is
+component fulladd
+port(x,y,z: in std_logic;
+S,C: out std_logic);
+end component;
+signal s1,s2,s3,s4,s5,s6,s7: std_logic;
+begin
+	g0:fulladd port map(a(0),b(0),'0',c(0),s1);
+	g1:fulladd port map(a(1),b(1),s1,c(1),s2);
+	g2:fulladd port map(a(2),b(2),s2,c(2),s3);
+	g3:fulladd port map(a(3),b(3),s3,c(3),s4);
+	g4:fulladd port map(a(4),b(4),s4,c(4),s5);
+	g5:fulladd port map(a(5),b(5),s5,c(5),s6);
+	g6:fulladd port map(a(6),b(6),s6,c(6),s7);
+	g7:fulladd port map(a(7),b(7),s7,c(7),jcc);
+end;
+-----------------------------------------------
+library ieee;
+use ieee.std_logic_1164.all;
+entity ebsub is
+port(a,b: in std_logic_vector(7 downto 0);
+c: out std_logic_vector(7 downto 0);
+jzz: out std_logic);
+end ebsub;
+
+architecture SS of ebsub is
+component fulladd
+port(x,y,z: in std_logic;
+S,C: out std_logic);
+end component;
+signal s1,s2,s3,s4,s5,s6,s7,s8: std_logic;
+signal tc:std_logic_vector(7 downto 0);
+begin
+	g0:fulladd port map(not a(0),b(0),'1',tc(0),s1);
+	g1:fulladd port map(not a(1),b(1),s1,tc(1),s2);
+	g2:fulladd port map(not a(2),b(2),s2,tc(2),s3);
+	g3:fulladd port map(not a(3),b(3),s3,tc(3),s4);
+	g4:fulladd port map(not a(4),b(4),s4,tc(4),s5);
+	g5:fulladd port map(not a(5),b(5),s5,tc(5),s6);
+	g6:fulladd port map(not a(6),b(6),s6,tc(6),s7);
+	g7:fulladd port map(not a(7),b(7),s7,tc(7),s8);
+	c<=tc;
+	jzz<=not(tc(0) or tc(1) or tc(2) or tc(3) or tc(4) or tc(5) or tc(6) or tc(7)); 
+end;
+-----------------------------------------------------------
+library ieee;
+use ieee.std_logic_1164.all;
+entity ebor is
+port(a,b: in std_logic_vector(7 downto 0);
+c: out std_logic_vector(7 downto 0));
+end ebor;
+
+architecture SS of ebor is
+	begin
+	c(0)<=a(0) or b(0);
+	c(1)<=a(1) or b(1);
+	c(2)<=a(2) or b(2);
+	c(3)<=a(3) or b(3);
+	c(4)<=a(4) or b(4);
+	c(5)<=a(5) or b(5);
+	c(6)<=a(6) or b(6);
+	c(7)<=a(7) or b(7);
+end;
+-----------------------------------------------------------
+library ieee;
+use ieee.std_logic_1164.all;
+entity ebnot is
+port(a: in std_logic_vector(7 downto 0);
+c: out std_logic_vector(7 downto 0));
+end ebnot;
+
+architecture SS of ebnot is
+	begin
+	c(0)<=not a(0);
+	c(1)<=not a(1);
+	c(2)<=not a(2);
+	c(3)<=not a(3);
+	c(4)<=not a(4);
+	c(5)<=not a(5);
+	c(6)<=not a(6);
+	c(7)<=not a(7);
+end;
+-----------------------------------------------------------
+library ieee;
+use ieee.std_logic_1164.all;
+entity alu is
+	port(m: in std_logic;
+	s: in std_logic_vector(3 downto 0);
+	a,b: in std_logic_vector(7 downto 0);
+	cf,zf: out std_logic;
+	t: out std_logic_vector(7 downto 0));
+end alu;
+
+architecture lyh of alu is
+	component ebaad is
+	port(a,b: in std_logic_vector(7 downto 0);
+	c: out std_logic_vector(7 downto 0);
+	jcc: out std_logic);
+	end component;
+	component ebsub is
+	port(a,b: in std_logic_vector(7 downto 0);
+	c: out std_logic_vector(7 downto 0);
+	jzz: out std_logic);
+	end component;
+	component ebor is
+	port(a,b: in std_logic_vector(7 downto 0);
+	c: out std_logic_vector(7 downto 0));
+	end component;
+	component ebnot is
+	port(a: in std_logic_vector(7 downto 0);
+	c: out std_logic_vector(7 downto 0));
+	end component;
+	signal t1,t2,t3,t4: std_logic_vector(7 downto 0);
+	signal tcf,tzf: std_logic;
+	begin
+	g0:ebaad port map(a,b,t1,tcf);
+	g1:ebsub port map(a,b,t2,tzf);
+	g2:ebor port map(a,b,t3);
+	g3:ebnot port map(b,t4);
+	process(m,s,a,b)
+		begin
+			if(m='0')then--signal pass
+				if(s="1111")then t<=a;
+				elsif(s="1010" or s="0100")then t<=b;
+				end if;
+			elsif(s="1001")then
+				t<=t1;cf<=tcf;zf<='0';
+			elsif(s="0110")then
+				t<=t2;cf<='0';zf<=tzf;
+			elsif(s="1011")then
+				t<=t3;cf<='0';zf<='0';
+			elsif(s="0101")then
+				t<=t4;cf<='0';zf<='0';
+			else t<="ZZZZZZZZ";
+			end if;	
+	end process;
+end;

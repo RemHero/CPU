@@ -1,0 +1,68 @@
+|parallel_adder
+x[0] => adder:h0.a
+x[1] => adder:h1.a
+x[2] => adder:h2.a
+x[3] => adder:h3.a
+y[0] => adder:h0.b
+y[1] => adder:h1.b
+y[2] => adder:h2.b
+y[3] => adder:h3.b
+s[0] <= adder:h0.g
+s[1] <= adder:h1.g
+s[2] <= adder:h2.g
+s[3] <= adder:h3.g
+c <= adder:h3.h
+
+
+|parallel_adder|adder:h0
+a => h~1.IN0
+a => h~0.IN0
+a => g~0.IN0
+b => h~1.IN1
+b => h~0.IN1
+b => g~1.IN1
+c => h~2.IN0
+c => g~0.IN1
+g <= g~1.DB_MAX_OUTPUT_PORT_TYPE
+h <= h~3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|parallel_adder|adder:h1
+a => h~1.IN0
+a => h~0.IN0
+a => g~0.IN0
+b => h~1.IN1
+b => h~0.IN1
+b => g~1.IN1
+c => h~2.IN0
+c => g~0.IN1
+g <= g~1.DB_MAX_OUTPUT_PORT_TYPE
+h <= h~3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|parallel_adder|adder:h2
+a => h~1.IN0
+a => h~0.IN0
+a => g~0.IN0
+b => h~1.IN1
+b => h~0.IN1
+b => g~1.IN1
+c => h~2.IN0
+c => g~0.IN1
+g <= g~1.DB_MAX_OUTPUT_PORT_TYPE
+h <= h~3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|parallel_adder|adder:h3
+a => h~1.IN0
+a => h~0.IN0
+a => g~0.IN0
+b => h~1.IN1
+b => h~0.IN1
+b => g~1.IN1
+c => h~2.IN0
+c => g~0.IN1
+g <= g~1.DB_MAX_OUTPUT_PORT_TYPE
+h <= h~3.DB_MAX_OUTPUT_PORT_TYPE
+
+

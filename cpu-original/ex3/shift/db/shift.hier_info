@@ -1,0 +1,43 @@
+|shift
+fbus => w[0]~9.IN1
+fbus => cf$latch.ACLR
+flbus => w[0]~8.IN1
+frbus => cf~0.OUTPUTSELECT
+frbus => w[0]~8.IN0
+frbus => w[0]~7.OUTPUTSELECT
+frbus => w[1]~6.OUTPUTSELECT
+frbus => w[2]~5.OUTPUTSELECT
+frbus => w[3]~4.OUTPUTSELECT
+frbus => w[4]~3.OUTPUTSELECT
+frbus => w[5]~2.OUTPUTSELECT
+frbus => w[6]~1.OUTPUTSELECT
+frbus => w[7]~0.OUTPUTSELECT
+a[7] => cf~0.DATAA
+a[7] => w[0]~7.DATAA
+a[7] => w[6]~1.DATAB
+a[6] => w[5]~2.DATAB
+a[6] => w[7]~0.DATAA
+a[5] => w[4]~3.DATAB
+a[5] => w[6]~1.DATAA
+a[4] => w[3]~4.DATAB
+a[4] => w[5]~2.DATAA
+a[3] => w[2]~5.DATAB
+a[3] => w[4]~3.DATAA
+a[2] => w[1]~6.DATAB
+a[2] => w[3]~4.DATAA
+a[1] => w[0]~7.DATAB
+a[1] => w[2]~5.DATAA
+a[0] => cf~0.DATAB
+a[0] => w[1]~6.DATAA
+a[0] => w[7]~0.DATAB
+w[7] <= w[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
+w[6] <= w[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+w[5] <= w[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+w[4] <= w[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+w[3] <= w[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+w[2] <= w[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+w[1] <= w[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+w[0] <= w[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+cf <= cf$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

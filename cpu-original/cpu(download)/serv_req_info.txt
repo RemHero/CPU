@@ -1,0 +1,19 @@
+<internal_error>
+	<executable>quartus.exe</executable>
+	<sub_system>GED</sub_system>
+	<file>/quartus/edt/ged/ged_connector.h</file>
+	<line>373</line>
+	<callstack>
+	0x097d086f: edt_ged + 0x2086f
+	0x097cc9f2: edt_ged + 0x1c9f2
+	0x097cc6e1: edt_ged + 0x1c6e1
+	0x097db6d4: edt_ged + 0x2b6d4
+	0x097dd02e: edt_ged + 0x2d02e (_DllMain@12 + 0x2fe)
+	</callstack>
+	<error>file_db-&gt;add(this)</error>
+	<date>Thu Dec 19 22:46:23 2019</date>
+	<version>Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition</version>
+	<full_error>file_db-&gt;add(this)
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition </full_error>
+</internal_error>
+

@@ -1,0 +1,339 @@
+Analysis & Synthesis report for alu
+Tue Nov 19 17:46:27 2019
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Analysis & Synthesis Source Files Read
+  5. Analysis & Synthesis Resource Usage Summary
+  6. Analysis & Synthesis Resource Utilization by Entity
+  7. User-Specified and Inferred Latches
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Port Connectivity Checks: "ebsub:g1|fulladd:g7"
+ 11. Port Connectivity Checks: "ebsub:g1|fulladd:g0"
+ 12. Port Connectivity Checks: "ebaad:g0|fulladd:g0"
+ 13. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                      ;
++------------------------------------+----------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Tue Nov 19 17:46:27 2019        ;
+; Quartus II Version                 ; 9.0 Build 184 04/29/2009 SP 1 SJ Web Edition ;
+; Revision Name                      ; alu                                          ;
+; Top-level Entity Name              ; alu                                          ;
+; Family                             ; Cyclone II                                   ;
+; Total logic elements               ; 56                                           ;
+;     Total combinational functions  ; 56                                           ;
+;     Dedicated logic registers      ; 0                                            ;
+; Total registers                    ; 0                                            ;
+; Total pins                         ; 31                                           ;
+; Total virtual pins                 ; 0                                            ;
+; Total memory bits                  ; 0                                            ;
+; Embedded Multiplier 9-bit elements ; 0                                            ;
+; Total PLLs                         ; 0                                            ;
++------------------------------------+----------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                          ;
++--------------------------------------------------------------+--------------------+--------------------+
+; Option                                                       ; Setting            ; Default Value      ;
++--------------------------------------------------------------+--------------------+--------------------+
+; Device                                                       ; EP2C70F896C6       ;                    ;
+; Top-level entity name                                        ; alu                ; alu                ;
+; Family name                                                  ; Cyclone II         ; Stratix II         ;
+; Use Generated Physical Constraints File                      ; Off                ;                    ;
+; Use smart compilation                                        ; Off                ; Off                ;
+; Restructure Multiplexers                                     ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                          ; Off                ; Off                ;
+; Preserve fewer node names                                    ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                    ; Off                ; Off                ;
+; Verilog Version                                              ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                 ; VHDL93             ; VHDL93             ;
+; State Machine Processing                                     ; Auto               ; Auto               ;
+; Safe State Machine                                           ; Off                ; Off                ;
+; Extract Verilog State Machines                               ; On                 ; On                 ;
+; Extract VHDL State Machines                                  ; On                 ; On                 ;
+; Ignore Verilog initial constructs                            ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                   ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops               ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                      ; On                 ; On                 ;
+; Parallel Synthesis                                           ; Off                ; Off                ;
+; DSP Block Balancing                                          ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                           ; On                 ; On                 ;
+; Power-Up Don't Care                                          ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                 ; Off                ; Off                ;
+; Remove Duplicate Registers                                   ; On                 ; On                 ;
+; Ignore CARRY Buffers                                         ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                       ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                    ; Off                ; Off                ;
+; Ignore LCELL Buffers                                         ; Off                ; Off                ;
+; Ignore SOFT Buffers                                          ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                               ; Off                ; Off                ;
+; Optimization Technique                                       ; Balanced           ; Balanced           ;
+; Carry Chain Length                                           ; 70                 ; 70                 ;
+; Auto Carry Chains                                            ; On                 ; On                 ;
+; Auto Open-Drain Pins                                         ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                        ; Off                ; Off                ;
+; Auto ROM Replacement                                         ; On                 ; On                 ;
+; Auto RAM Replacement                                         ; On                 ; On                 ;
+; Auto Shift Register Replacement                              ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                ; On                 ; On                 ;
+; Strict RAM Replacement                                       ; Off                ; Off                ;
+; Allow Synchronous Control Signals                            ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                       ; Off                ; Off                ;
+; Auto RAM to Logic Cell Conversion                            ; Off                ; Off                ;
+; Auto Resource Sharing                                        ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                           ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                           ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing          ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives            ; Off                ; Off                ;
+; Timing-Driven Synthesis                                      ; Off                ; Off                ;
+; Show Parameter Settings Tables in Synthesis Report           ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                           ; Off                ; Off                ;
+; Synchronization Register Chain Length                        ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                 ; Normal compilation ; Normal compilation ;
+; HDL message level                                            ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages              ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report     ; 100                ; 100                ;
+; Number of Inverted Registers Reported in Synthesis Report    ; 100                ; 100                ;
+; Clock MUX Protection                                         ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                  ; Off                ; Off                ;
+; Block Design Naming                                          ; Auto               ; Auto               ;
+; SDC constraint protection                                    ; Off                ; Off                ;
+; Synthesis Effort                                             ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                           ; Medium             ; Medium             ;
++--------------------------------------------------------------+--------------------+--------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                    ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                       ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------+
+; alu.vhd                          ; yes             ; User VHDL File  ; C:/altera/90sp1/quartus/experiment/ex3/alu/alu.vhd ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------+
+
+
++-------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary           ;
++---------------------------------------------+---------+
+; Resource                                    ; Usage   ;
++---------------------------------------------+---------+
+; Estimated Total logic elements              ; 56      ;
+;                                             ;         ;
+; Total combinational functions               ; 56      ;
+; Logic element usage by number of LUT inputs ;         ;
+;     -- 4 input functions                    ; 34      ;
+;     -- 3 input functions                    ; 21      ;
+;     -- <=2 input functions                  ; 1       ;
+;                                             ;         ;
+; Logic elements by mode                      ;         ;
+;     -- normal mode                          ; 56      ;
+;     -- arithmetic mode                      ; 0       ;
+;                                             ;         ;
+; Total registers                             ; 0       ;
+;     -- Dedicated logic registers            ; 0       ;
+;     -- I/O registers                        ; 0       ;
+;                                             ;         ;
+; I/O pins                                    ; 31      ;
+; Maximum fan-out node                        ; t[7]~31 ;
+; Maximum fan-out                             ; 14      ;
+; Total fan-out                               ; 211     ;
+; Average fan-out                             ; 2.43    ;
++---------------------------------------------+---------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                              ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name      ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------+--------------+
+; |alu                       ; 56 (30)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 31   ; 0            ; |alu                     ; work         ;
+;    |ebaad:g0|              ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ebaad:g0            ; work         ;
+;       |fulladd:g1|         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ebaad:g0|fulladd:g1 ; work         ;
+;       |fulladd:g2|         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ebaad:g0|fulladd:g2 ; work         ;
+;       |fulladd:g3|         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ebaad:g0|fulladd:g3 ; work         ;
+;       |fulladd:g4|         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ebaad:g0|fulladd:g4 ; work         ;
+;       |fulladd:g5|         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ebaad:g0|fulladd:g5 ; work         ;
+;       |fulladd:g6|         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ebaad:g0|fulladd:g6 ; work         ;
+;       |fulladd:g7|         ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ebaad:g0|fulladd:g7 ; work         ;
+;    |ebsub:g1|              ; 14 (3)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ebsub:g1            ; work         ;
+;       |fulladd:g1|         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ebsub:g1|fulladd:g1 ; work         ;
+;       |fulladd:g2|         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ebsub:g1|fulladd:g2 ; work         ;
+;       |fulladd:g3|         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ebsub:g1|fulladd:g3 ; work         ;
+;       |fulladd:g4|         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ebsub:g1|fulladd:g4 ; work         ;
+;       |fulladd:g5|         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ebsub:g1|fulladd:g5 ; work         ;
+;       |fulladd:g6|         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ebsub:g1|fulladd:g6 ; work         ;
+;       |fulladd:g7|         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ebsub:g1|fulladd:g7 ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                               ;
++----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
++----------------------------------------------------+---------------------+------------------------+
+; t[7]$latch                                         ; t[0]~26             ; yes                    ;
+; t[6]$latch                                         ; t[0]~26             ; yes                    ;
+; t[5]$latch                                         ; t[0]~26             ; yes                    ;
+; t[4]$latch                                         ; t[0]~26             ; yes                    ;
+; t[3]$latch                                         ; t[0]~26             ; yes                    ;
+; t[2]$latch                                         ; t[0]~26             ; yes                    ;
+; t[1]$latch                                         ; t[0]~26             ; yes                    ;
+; t[0]$latch                                         ; t[0]~26             ; yes                    ;
+; Number of user-specified and inferred latches = 8  ;                     ;                        ;
++----------------------------------------------------+---------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |alu|t[7]~0                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ebsub:g1|fulladd:g7"                                                                ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; c    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------+
+; Port Connectivity Checks: "ebsub:g1|fulladd:g0" ;
++------+-------+----------+-----------------------+
+; Port ; Type  ; Severity ; Details               ;
++------+-------+----------+-----------------------+
+; z    ; Input ; Info     ; Stuck at VCC          ;
++------+-------+----------+-----------------------+
+
+
++-------------------------------------------------+
+; Port Connectivity Checks: "ebaad:g0|fulladd:g0" ;
++------+-------+----------+-----------------------+
+; Port ; Type  ; Severity ; Details               ;
++------+-------+----------+-----------------------+
+; z    ; Input ; Info     ; Stuck at GND          ;
++------+-------+----------+-----------------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Analysis & Synthesis
+    Info: Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+    Info: Processing started: Tue Nov 19 17:46:25 2019
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off alu -c alu
+Info: Found 12 design units, including 6 entities, in source file alu.vhd
+    Info: Found design unit 1: fulladd-SS
+    Info: Found design unit 2: ebaad-SS
+    Info: Found design unit 3: ebsub-SS
+    Info: Found design unit 4: ebor-SS
+    Info: Found design unit 5: ebnot-SS
+    Info: Found design unit 6: alu-lyh
+    Info: Found entity 1: fulladd
+    Info: Found entity 2: ebaad
+    Info: Found entity 3: ebsub
+    Info: Found entity 4: ebor
+    Info: Found entity 5: ebnot
+    Info: Found entity 6: alu
+Info: Elaborating entity "alu" for the top level hierarchy
+Warning (10492): VHDL Process Statement warning at alu.vhd(147): signal "t1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at alu.vhd(149): signal "t2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at alu.vhd(151): signal "t3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at alu.vhd(153): signal "t4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at alu.vhd(142): inferring latch(es) for signal or variable "t", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "t[7]" at alu.vhd(142)
+Info (10041): Inferred latch for "t[6]" at alu.vhd(142)
+Info (10041): Inferred latch for "t[5]" at alu.vhd(142)
+Info (10041): Inferred latch for "t[4]" at alu.vhd(142)
+Info (10041): Inferred latch for "t[3]" at alu.vhd(142)
+Info (10041): Inferred latch for "t[2]" at alu.vhd(142)
+Info (10041): Inferred latch for "t[1]" at alu.vhd(142)
+Info (10041): Inferred latch for "t[0]" at alu.vhd(142)
+Info: Elaborating entity "ebaad" for hierarchy "ebaad:g0"
+Info: Elaborating entity "fulladd" for hierarchy "ebaad:g0|fulladd:g0"
+Info: Elaborating entity "ebsub" for hierarchy "ebsub:g1"
+Warning (10036): Verilog HDL or VHDL warning at alu.vhd(54): object "s8" assigned a value but never read
+Info: Elaborating entity "ebor" for hierarchy "ebor:g2"
+Info: Elaborating entity "ebnot" for hierarchy "ebnot:g3"
+Warning: Latch t[7]$latch has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal s[3]
+Warning: Latch t[6]$latch has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal s[3]
+Warning: Latch t[5]$latch has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal s[3]
+Warning: Latch t[4]$latch has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal s[3]
+Warning: Latch t[3]$latch has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal s[3]
+Warning: Latch t[2]$latch has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal s[3]
+Warning: Latch t[1]$latch has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal s[3]
+Warning: Latch t[0]$latch has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal s[3]
+Info: Implemented 87 device resources after synthesis - the final resource count might be different
+    Info: Implemented 21 input pins
+    Info: Implemented 10 output pins
+    Info: Implemented 56 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 22 warnings
+    Info: Peak virtual memory: 250 megabytes
+    Info: Processing ended: Tue Nov 19 17:46:27 2019
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+
+

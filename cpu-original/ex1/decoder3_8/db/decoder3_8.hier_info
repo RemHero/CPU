@@ -1,0 +1,44 @@
+|decoder3_8
+a[0] => decoder2_4:g0.a[0]
+a[1] => decoder2_4:g0.a[1]
+a[2] => decoder1_2:g1.a
+d[0] <= d~0.DB_MAX_OUTPUT_PORT_TYPE
+d[1] <= d~1.DB_MAX_OUTPUT_PORT_TYPE
+d[2] <= d~2.DB_MAX_OUTPUT_PORT_TYPE
+d[3] <= d~3.DB_MAX_OUTPUT_PORT_TYPE
+d[4] <= d~4.DB_MAX_OUTPUT_PORT_TYPE
+d[5] <= d~5.DB_MAX_OUTPUT_PORT_TYPE
+d[6] <= d~6.DB_MAX_OUTPUT_PORT_TYPE
+d[7] <= d~7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|decoder3_8|decoder2_4:g0
+a[0] => decoder1_2:g0.a
+a[1] => decoder1_2:g1.a
+d[0] <= d~0.DB_MAX_OUTPUT_PORT_TYPE
+d[1] <= d~1.DB_MAX_OUTPUT_PORT_TYPE
+d[2] <= d~2.DB_MAX_OUTPUT_PORT_TYPE
+d[3] <= d~3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|decoder3_8|decoder2_4:g0|decoder1_2:g0
+a => d[1].DATAIN
+a => d[0].DATAIN
+d[0] <= a.DB_MAX_OUTPUT_PORT_TYPE
+d[1] <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|decoder3_8|decoder2_4:g0|decoder1_2:g1
+a => d[1].DATAIN
+a => d[0].DATAIN
+d[0] <= a.DB_MAX_OUTPUT_PORT_TYPE
+d[1] <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|decoder3_8|decoder1_2:g1
+a => d[1].DATAIN
+a => d[0].DATAIN
+d[0] <= a.DB_MAX_OUTPUT_PORT_TYPE
+d[1] <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+

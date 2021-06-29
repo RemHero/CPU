@@ -1,0 +1,287 @@
+Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+11
+1040
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+alu
+# storage
+db|alu.(0).cnf
+db|alu.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+alu.vhd
+17cf8395e3be4190a6b5d17bd9d919a5
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+|
+}
+# lmf
+..|..|..|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+ebaad
+# storage
+db|alu.(1).cnf
+db|alu.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+alu.vhd
+17cf8395e3be4190a6b5d17bd9d919a5
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(a)
+0 to 7
+PARAMETER_STRING
+USR
+ constraint(b)
+0 to 7
+PARAMETER_STRING
+USR
+ constraint(c)
+0 to 7
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+ebaad:g0
+}
+# lmf
+..|..|..|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+fulladd
+# storage
+db|alu.(2).cnf
+db|alu.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+alu.vhd
+17cf8395e3be4190a6b5d17bd9d919a5
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+ebaad:g0|fulladd:g0
+ebaad:g0|fulladd:g1
+ebaad:g0|fulladd:g2
+ebaad:g0|fulladd:g3
+ebaad:g0|fulladd:g4
+ebaad:g0|fulladd:g5
+ebaad:g0|fulladd:g6
+ebaad:g0|fulladd:g7
+ebsub:g1|fulladd:g0
+ebsub:g1|fulladd:g1
+ebsub:g1|fulladd:g2
+ebsub:g1|fulladd:g3
+ebsub:g1|fulladd:g4
+ebsub:g1|fulladd:g5
+ebsub:g1|fulladd:g6
+ebsub:g1|fulladd:g7
+}
+# lmf
+..|..|..|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+ebsub
+# storage
+db|alu.(3).cnf
+db|alu.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+alu.vhd
+17cf8395e3be4190a6b5d17bd9d919a5
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(a)
+0 to 7
+PARAMETER_STRING
+USR
+ constraint(b)
+0 to 7
+PARAMETER_STRING
+USR
+ constraint(c)
+0 to 7
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+ebsub:g1
+}
+# lmf
+..|..|..|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+ebor
+# storage
+db|alu.(4).cnf
+db|alu.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+alu.vhd
+17cf8395e3be4190a6b5d17bd9d919a5
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(a)
+0 to 7
+PARAMETER_STRING
+USR
+ constraint(b)
+0 to 7
+PARAMETER_STRING
+USR
+ constraint(c)
+0 to 7
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+ebor:g2
+}
+# lmf
+..|..|..|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+ebnot
+# storage
+db|alu.(5).cnf
+db|alu.(5).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+alu.vhd
+17cf8395e3be4190a6b5d17bd9d919a5
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(a)
+0 to 7
+PARAMETER_STRING
+USR
+ constraint(c)
+0 to 7
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+ebnot:g3
+}
+# lmf
+..|..|..|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# complete
+

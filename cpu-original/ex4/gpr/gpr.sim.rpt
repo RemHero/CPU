@@ -1,0 +1,441 @@
+Simulator report for gpr
+Tue Dec 03 19:01:15 2019
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 162 nodes    ;
+; Simulation Coverage         ;       2.47 % ;
+; Total Number of Transitions ; 296          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone      ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Vector input source                                                                        ; gpr.vwf    ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;       2.47 % ;
+; Total nodes checked                                 ; 162          ;
+; Total output ports checked                          ; 162          ;
+; Total output ports with complete 1/0-value coverage ; 4            ;
+; Total output ports with no 1/0-value coverage       ; 118          ;
+; Total output ports with no 1-value coverage         ; 146          ;
+; Total output ports with no 0-value coverage         ; 130          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++-----------------------------------------------------+
+; Complete 1/0-Value Coverage                         ;
++---------------+------------------+------------------+
+; Node Name     ; Output Port Name ; Output Port Type ;
++---------------+------------------+------------------+
+; |gpr|a1[7]~18 ; |gpr|a1[7]~18    ; out0             ;
+; |gpr|a0[7]~18 ; |gpr|a0[7]~18    ; out0             ;
+; |gpr|we       ; |gpr|we          ; out              ;
+; |gpr|clk      ; |gpr|clk         ; out              ;
++---------------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------+
+; Missing 1-Value Coverage                               ;
++------------------+------------------+------------------+
+; Node Name        ; Output Port Name ; Output Port Type ;
++------------------+------------------+------------------+
+; |gpr|c[0]        ; |gpr|c[0]        ; regout           ;
+; |gpr|a~0         ; |gpr|a~0         ; out              ;
+; |gpr|a~1         ; |gpr|a~1         ; out              ;
+; |gpr|a~2         ; |gpr|a~2         ; out              ;
+; |gpr|a~3         ; |gpr|a~3         ; out              ;
+; |gpr|a~4         ; |gpr|a~4         ; out              ;
+; |gpr|a~5         ; |gpr|a~5         ; out              ;
+; |gpr|a~6         ; |gpr|a~6         ; out              ;
+; |gpr|a~7         ; |gpr|a~7         ; out              ;
+; |gpr|b~0         ; |gpr|b~0         ; out              ;
+; |gpr|b~1         ; |gpr|b~1         ; out              ;
+; |gpr|b~2         ; |gpr|b~2         ; out              ;
+; |gpr|b~3         ; |gpr|b~3         ; out              ;
+; |gpr|b~4         ; |gpr|b~4         ; out              ;
+; |gpr|b~5         ; |gpr|b~5         ; out              ;
+; |gpr|b~6         ; |gpr|b~6         ; out              ;
+; |gpr|b~7         ; |gpr|b~7         ; out              ;
+; |gpr|b~8         ; |gpr|b~8         ; out              ;
+; |gpr|b~9         ; |gpr|b~9         ; out              ;
+; |gpr|b~10        ; |gpr|b~10        ; out              ;
+; |gpr|b~11        ; |gpr|b~11        ; out              ;
+; |gpr|b~12        ; |gpr|b~12        ; out              ;
+; |gpr|b~13        ; |gpr|b~13        ; out              ;
+; |gpr|b~14        ; |gpr|b~14        ; out              ;
+; |gpr|b~15        ; |gpr|b~15        ; out              ;
+; |gpr|c~0         ; |gpr|c~0         ; out              ;
+; |gpr|c~1         ; |gpr|c~1         ; out              ;
+; |gpr|c~2         ; |gpr|c~2         ; out              ;
+; |gpr|c~3         ; |gpr|c~3         ; out              ;
+; |gpr|c~4         ; |gpr|c~4         ; out              ;
+; |gpr|c~5         ; |gpr|c~5         ; out              ;
+; |gpr|c~6         ; |gpr|c~6         ; out              ;
+; |gpr|c~7         ; |gpr|c~7         ; out              ;
+; |gpr|c~8         ; |gpr|c~8         ; out              ;
+; |gpr|c~9         ; |gpr|c~9         ; out              ;
+; |gpr|c~10        ; |gpr|c~10        ; out              ;
+; |gpr|c~11        ; |gpr|c~11        ; out              ;
+; |gpr|c~12        ; |gpr|c~12        ; out              ;
+; |gpr|c~13        ; |gpr|c~13        ; out              ;
+; |gpr|c~14        ; |gpr|c~14        ; out              ;
+; |gpr|c~15        ; |gpr|c~15        ; out              ;
+; |gpr|c~16        ; |gpr|c~16        ; out              ;
+; |gpr|c~17        ; |gpr|c~17        ; out              ;
+; |gpr|c~18        ; |gpr|c~18        ; out              ;
+; |gpr|c~19        ; |gpr|c~19        ; out              ;
+; |gpr|c~20        ; |gpr|c~20        ; out              ;
+; |gpr|c~21        ; |gpr|c~21        ; out              ;
+; |gpr|c~22        ; |gpr|c~22        ; out              ;
+; |gpr|c~23        ; |gpr|c~23        ; out              ;
+; |gpr|a[7]        ; |gpr|a[7]        ; regout           ;
+; |gpr|a[6]        ; |gpr|a[6]        ; regout           ;
+; |gpr|a[5]        ; |gpr|a[5]        ; regout           ;
+; |gpr|a[4]        ; |gpr|a[4]        ; regout           ;
+; |gpr|a[3]        ; |gpr|a[3]        ; regout           ;
+; |gpr|a[2]        ; |gpr|a[2]        ; regout           ;
+; |gpr|a[1]        ; |gpr|a[1]        ; regout           ;
+; |gpr|a[0]        ; |gpr|a[0]        ; regout           ;
+; |gpr|b[7]        ; |gpr|b[7]        ; regout           ;
+; |gpr|b[6]        ; |gpr|b[6]        ; regout           ;
+; |gpr|b[5]        ; |gpr|b[5]        ; regout           ;
+; |gpr|b[4]        ; |gpr|b[4]        ; regout           ;
+; |gpr|b[3]        ; |gpr|b[3]        ; regout           ;
+; |gpr|b[2]        ; |gpr|b[2]        ; regout           ;
+; |gpr|b[1]        ; |gpr|b[1]        ; regout           ;
+; |gpr|b[0]        ; |gpr|b[0]        ; regout           ;
+; |gpr|c[7]        ; |gpr|c[7]        ; regout           ;
+; |gpr|c[6]        ; |gpr|c[6]        ; regout           ;
+; |gpr|c[5]        ; |gpr|c[5]        ; regout           ;
+; |gpr|c[3]        ; |gpr|c[3]        ; regout           ;
+; |gpr|c[1]        ; |gpr|c[1]        ; regout           ;
+; |gpr|a1[0]~0     ; |gpr|a1[0]~0     ; out              ;
+; |gpr|a1[0]~1     ; |gpr|a1[0]~1     ; out              ;
+; |gpr|a1[1]$latch ; |gpr|a1[1]$latch ; out              ;
+; |gpr|a1[1]~2     ; |gpr|a1[1]~2     ; out              ;
+; |gpr|a1[1]~3     ; |gpr|a1[1]~3     ; out              ;
+; |gpr|a1[3]$latch ; |gpr|a1[3]$latch ; out              ;
+; |gpr|a1[3]~6     ; |gpr|a1[3]~6     ; out              ;
+; |gpr|a1[3]~7     ; |gpr|a1[3]~7     ; out              ;
+; |gpr|a1[5]$latch ; |gpr|a1[5]$latch ; out              ;
+; |gpr|a1[5]~10    ; |gpr|a1[5]~10    ; out              ;
+; |gpr|a1[5]~11    ; |gpr|a1[5]~11    ; out              ;
+; |gpr|a1[6]$latch ; |gpr|a1[6]$latch ; out              ;
+; |gpr|a1[6]~12    ; |gpr|a1[6]~12    ; out              ;
+; |gpr|a1[6]~13    ; |gpr|a1[6]~13    ; out              ;
+; |gpr|a1[7]$latch ; |gpr|a1[7]$latch ; out              ;
+; |gpr|a1[7]~14    ; |gpr|a1[7]~14    ; out              ;
+; |gpr|a1[7]~15    ; |gpr|a1[7]~15    ; out0             ;
+; |gpr|a1[7]~16    ; |gpr|a1[7]~16    ; out              ;
+; |gpr|a1[7]~17    ; |gpr|a1[7]~17    ; out0             ;
+; |gpr|a0[0]$latch ; |gpr|a0[0]$latch ; out              ;
+; |gpr|a0[0]~0     ; |gpr|a0[0]~0     ; out              ;
+; |gpr|a0[0]~1     ; |gpr|a0[0]~1     ; out              ;
+; |gpr|a0[1]$latch ; |gpr|a0[1]$latch ; out              ;
+; |gpr|a0[1]~2     ; |gpr|a0[1]~2     ; out              ;
+; |gpr|a0[1]~3     ; |gpr|a0[1]~3     ; out              ;
+; |gpr|a0[2]$latch ; |gpr|a0[2]$latch ; out              ;
+; |gpr|a0[2]~5     ; |gpr|a0[2]~5     ; out              ;
+; |gpr|a0[3]$latch ; |gpr|a0[3]$latch ; out              ;
+; |gpr|a0[3]~6     ; |gpr|a0[3]~6     ; out              ;
+; |gpr|a0[3]~7     ; |gpr|a0[3]~7     ; out              ;
+; |gpr|a0[4]$latch ; |gpr|a0[4]$latch ; out              ;
+; |gpr|a0[4]~9     ; |gpr|a0[4]~9     ; out              ;
+; |gpr|a0[5]$latch ; |gpr|a0[5]$latch ; out              ;
+; |gpr|a0[5]~10    ; |gpr|a0[5]~10    ; out              ;
+; |gpr|a0[5]~11    ; |gpr|a0[5]~11    ; out              ;
+; |gpr|a0[6]$latch ; |gpr|a0[6]$latch ; out              ;
+; |gpr|a0[6]~12    ; |gpr|a0[6]~12    ; out              ;
+; |gpr|a0[6]~13    ; |gpr|a0[6]~13    ; out              ;
+; |gpr|a0[7]$latch ; |gpr|a0[7]$latch ; out              ;
+; |gpr|a1[0]$latch ; |gpr|a1[0]$latch ; out              ;
+; |gpr|a0[7]~14    ; |gpr|a0[7]~14    ; out              ;
+; |gpr|a0[7]~15    ; |gpr|a0[7]~15    ; out0             ;
+; |gpr|a0[7]~16    ; |gpr|a0[7]~16    ; out              ;
+; |gpr|a0[7]~17    ; |gpr|a0[7]~17    ; out0             ;
+; |gpr|ra[0]       ; |gpr|ra[0]       ; out              ;
+; |gpr|ra[1]       ; |gpr|ra[1]       ; out              ;
+; |gpr|wa[0]       ; |gpr|wa[0]       ; out              ;
+; |gpr|wa[1]       ; |gpr|wa[1]       ; out              ;
+; |gpr|ai[0]       ; |gpr|ai[0]       ; out              ;
+; |gpr|ai[1]       ; |gpr|ai[1]       ; out              ;
+; |gpr|ai[2]       ; |gpr|ai[2]       ; out              ;
+; |gpr|ai[3]       ; |gpr|ai[3]       ; out              ;
+; |gpr|ai[4]       ; |gpr|ai[4]       ; out              ;
+; |gpr|ai[5]       ; |gpr|ai[5]       ; out              ;
+; |gpr|ai[6]       ; |gpr|ai[6]       ; out              ;
+; |gpr|ai[7]       ; |gpr|ai[7]       ; out              ;
+; |gpr|a0[0]       ; |gpr|a0[0]       ; pin_out          ;
+; |gpr|a0[1]       ; |gpr|a0[1]       ; pin_out          ;
+; |gpr|a0[2]       ; |gpr|a0[2]       ; pin_out          ;
+; |gpr|a0[3]       ; |gpr|a0[3]       ; pin_out          ;
+; |gpr|a0[4]       ; |gpr|a0[4]       ; pin_out          ;
+; |gpr|a0[5]       ; |gpr|a0[5]       ; pin_out          ;
+; |gpr|a0[6]       ; |gpr|a0[6]       ; pin_out          ;
+; |gpr|a0[7]       ; |gpr|a0[7]       ; pin_out          ;
+; |gpr|a1[0]       ; |gpr|a1[0]       ; pin_out          ;
+; |gpr|a1[1]       ; |gpr|a1[1]       ; pin_out          ;
+; |gpr|a1[3]       ; |gpr|a1[3]       ; pin_out          ;
+; |gpr|a1[5]       ; |gpr|a1[5]       ; pin_out          ;
+; |gpr|a1[6]       ; |gpr|a1[6]       ; pin_out          ;
+; |gpr|a1[7]       ; |gpr|a1[7]       ; pin_out          ;
+; |gpr|Equal0~0    ; |gpr|Equal0~0    ; out0             ;
+; |gpr|Equal1~0    ; |gpr|Equal1~0    ; out0             ;
+; |gpr|Equal2~0    ; |gpr|Equal2~0    ; out0             ;
+; |gpr|Equal3~0    ; |gpr|Equal3~0    ; out0             ;
+; |gpr|Equal4~0    ; |gpr|Equal4~0    ; out0             ;
+; |gpr|Equal5~0    ; |gpr|Equal5~0    ; out0             ;
++------------------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------+
+; Missing 0-Value Coverage                               ;
++------------------+------------------+------------------+
+; Node Name        ; Output Port Name ; Output Port Type ;
++------------------+------------------+------------------+
+; |gpr|c[0]        ; |gpr|c[0]        ; regout           ;
+; |gpr|a~0         ; |gpr|a~0         ; out              ;
+; |gpr|a~1         ; |gpr|a~1         ; out              ;
+; |gpr|a~2         ; |gpr|a~2         ; out              ;
+; |gpr|a~3         ; |gpr|a~3         ; out              ;
+; |gpr|a~4         ; |gpr|a~4         ; out              ;
+; |gpr|a~5         ; |gpr|a~5         ; out              ;
+; |gpr|a~6         ; |gpr|a~6         ; out              ;
+; |gpr|a~7         ; |gpr|a~7         ; out              ;
+; |gpr|b~0         ; |gpr|b~0         ; out              ;
+; |gpr|b~1         ; |gpr|b~1         ; out              ;
+; |gpr|b~2         ; |gpr|b~2         ; out              ;
+; |gpr|b~3         ; |gpr|b~3         ; out              ;
+; |gpr|b~4         ; |gpr|b~4         ; out              ;
+; |gpr|b~5         ; |gpr|b~5         ; out              ;
+; |gpr|b~6         ; |gpr|b~6         ; out              ;
+; |gpr|b~7         ; |gpr|b~7         ; out              ;
+; |gpr|b~8         ; |gpr|b~8         ; out              ;
+; |gpr|b~9         ; |gpr|b~9         ; out              ;
+; |gpr|b~10        ; |gpr|b~10        ; out              ;
+; |gpr|b~11        ; |gpr|b~11        ; out              ;
+; |gpr|b~12        ; |gpr|b~12        ; out              ;
+; |gpr|b~13        ; |gpr|b~13        ; out              ;
+; |gpr|b~14        ; |gpr|b~14        ; out              ;
+; |gpr|b~15        ; |gpr|b~15        ; out              ;
+; |gpr|c~0         ; |gpr|c~0         ; out              ;
+; |gpr|c~1         ; |gpr|c~1         ; out              ;
+; |gpr|c~2         ; |gpr|c~2         ; out              ;
+; |gpr|c~3         ; |gpr|c~3         ; out              ;
+; |gpr|c~4         ; |gpr|c~4         ; out              ;
+; |gpr|c~5         ; |gpr|c~5         ; out              ;
+; |gpr|c~6         ; |gpr|c~6         ; out              ;
+; |gpr|c~7         ; |gpr|c~7         ; out              ;
+; |gpr|c~8         ; |gpr|c~8         ; out              ;
+; |gpr|c~9         ; |gpr|c~9         ; out              ;
+; |gpr|c~10        ; |gpr|c~10        ; out              ;
+; |gpr|c~11        ; |gpr|c~11        ; out              ;
+; |gpr|c~12        ; |gpr|c~12        ; out              ;
+; |gpr|c~13        ; |gpr|c~13        ; out              ;
+; |gpr|c~14        ; |gpr|c~14        ; out              ;
+; |gpr|c~15        ; |gpr|c~15        ; out              ;
+; |gpr|c~16        ; |gpr|c~16        ; out              ;
+; |gpr|c~17        ; |gpr|c~17        ; out              ;
+; |gpr|c~18        ; |gpr|c~18        ; out              ;
+; |gpr|c~19        ; |gpr|c~19        ; out              ;
+; |gpr|c~20        ; |gpr|c~20        ; out              ;
+; |gpr|c~21        ; |gpr|c~21        ; out              ;
+; |gpr|c~22        ; |gpr|c~22        ; out              ;
+; |gpr|c~23        ; |gpr|c~23        ; out              ;
+; |gpr|a[7]        ; |gpr|a[7]        ; regout           ;
+; |gpr|a[6]        ; |gpr|a[6]        ; regout           ;
+; |gpr|a[5]        ; |gpr|a[5]        ; regout           ;
+; |gpr|a[4]        ; |gpr|a[4]        ; regout           ;
+; |gpr|a[3]        ; |gpr|a[3]        ; regout           ;
+; |gpr|a[2]        ; |gpr|a[2]        ; regout           ;
+; |gpr|a[1]        ; |gpr|a[1]        ; regout           ;
+; |gpr|a[0]        ; |gpr|a[0]        ; regout           ;
+; |gpr|b[7]        ; |gpr|b[7]        ; regout           ;
+; |gpr|b[6]        ; |gpr|b[6]        ; regout           ;
+; |gpr|b[5]        ; |gpr|b[5]        ; regout           ;
+; |gpr|b[4]        ; |gpr|b[4]        ; regout           ;
+; |gpr|b[3]        ; |gpr|b[3]        ; regout           ;
+; |gpr|b[2]        ; |gpr|b[2]        ; regout           ;
+; |gpr|b[1]        ; |gpr|b[1]        ; regout           ;
+; |gpr|b[0]        ; |gpr|b[0]        ; regout           ;
+; |gpr|c[7]        ; |gpr|c[7]        ; regout           ;
+; |gpr|c[6]        ; |gpr|c[6]        ; regout           ;
+; |gpr|c[5]        ; |gpr|c[5]        ; regout           ;
+; |gpr|c[4]        ; |gpr|c[4]        ; regout           ;
+; |gpr|c[3]        ; |gpr|c[3]        ; regout           ;
+; |gpr|c[2]        ; |gpr|c[2]        ; regout           ;
+; |gpr|c[1]        ; |gpr|c[1]        ; regout           ;
+; |gpr|a1[0]~0     ; |gpr|a1[0]~0     ; out              ;
+; |gpr|a1[0]~1     ; |gpr|a1[0]~1     ; out              ;
+; |gpr|a1[1]~2     ; |gpr|a1[1]~2     ; out              ;
+; |gpr|a1[1]~3     ; |gpr|a1[1]~3     ; out              ;
+; |gpr|a1[2]$latch ; |gpr|a1[2]$latch ; out              ;
+; |gpr|a1[2]~4     ; |gpr|a1[2]~4     ; out              ;
+; |gpr|a1[2]~5     ; |gpr|a1[2]~5     ; out              ;
+; |gpr|a1[3]~6     ; |gpr|a1[3]~6     ; out              ;
+; |gpr|a1[3]~7     ; |gpr|a1[3]~7     ; out              ;
+; |gpr|a1[4]$latch ; |gpr|a1[4]$latch ; out              ;
+; |gpr|a1[4]~8     ; |gpr|a1[4]~8     ; out              ;
+; |gpr|a1[4]~9     ; |gpr|a1[4]~9     ; out              ;
+; |gpr|a1[5]~10    ; |gpr|a1[5]~10    ; out              ;
+; |gpr|a1[5]~11    ; |gpr|a1[5]~11    ; out              ;
+; |gpr|a1[6]~12    ; |gpr|a1[6]~12    ; out              ;
+; |gpr|a1[6]~13    ; |gpr|a1[6]~13    ; out              ;
+; |gpr|a1[7]~14    ; |gpr|a1[7]~14    ; out              ;
+; |gpr|a1[7]~15    ; |gpr|a1[7]~15    ; out0             ;
+; |gpr|a1[7]~16    ; |gpr|a1[7]~16    ; out              ;
+; |gpr|a1[7]~17    ; |gpr|a1[7]~17    ; out0             ;
+; |gpr|a0[0]~0     ; |gpr|a0[0]~0     ; out              ;
+; |gpr|a0[0]~1     ; |gpr|a0[0]~1     ; out              ;
+; |gpr|a0[1]~2     ; |gpr|a0[1]~2     ; out              ;
+; |gpr|a0[1]~3     ; |gpr|a0[1]~3     ; out              ;
+; |gpr|a0[2]~4     ; |gpr|a0[2]~4     ; out              ;
+; |gpr|a0[2]~5     ; |gpr|a0[2]~5     ; out              ;
+; |gpr|a0[3]~6     ; |gpr|a0[3]~6     ; out              ;
+; |gpr|a0[3]~7     ; |gpr|a0[3]~7     ; out              ;
+; |gpr|a0[4]~8     ; |gpr|a0[4]~8     ; out              ;
+; |gpr|a0[4]~9     ; |gpr|a0[4]~9     ; out              ;
+; |gpr|a0[5]~10    ; |gpr|a0[5]~10    ; out              ;
+; |gpr|a0[5]~11    ; |gpr|a0[5]~11    ; out              ;
+; |gpr|a0[6]~12    ; |gpr|a0[6]~12    ; out              ;
+; |gpr|a0[6]~13    ; |gpr|a0[6]~13    ; out              ;
+; |gpr|a0[7]~14    ; |gpr|a0[7]~14    ; out              ;
+; |gpr|a0[7]~15    ; |gpr|a0[7]~15    ; out0             ;
+; |gpr|a0[7]~16    ; |gpr|a0[7]~16    ; out              ;
+; |gpr|a0[7]~17    ; |gpr|a0[7]~17    ; out0             ;
+; |gpr|ra[0]       ; |gpr|ra[0]       ; out              ;
+; |gpr|ra[1]       ; |gpr|ra[1]       ; out              ;
+; |gpr|wa[0]       ; |gpr|wa[0]       ; out              ;
+; |gpr|wa[1]       ; |gpr|wa[1]       ; out              ;
+; |gpr|ai[0]       ; |gpr|ai[0]       ; out              ;
+; |gpr|ai[1]       ; |gpr|ai[1]       ; out              ;
+; |gpr|ai[2]       ; |gpr|ai[2]       ; out              ;
+; |gpr|ai[3]       ; |gpr|ai[3]       ; out              ;
+; |gpr|ai[4]       ; |gpr|ai[4]       ; out              ;
+; |gpr|ai[5]       ; |gpr|ai[5]       ; out              ;
+; |gpr|ai[6]       ; |gpr|ai[6]       ; out              ;
+; |gpr|ai[7]       ; |gpr|ai[7]       ; out              ;
+; |gpr|a1[2]       ; |gpr|a1[2]       ; pin_out          ;
+; |gpr|a1[4]       ; |gpr|a1[4]       ; pin_out          ;
+; |gpr|Equal0~0    ; |gpr|Equal0~0    ; out0             ;
+; |gpr|Equal1~0    ; |gpr|Equal1~0    ; out0             ;
+; |gpr|Equal2~0    ; |gpr|Equal2~0    ; out0             ;
+; |gpr|Equal3~0    ; |gpr|Equal3~0    ; out0             ;
+; |gpr|Equal4~0    ; |gpr|Equal4~0    ; out0             ;
+; |gpr|Equal5~0    ; |gpr|Equal5~0    ; out0             ;
++------------------+------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+    Info: Processing started: Tue Dec 03 19:01:15 2019
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off gpr -c gpr
+Info: Using vector source file "c:/altera/90sp1/quartus/ex4/gpr/gpr.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is       2.47 %
+Info: Number of transitions in simulation is 296
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 163 megabytes
+    Info: Processing ended: Tue Dec 03 19:01:15 2019
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

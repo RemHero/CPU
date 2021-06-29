@@ -1,0 +1,42 @@
+|serial_adder
+shift => comb~0.IN0
+shift => comb~1.IN0
+shift => comb~2.IN0
+clock => comb~2.IN1
+clock => comb~1.IN1
+clock => comb~0.IN1
+si => shift_register:h1.si
+nreset => ~NO_FANOUT~
+checks <= adder:h3.s
+checkc <= adder:h3.c
+
+
+|serial_adder|shift_register:h0
+si => h1.DATAIN
+c => h1.CLK
+c => h2.CLK
+c => h3.CLK
+c => h4.CLK
+so <= h4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|serial_adder|shift_register:h1
+si => h1.DATAIN
+c => h1.CLK
+c => h2.CLK
+c => h3.CLK
+c => h4.CLK
+so <= h4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|serial_adder|adder:h3
+x => c~0.IN0
+x => s~0.IN0
+y => c~0.IN1
+y => s~0.IN1
+z => c~1.IN1
+z => s~1.IN1
+s <= s~1.DB_MAX_OUTPUT_PORT_TYPE
+c <= c~2.DB_MAX_OUTPUT_PORT_TYPE
+
+

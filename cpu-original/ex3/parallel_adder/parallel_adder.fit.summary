@@ -1,0 +1,12 @@
+Fitter Status : Successful - Mon Nov 18 20:08:25 2019
+Quartus II Version : 9.0 Build 184 04/29/2009 SP 1 SJ Web Edition
+Revision Name : parallel_adder
+Top-level Entity Name : parallel_adder
+Family : Cyclone
+Device : EP1C3T144C8
+Timing Models : Final
+Total logic elements : 7 / 2,910 ( < 1 % )
+Total pins : 13 / 104 ( 13 % )
+Total virtual pins : 0
+Total memory bits : 0 / 59,904 ( 0 % )
+Total PLLs : 0 / 1 ( 0 % )

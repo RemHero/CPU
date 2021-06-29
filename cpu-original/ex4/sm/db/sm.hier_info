@@ -1,0 +1,7 @@
+|sm
+en => zout~reg0.ENA
+clk => zout~reg0.CLK
+reset => zout~reg0.ACLR
+zout <= zout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
