@@ -1,0 +1,84 @@
+Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+11
+1040
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+74244
+# storage
+db|BBUS.(1).cnf
+db|BBUS.(1).cnf
+# case_insensitive
+# source_file
+..|..|..|..|libraries|others|maxplus2|74244.bdf
+b991c4e54d71024b356407b6c66fc4
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+74244:inst
+}
+# macro_sequence
+
+# end
+# entity
+74374
+# storage
+db|BBUS.(2).cnf
+db|BBUS.(2).cnf
+# case_insensitive
+# source_file
+..|..|..|..|libraries|others|maxplus2|74374.bdf
+a56b17bdd2cc8a58faa0ca93b8a3a3
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+74374:inst1
+74374:inst2
+74374:inst3
+}
+# macro_sequence
+
+# end
+# entity
+Block1
+# storage
+db|BBUS.(0).cnf
+db|BBUS.(0).cnf
+# case_insensitive
+# source_file
+Block1.bdf
+8a5804be36589286ef7dc628c90f46
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+

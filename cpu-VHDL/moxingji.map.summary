@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sun Mar 22 20:09:21 2020
+Quartus II Version : 9.0 Build 184 04/29/2009 SP 1 SJ Web Edition
+Revision Name : moxingji
+Top-level Entity Name : moxingji
+Family : Cyclone II
+Total logic elements : 329
+    Total combinational functions : 311
+    Dedicated logic registers : 78
+Total registers : 78
+Total pins : 54
+Total virtual pins : 0
+Total memory bits : 2,048
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

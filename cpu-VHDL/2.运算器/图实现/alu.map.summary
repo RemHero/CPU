@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Fri Feb 28 15:14:29 2020
+Quartus II Version : 9.0 Build 184 04/29/2009 SP 1 SJ Web Edition
+Revision Name : alu
+Top-level Entity Name : alu
+Family : Cyclone II
+Total logic elements : 91
+    Total combinational functions : 59
+    Dedicated logic registers : 32
+Total registers : 32
+Total pins : 31
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

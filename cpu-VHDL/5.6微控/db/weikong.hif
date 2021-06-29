@@ -1,0 +1,173 @@
+Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+18
+1130
+OFF
+OFF
+OFF
+ON
+ON
+OFF
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+74273
+# storage
+db|weikong.(1).cnf
+db|weikong.(1).cnf
+# case_insensitive
+# source_file
+..|..|..|libraries|others|maxplus2|74273.bdf
+43247217913d17ab51bbea92feb3e38
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+74273:inst5
+74273:inst3
+74273:inst13
+74273:inst4
+}
+# macro_sequence
+
+# end
+# entity
+7474
+# storage
+db|weikong.(2).cnf
+db|weikong.(2).cnf
+# case_insensitive
+# source_file
+..|..|..|libraries|others|maxplus2|7474.bdf
+f0d781b738e7134a9d686c0ea27f
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+7474:inst19
+7474:inst18
+7474:inst20
+}
+# macro_sequence
+
+# end
+# entity
+74244
+# storage
+db|weikong.(3).cnf
+db|weikong.(3).cnf
+# case_insensitive
+# source_file
+..|..|..|libraries|others|maxplus2|74244.bdf
+b991c4e54d71024b356407b6c66fc4
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+74244:inst21
+}
+# macro_sequence
+
+# end
+# entity
+shixu
+# storage
+db|weikong.(4).cnf
+db|weikong.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+shixu.vhd
+ba42701d7c3a8b9dad2dd6f5d6aa32f8
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+shixu:inst
+}
+# lmf
+..|..|..|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+weikong
+# storage
+db|weikong.(0).cnf
+db|weikong.(0).cnf
+# case_insensitive
+# source_file
+weikong.bdf
+d79c45607b1a572f964f45bde86c5a75
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+rom
+# storage
+db|weikong.(5).cnf
+db|weikong.(5).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+ROM.vhd
+1858e4e84c11b4354352ad2efebedb
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+rom:inst1
+}
+# lmf
+..|..|..|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# complete
+

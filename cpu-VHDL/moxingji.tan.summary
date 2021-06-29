@@ -1,0 +1,96 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 9.540 ns
+From           : sw[6]
+To             : xianshi:inst2|guazai:inst|min[2]
+From Clock     : --
+To Clock       : clk1
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 27.129 ns
+From           : sjtl:inst1|Block1:inst|lpm_ram_io:inst13|altram:sram|altsyncram:ram_block|altsyncram_9p91:auto_generated|ram_block1a0~porta_address_reg7
+To             : d[3]
+From Clock     : clk
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 19.925 ns
+From           : sw[6]
+To             : d[6]
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : 6.053 ns
+From           : sw[1]
+To             : sjtl:inst1|exp_alu:inst1|r5[1]
+From Clock     : --
+To Clock       : clk
+Failed Paths   : 0
+
+Type           : Clock Setup: 'clk'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 51.61 MHz ( period = 19.376 ns )
+From           : weikong:inst|74273:inst13|14
+To             : weikong:inst|74273:inst3|13
+From Clock     : clk
+To Clock       : clk
+Failed Paths   : 0
+
+Type           : Clock Setup: 'clk1'
+Slack          : N/A
+Required Time  : None
+Actual Time    : Restricted to 340.02 MHz ( period = 2.941 ns )
+From           : xianshi:inst2|mod6:inst1|ex[0]
+To             : xianshi:inst2|mod6:inst1|ex[2]
+From Clock     : clk1
+To Clock       : clk1
+Failed Paths   : 0
+
+Type           : Clock Hold: 'clk1'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : xianshi:inst2|mod6:inst1|ex[2]
+To             : xianshi:inst2|guazai:inst|min[0]
+From Clock     : clk1
+To Clock       : clk1
+Failed Paths   : 12
+
+Type           : Clock Hold: 'clk'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : weikong:inst|74273:inst5|12
+To             : sjtl:inst1|Block1:inst|cunchuqi:inst|ar[3]
+From Clock     : clk
+To Clock       : clk
+Failed Paths   : 201
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 213
+
+--------------------------------------------------------------------------------------
+

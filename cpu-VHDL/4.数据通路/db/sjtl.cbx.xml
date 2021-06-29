@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="sjtl">
+		<CBX_INST_ENTRY INSTANCE_NAME="|sjtl|exp_alu:inst1|lpm_add_sub:Add12" CBX_FILE_NAME="add_sub_fnh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sjtl|exp_alu:inst1|lpm_add_sub:Add21" CBX_FILE_NAME="add_sub_lch.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sjtl|exp_alu:inst1|lpm_add_sub:Add3" CBX_FILE_NAME="add_sub_lch.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sjtl|exp_alu:inst1|lpm_add_sub:Add13" CBX_FILE_NAME="add_sub_rjh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sjtl|exp_alu:inst1|lpm_add_sub:Add4" CBX_FILE_NAME="add_sub_fnh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sjtl|exp_alu:inst1|lpm_add_sub:Add1" CBX_FILE_NAME="add_sub_fnh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sjtl|exp_alu:inst1|lpm_add_sub:Add10" CBX_FILE_NAME="add_sub_fnh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sjtl|exp_alu:inst1|lpm_add_sub:Add14" CBX_FILE_NAME="add_sub_fnh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sjtl|exp_alu:inst1|lpm_add_sub:Add18" CBX_FILE_NAME="add_sub_rjh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sjtl|exp_alu:inst1|lpm_add_sub:Add5" CBX_FILE_NAME="add_sub_rjh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sjtl|exp_alu:inst1|lpm_add_sub:Add9" CBX_FILE_NAME="add_sub_lch.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sjtl|exp_alu:inst1|lpm_add_sub:Add11" CBX_FILE_NAME="add_sub_rjh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sjtl|exp_alu:inst1|lpm_add_sub:Add15" CBX_FILE_NAME="add_sub_rjh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sjtl|exp_alu:inst1|lpm_add_sub:Add19" CBX_FILE_NAME="add_sub_fnh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sjtl|exp_alu:inst1|lpm_add_sub:Add2" CBX_FILE_NAME="add_sub_fnh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sjtl|exp_alu:inst1|lpm_add_sub:Add20" CBX_FILE_NAME="add_sub_rjh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sjtl|exp_alu:inst1|lpm_add_sub:Add6" CBX_FILE_NAME="add_sub_rjh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sjtl|exp_alu:inst1|lpm_add_sub:Add16" CBX_FILE_NAME="add_sub_lch.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sjtl|exp_alu:inst1|lpm_add_sub:Add7" CBX_FILE_NAME="add_sub_4lh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sjtl|exp_alu:inst1|lpm_add_sub:Add0" CBX_FILE_NAME="add_sub_fnh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sjtl|exp_alu:inst1|lpm_add_sub:Add17" CBX_FILE_NAME="add_sub_fnh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sjtl|exp_alu:inst1|lpm_add_sub:Add8" CBX_FILE_NAME="add_sub_ooh.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

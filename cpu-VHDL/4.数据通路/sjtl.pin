@@ -1,0 +1,188 @@
+ -- Copyright (C) 1991-2009 Altera Corporation
+ -- Your use of Altera Corporation's design tools, logic functions 
+ -- and other software and tools, and its AMPP partner logic 
+ -- functions, and any output files from any of the foregoing 
+ -- (including device programming or simulation files), and any 
+ -- associated documentation or information are expressly subject 
+ -- to the terms and conditions of the Altera Program License 
+ -- Subscription Agreement, Altera MegaCore Function License 
+ -- Agreement, or other applicable license agreement, including, 
+ -- without limitation, that your use is for the sole purpose of 
+ -- programming logic devices manufactured by Altera and sold by 
+ -- Altera or its authorized distributors.  Please refer to the 
+ -- applicable agreement for further details.
+ -- 
+ -- This is a Quartus II output file. It is for reporting purposes only, and is
+ -- not intended for use as a Quartus II input file. This file cannot be used
+ -- to make Quartus II pin assignments - for instructions on how to make pin
+ -- assignments, please see Quartus II help.
+ ------------------------------------------------------------------------------
+
+
+
+ ------------------------------------------------------------------------------
+ -- NC         : No Connect. This pin has no internal connection to the device.
+ -- VCC_INT    : Dedicated power pin, which MUST be connected to VCC  (5.0V).
+ -- VCC_IO     : Dedicated power pin, which MUST be connected to VCC  (Refer to
+ --              the table below for voltage).
+ -- GND        : Dedicated ground pin, which MUST be connected to GND.
+ -- GND+       : Unused input. This pin should be connected to GND. It may also
+ --              be connected  to a  valid signal  on the board  (low, high, or
+ --              toggling)  if that signal is required for a different revision
+ --              of the design.
+ -- GND*       : Unused  I/O  pin.   This pin can either be left unconnected or
+ --              connected to GND.  Connecting this pin to GND will improve the
+ --              device's immunity to noise.
+ ------------------------------------------------------------------------------
+
+
+File Generation Date & Time: Mon Mar 16 22:33:02 2020
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+CHIP  "sjtl"  ASSIGNED TO AN: EPF10K20TC144-4
+
+Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
+-------------------------------------------------------------------------------------------------------------
+TCK                          : 1         : input  :                   :         :           :                
+CONF_DONE                    : 2         : bidir  :                   :         :           :                
+nCEO                         : 3         : output :                   :         :           :                
+TDO                          : 4         : output :                   :         :           :                
+VCC_IO                       : 5         : power  :                   : 5.0V    :           :                
+VCC_INT                      : 6         : power  :                   : 5.0V    :           :                
+k[3]                         : 7         : input  : TTL               :         :           : N              
+pc_sel[0]                    : 8         : input  : TTL               :         :           : N              
+GND*                         : 9         :        :                   :         :           :                
+GND*                         : 10        :        :                   :         :           :                
+arout[5]                     : 11        : output : TTL               :         :           : N              
+GND*                         : 12        :        :                   :         :           :                
+GND*                         : 13        :        :                   :         :           :                
+GND*                         : 14        :        :                   :         :           :                
+GND_IO                       : 15        : gnd    :                   :         :           :                
+GND_INT                      : 16        : gnd    :                   :         :           :                
+alu_sel[5]                   : 17        : input  : TTL               :         :           : N              
+GND*                         : 18        :        :                   :         :           :                
+GND*                         : 19        :        :                   :         :           :                
+GND*                         : 20        :        :                   :         :           :                
+GND*                         : 21        :        :                   :         :           :                
+GND*                         : 22        :        :                   :         :           :                
+alu_sel[4]                   : 23        : input  : TTL               :         :           : N              
+VCC_IO                       : 24        : power  :                   : 5.0V    :           :                
+VCC_INT                      : 25        : power  :                   : 5.0V    :           :                
+ld_reg[2]                    : 26        : input  : TTL               :         :           : N              
+ld_reg[1]                    : 27        : input  : TTL               :         :           : N              
+ld_reg[3]                    : 28        : input  : TTL               :         :           : N              
+arout[4]                     : 29        : output : TTL               :         :           : N              
+GND*                         : 30        :        :                   :         :           :                
+GND*                         : 31        :        :                   :         :           :                
+GND*                         : 32        :        :                   :         :           :                
+arout[7]                     : 33        : output : TTL               :         :           : N              
+TMS                          : 34        : input  :                   :         :           :                
+nSTATUS                      : 35        : bidir  :                   :         :           :                
+GND*                         : 36        :        :                   :         :           :                
+k[6]                         : 37        : input  : TTL               :         :           : N              
+GND*                         : 38        :        :                   :         :           :                
+arout[2]                     : 39        : output : TTL               :         :           : N              
+GND_IO                       : 40        : gnd    :                   :         :           :                
+GND*                         : 41        :        :                   :         :           :                
+bus_sel[0]                   : 42        : input  : TTL               :         :           : N              
+k[4]                         : 43        : input  : TTL               :         :           : N              
+k[7]                         : 44        : input  : TTL               :         :           : N              
+VCC_IO                       : 45        : power  :                   : 5.0V    :           :                
+k[2]                         : 46        : input  : TTL               :         :           : N              
+k[0]                         : 47        : input  : TTL               :         :           : N              
+arout[0]                     : 48        : output : TTL               :         :           : N              
+GND*                         : 49        :        :                   :         :           :                
+GND_IO                       : 50        : gnd    :                   :         :           :                
+GND*                         : 51        :        :                   :         :           :                
+VCC_INT                      : 52        : power  :                   : 5.0V    :           :                
+VCC_INT                      : 53        : power  :                   : 5.0V    :           :                
+alu_sel[3]                   : 54        : input  : TTL               :         :           : N              
+t2                           : 55        : input  : TTL               :         :           : N              
+alu_sel[0]                   : 56        : input  : TTL               :         :           : N              
+GND_INT                      : 57        : gnd    :                   :         :           :                
+GND_INT                      : 58        : gnd    :                   :         :           :                
+pc_sel[1]                    : 59        : input  : TTL               :         :           : N              
+k[1]                         : 60        : input  : TTL               :         :           : N              
+VCC_IO                       : 61        : power  :                   : 5.0V    :           :                
+d[3]                         : 62        : bidir  : TTL               :         :           : N              
+bus_sel[1]                   : 63        : input  : TTL               :         :           : N              
+GND*                         : 64        :        :                   :         :           :                
+bus_sel[3]                   : 65        : input  : TTL               :         :           : N              
+GND_IO                       : 66        : gnd    :                   :         :           :                
+GND*                         : 67        :        :                   :         :           :                
+GND*                         : 68        :        :                   :         :           :                
+ld_reg[4]                    : 69        : input  : TTL               :         :           : N              
+GND*                         : 70        :        :                   :         :           :                
+VCC_IO                       : 71        : power  :                   : 5.0V    :           :                
+GND*                         : 72        :        :                   :         :           :                
+GND*                         : 73        :        :                   :         :           :                
+nCONFIG                      : 74        : input  :                   :         :           :                
+VCC_INT                      : 75        : power  :                   : 5.0V    :           :                
+MSEL1                        : 76        : input  :                   :         :           :                
+MSEL0                        : 77        : input  :                   :         :           :                
+GND*                         : 78        :        :                   :         :           :                
+GND*                         : 79        :        :                   :         :           :                
+GND*                         : 80        :        :                   :         :           :                
+GND*                         : 81        :        :                   :         :           :                
+GND*                         : 82        :        :                   :         :           :                
+GND*                         : 83        :        :                   :         :           :                
+GND_INT                      : 84        : gnd    :                   :         :           :                
+GND_IO                       : 85        : gnd    :                   :         :           :                
+GND*                         : 86        :        :                   :         :           :                
+GND*                         : 87        :        :                   :         :           :                
+GND*                         : 88        :        :                   :         :           :                
+GND*                         : 89        :        :                   :         :           :                
+GND*                         : 90        :        :                   :         :           :                
+GND*                         : 91        :        :                   :         :           :                
+GND*                         : 92        :        :                   :         :           :                
+VCC_INT                      : 93        : power  :                   : 5.0V    :           :                
+VCC_IO                       : 94        : power  :                   : 5.0V    :           :                
+GND*                         : 95        :        :                   :         :           :                
+alu_sel[1]                   : 96        : input  : TTL               :         :           : N              
+GND*                         : 97        :        :                   :         :           :                
+GND*                         : 98        :        :                   :         :           :                
+GND*                         : 99        :        :                   :         :           :                
+k[5]                         : 100       : input  : TTL               :         :           : N              
+we_rd[0]                     : 101       : input  : TTL               :         :           : N              
+d[2]                         : 102       : bidir  : TTL               :         :           : N              
+GND_INT                      : 103       : gnd    :                   :         :           :                
+GND_IO                       : 104       : gnd    :                   :         :           :                
+TDI                          : 105       : input  :                   :         :           :                
+nCE                          : 106       : input  :                   :         :           :                
+DCLK                         : 107       : bidir  :                   :         :           :                
+DATA0                        : 108       : input  :                   :         :           :                
+d[7]                         : 109       : bidir  : TTL               :         :           : N              
+GND*                         : 110       :        :                   :         :           :                
+ld_reg[0]                    : 111       : input  : TTL               :         :           : N              
+we_rd[1]                     : 112       : input  : TTL               :         :           : N              
+d[1]                         : 113       : bidir  : TTL               :         :           : N              
+arout[3]                     : 114       : output : TTL               :         :           : N              
+VCC_IO                       : 115       : power  :                   : 5.0V    :           :                
+arout[1]                     : 116       : output : TTL               :         :           : N              
+GND*                         : 117       :        :                   :         :           :                
+GND*                         : 118       :        :                   :         :           :                
+bus_sel[4]                   : 119       : input  : TTL               :         :           : N              
+bus_sel[2]                   : 120       : input  : TTL               :         :           : N              
+GND*                         : 121       :        :                   :         :           :                
+GND*                         : 122       :        :                   :         :           :                
+VCC_INT                      : 123       : power  :                   : 5.0V    :           :                
+alu_sel[2]                   : 124       : input  : TTL               :         :           : N              
+t3                           : 125       : input  : TTL               :         :           : N              
+pc_sel[2]                    : 126       : input  : TTL               :         :           : N              
+GND_INT                      : 127       : gnd    :                   :         :           :                
+GND*                         : 128       :        :                   :         :           :                
+GND_IO                       : 129       : gnd    :                   :         :           :                
+GND*                         : 130       :        :                   :         :           :                
+arout[6]                     : 131       : output : TTL               :         :           : N              
+GND*                         : 132       :        :                   :         :           :                
+GND*                         : 133       :        :                   :         :           :                
+VCC_IO                       : 134       : power  :                   : 5.0V    :           :                
+d[4]                         : 135       : bidir  : TTL               :         :           : N              
+GND*                         : 136       :        :                   :         :           :                
+GND*                         : 137       :        :                   :         :           :                
+d[0]                         : 138       : bidir  : TTL               :         :           : N              
+GND_IO                       : 139       : gnd    :                   :         :           :                
+GND*                         : 140       :        :                   :         :           :                
+GND*                         : 141       :        :                   :         :           :                
+GND*                         : 142       :        :                   :         :           :                
+d[6]                         : 143       : bidir  : TTL               :         :           : N              
+d[5]                         : 144       : bidir  : TTL               :         :           : N              

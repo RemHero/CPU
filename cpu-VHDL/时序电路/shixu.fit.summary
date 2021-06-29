@@ -1,0 +1,10 @@
+Fitter Status : Successful - Sun Mar 22 20:38:44 2020
+Quartus II Version : 9.0 Build 184 04/29/2009 SP 1 SJ Web Edition
+Revision Name : shixu
+Top-level Entity Name : shixu
+Family : FLEX10K
+Device : EPF10K20TC144-4
+Timing Models : Final
+Total logic elements : 24 / 1,152 ( 2 % )
+Total pins : 9 / 102 ( 9 % )
+Total memory bits : 0 / 12,288 ( 0 % )

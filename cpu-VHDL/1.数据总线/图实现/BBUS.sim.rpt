@@ -1,0 +1,271 @@
+Simulator report for BBUS
+Wed Mar 04 22:53:01 2020
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 4.0 us       ;
+; Simulation Netlist Size     ; 95 nodes     ;
+; Simulation Coverage         ;      74.74 % ;
+; Total Number of Transitions ; 571          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
+; Device                      ; EP2C70F896C6 ;
++-----------------------------+--------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                        ;
++--------------------------------------------------------------------------------------------+--------------+---------------+
+; Option                                                                                     ; Setting      ; Default Value ;
++--------------------------------------------------------------------------------------------+--------------+---------------+
+; Simulation mode                                                                            ; Timing       ; Timing        ;
+; Start time                                                                                 ; 0 ns         ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF         ;               ;
+; Vector input source                                                                        ; test_bus.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On           ; On            ;
+; Check outputs                                                                              ; Off          ; Off           ;
+; Report simulation coverage                                                                 ; On           ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On           ; On            ;
+; Display missing 1-value coverage report                                                    ; On           ; On            ;
+; Display missing 0-value coverage report                                                    ; On           ; On            ;
+; Detect setup and hold time violations                                                      ; Off          ; Off           ;
+; Detect glitches                                                                            ; Off          ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off          ; Off           ;
+; Generate Signal Activity File                                                              ; Off          ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off          ; Off           ;
+; Group bus channels in simulation results                                                   ; Off          ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On           ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE   ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off          ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off          ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto         ; Auto          ;
++--------------------------------------------------------------------------------------------+--------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      74.74 % ;
+; Total nodes checked                                 ; 95           ;
+; Total output ports checked                          ; 95           ;
+; Total output ports with complete 1/0-value coverage ; 71           ;
+; Total output ports with no 1/0-value coverage       ; 14           ;
+; Total output ports with no 1-value coverage         ; 16           ;
+; Total output ports with no 0-value coverage         ; 22           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                            ;
++--------------------------+--------------------------+------------------+
+; Node Name                ; Output Port Name         ; Output Port Type ;
++--------------------------+--------------------------+------------------+
+; |Block1|74244:inst|1~0   ; |Block1|74244:inst|1~0   ; combout          ;
+; |Block1|74374:inst3|40~1 ; |Block1|74374:inst3|40~1 ; combout          ;
+; |Block1|74374:inst2|13   ; |Block1|74374:inst2|13   ; regout           ;
+; |Block1|74374:inst3|40~2 ; |Block1|74374:inst3|40~2 ; combout          ;
+; |Block1|74374:inst3|40~3 ; |Block1|74374:inst3|40~3 ; combout          ;
+; |Block1|74244:inst|6~0   ; |Block1|74244:inst|6~0   ; combout          ;
+; |Block1|74374:inst3|41~1 ; |Block1|74374:inst3|41~1 ; combout          ;
+; |Block1|74374:inst2|14   ; |Block1|74374:inst2|14   ; regout           ;
+; |Block1|74374:inst3|41~2 ; |Block1|74374:inst3|41~2 ; combout          ;
+; |Block1|74244:inst|10~0  ; |Block1|74244:inst|10~0  ; combout          ;
+; |Block1|74374:inst3|42~1 ; |Block1|74374:inst3|42~1 ; combout          ;
+; |Block1|74374:inst2|15   ; |Block1|74374:inst2|15   ; regout           ;
+; |Block1|74374:inst3|42~2 ; |Block1|74374:inst3|42~2 ; combout          ;
+; |Block1|74244:inst|11~0  ; |Block1|74244:inst|11~0  ; combout          ;
+; |Block1|74374:inst3|43~1 ; |Block1|74374:inst3|43~1 ; combout          ;
+; |Block1|74374:inst2|16   ; |Block1|74374:inst2|16   ; regout           ;
+; |Block1|74374:inst3|43~2 ; |Block1|74374:inst3|43~2 ; combout          ;
+; |Block1|74244:inst|36~0  ; |Block1|74244:inst|36~0  ; combout          ;
+; |Block1|74374:inst3|44~1 ; |Block1|74374:inst3|44~1 ; combout          ;
+; |Block1|74374:inst3|44~2 ; |Block1|74374:inst3|44~2 ; combout          ;
+; |Block1|74244:inst|31~0  ; |Block1|74244:inst|31~0  ; combout          ;
+; |Block1|74374:inst1|18   ; |Block1|74374:inst1|18   ; regout           ;
+; |Block1|74374:inst3|45~2 ; |Block1|74374:inst3|45~2 ; combout          ;
+; |Block1|74244:inst|27~0  ; |Block1|74244:inst|27~0  ; combout          ;
+; |Block1|74374:inst3|46~1 ; |Block1|74374:inst3|46~1 ; combout          ;
+; |Block1|74374:inst3|46~2 ; |Block1|74374:inst3|46~2 ; combout          ;
+; |Block1|74244:inst|26~0  ; |Block1|74244:inst|26~0  ; combout          ;
+; |Block1|74374:inst1|20   ; |Block1|74374:inst1|20   ; regout           ;
+; |Block1|74374:inst3|47~2 ; |Block1|74374:inst3|47~2 ; combout          ;
+; |Block1|inst13           ; |Block1|inst13           ; combout          ;
+; |Block1|inst11           ; |Block1|inst11           ; combout          ;
+; |Block1|inst12           ; |Block1|inst12           ; combout          ;
+; |Block1|LE[7]            ; |Block1|LE[7]            ; padio            ;
+; |Block1|LE[6]            ; |Block1|LE[6]            ; padio            ;
+; |Block1|LE[5]            ; |Block1|LE[5]            ; padio            ;
+; |Block1|LE[4]            ; |Block1|LE[4]            ; padio            ;
+; |Block1|LE[2]            ; |Block1|LE[2]            ; padio            ;
+; |Block1|LE[0]            ; |Block1|LE[0]            ; padio            ;
+; |Block1|L[7]             ; |Block1|L~0              ; combout          ;
+; |Block1|L[7]             ; |Block1|L[7]~output      ; padio            ;
+; |Block1|L[6]             ; |Block1|L~1              ; combout          ;
+; |Block1|L[6]             ; |Block1|L[6]~output      ; padio            ;
+; |Block1|L[5]             ; |Block1|L~2              ; combout          ;
+; |Block1|L[5]             ; |Block1|L[5]~output      ; padio            ;
+; |Block1|L[4]             ; |Block1|L~3              ; combout          ;
+; |Block1|L[4]             ; |Block1|L[4]~output      ; padio            ;
+; |Block1|L[3]             ; |Block1|L~4              ; combout          ;
+; |Block1|L[3]             ; |Block1|L[3]~output      ; padio            ;
+; |Block1|L[2]             ; |Block1|L~5              ; combout          ;
+; |Block1|L[2]             ; |Block1|L[2]~output      ; padio            ;
+; |Block1|L[1]             ; |Block1|L~6              ; combout          ;
+; |Block1|L[1]             ; |Block1|L[1]~output      ; padio            ;
+; |Block1|L[0]             ; |Block1|L~7              ; combout          ;
+; |Block1|L[0]             ; |Block1|L[0]~output      ; padio            ;
+; |Block1|R3_BUS           ; |Block1|R3_BUS~corein    ; combout          ;
+; |Block1|SW_BUS           ; |Block1|SW_BUS~corein    ; combout          ;
+; |Block1|K[7]             ; |Block1|K[7]~corein      ; combout          ;
+; |Block1|R1_BUS           ; |Block1|R1_BUS~corein    ; combout          ;
+; |Block1|R2_BUS           ; |Block1|R2_BUS~corein    ; combout          ;
+; |Block1|K[6]             ; |Block1|K[6]~corein      ; combout          ;
+; |Block1|K[5]             ; |Block1|K[5]~corein      ; combout          ;
+; |Block1|K[4]             ; |Block1|K[4]~corein      ; combout          ;
+; |Block1|K[2]             ; |Block1|K[2]~corein      ; combout          ;
+; |Block1|K[0]             ; |Block1|K[0]~corein      ; combout          ;
+; |Block1|CLK              ; |Block1|CLK~corein       ; combout          ;
+; |Block1|LDDR[3]          ; |Block1|LDDR[3]~corein   ; combout          ;
+; |Block1|LDDR[1]          ; |Block1|LDDR[1]~corein   ; combout          ;
+; |Block1|LDDR[2]          ; |Block1|LDDR[2]~corein   ; combout          ;
+; |Block1|inst12~clkctrl   ; |Block1|inst12~clkctrl   ; outclk           ;
+; |Block1|inst11~clkctrl   ; |Block1|inst11~clkctrl   ; outclk           ;
+; |Block1|inst13~clkctrl   ; |Block1|inst13~clkctrl   ; outclk           ;
++--------------------------+--------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                               ;
++--------------------------+--------------------------+------------------+
+; Node Name                ; Output Port Name         ; Output Port Type ;
++--------------------------+--------------------------+------------------+
+; |Block1|74374:inst3|13   ; |Block1|74374:inst3|13   ; regout           ;
+; |Block1|74374:inst3|14   ; |Block1|74374:inst3|14   ; regout           ;
+; |Block1|74374:inst3|15   ; |Block1|74374:inst3|15   ; regout           ;
+; |Block1|74374:inst3|16   ; |Block1|74374:inst3|16   ; regout           ;
+; |Block1|74374:inst3|17   ; |Block1|74374:inst3|17   ; regout           ;
+; |Block1|74374:inst1|17   ; |Block1|74374:inst1|17   ; regout           ;
+; |Block1|74374:inst2|17   ; |Block1|74374:inst2|17   ; regout           ;
+; |Block1|74374:inst3|45~1 ; |Block1|74374:inst3|45~1 ; combout          ;
+; |Block1|74374:inst3|19   ; |Block1|74374:inst3|19   ; regout           ;
+; |Block1|74374:inst1|19   ; |Block1|74374:inst1|19   ; regout           ;
+; |Block1|74374:inst2|19   ; |Block1|74374:inst2|19   ; regout           ;
+; |Block1|74374:inst3|47~1 ; |Block1|74374:inst3|47~1 ; combout          ;
+; |Block1|LE[3]            ; |Block1|LE[3]            ; padio            ;
+; |Block1|LE[1]            ; |Block1|LE[1]            ; padio            ;
+; |Block1|K[3]             ; |Block1|K[3]~corein      ; combout          ;
+; |Block1|K[1]             ; |Block1|K[1]~corein      ; combout          ;
++--------------------------+--------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                               ;
++--------------------------+--------------------------+------------------+
+; Node Name                ; Output Port Name         ; Output Port Type ;
++--------------------------+--------------------------+------------------+
+; |Block1|74374:inst3|13   ; |Block1|74374:inst3|13   ; regout           ;
+; |Block1|74374:inst1|13   ; |Block1|74374:inst1|13   ; regout           ;
+; |Block1|74374:inst3|14   ; |Block1|74374:inst3|14   ; regout           ;
+; |Block1|74374:inst1|14   ; |Block1|74374:inst1|14   ; regout           ;
+; |Block1|74374:inst3|15   ; |Block1|74374:inst3|15   ; regout           ;
+; |Block1|74374:inst1|15   ; |Block1|74374:inst1|15   ; regout           ;
+; |Block1|74374:inst3|16   ; |Block1|74374:inst3|16   ; regout           ;
+; |Block1|74374:inst1|16   ; |Block1|74374:inst1|16   ; regout           ;
+; |Block1|74374:inst3|17   ; |Block1|74374:inst3|17   ; regout           ;
+; |Block1|74374:inst1|17   ; |Block1|74374:inst1|17   ; regout           ;
+; |Block1|74374:inst2|17   ; |Block1|74374:inst2|17   ; regout           ;
+; |Block1|74374:inst3|18   ; |Block1|74374:inst3|18   ; regout           ;
+; |Block1|74374:inst3|45~1 ; |Block1|74374:inst3|45~1 ; combout          ;
+; |Block1|74374:inst2|18   ; |Block1|74374:inst2|18   ; regout           ;
+; |Block1|74374:inst3|19   ; |Block1|74374:inst3|19   ; regout           ;
+; |Block1|74374:inst1|19   ; |Block1|74374:inst1|19   ; regout           ;
+; |Block1|74374:inst2|19   ; |Block1|74374:inst2|19   ; regout           ;
+; |Block1|74374:inst3|20   ; |Block1|74374:inst3|20   ; regout           ;
+; |Block1|74374:inst3|47~1 ; |Block1|74374:inst3|47~1 ; combout          ;
+; |Block1|74374:inst2|20   ; |Block1|74374:inst2|20   ; regout           ;
+; |Block1|K[3]             ; |Block1|K[3]~corein      ; combout          ;
+; |Block1|K[1]             ; |Block1|K[1]~corein      ; combout          ;
++--------------------------+--------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+    Info: Processing started: Wed Mar 04 22:53:01 2020
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off BBUS -c BBUS
+Info: Using vector source file "D:/quartus/大二下/计算机系统基础实验/1.数据总线/图实现/test_bus.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      74.74 %
+Info: Number of transitions in simulation is 571
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 169 megabytes
+    Info: Processing ended: Wed Mar 04 22:53:01 2020
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

@@ -1,0 +1,49 @@
+<internal_error>
+	<executable>quartus.exe</executable>
+	<sub_system>unknown</sub_system>
+	<file>unknown</file>
+	<line>0</line>
+	<callstack>
+	0x28746867:
+	0x119898b0: edt_sme + 0x198b0 (??0SME_COMPILE_GENERATOR@@QAE@XZ + 0xcc60)
+	</callstack>
+	<error>Access Violation at 0X28746867</error>
+	<date>Mon Mar 09 19:37:06 2020</date>
+	<version>Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition</version>
+	<full_error>Access Violation at 0X28746867
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition </full_error>
+</internal_error>
+
+<internal_error>
+	<executable>quartus.exe</executable>
+	<sub_system>unknown</sub_system>
+	<file>unknown</file>
+	<line>0</line>
+	<callstack>
+	0x28746867:
+	0x0bc498b0: edt_sme + 0x198b0 (??0SME_COMPILE_GENERATOR@@QAE@XZ + 0xcc60)
+	</callstack>
+	<error>Access Violation at 0X28746867</error>
+	<date>Mon Mar 09 19:40:47 2020</date>
+	<version>Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition</version>
+	<full_error>Access Violation at 0X28746867
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition </full_error>
+</internal_error>
+
+<internal_error>
+	<executable>quartus.exe</executable>
+	<sub_system>unknown</sub_system>
+	<file>unknown</file>
+	<line>0</line>
+	<callstack>
+	0x28746867:
+	0x112d98b0: edt_sme + 0x198b0 (??0SME_COMPILE_GENERATOR@@QAE@XZ + 0xcc60)
+	</callstack>
+	<error>Current editor: , RPW</error>
+	<date>Mon Mar 09 19:58:41 2020</date>
+	<version>Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition</version>
+	<full_error>Access Violation at 0X28746867
+Current editor: , RPW
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition </full_error>
+</internal_error>
+

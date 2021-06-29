@@ -1,0 +1,321 @@
+Simulator report for cunchuqi
+Sun Mar 08 19:18:03 2020
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. |Block1|lpm_ram_io:inst13|altram:sram|content
+  6. Coverage Summary
+  7. Complete 1/0-Value Coverage
+  8. Missing 1-Value Coverage
+  9. Missing 0-Value Coverage
+ 10. Simulator INI Usage
+ 11. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-----------------------------------------------+
+; Simulator Summary                             ;
++-----------------------------+-----------------+
+; Type                        ; Value           ;
++-----------------------------+-----------------+
+; Simulation Start Time       ; 0 ps            ;
+; Simulation End Time         ; 1.0 us          ;
+; Simulation Netlist Size     ; 94 nodes        ;
+; Simulation Coverage         ;      68.32 %    ;
+; Total Number of Transitions ; 712             ;
+; Simulation Breakpoints      ; 0               ;
+; Family                      ; FLEX10K         ;
+; Device                      ; EPF10K20TC144-4 ;
++-----------------------------+-----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++-----------------------------------------------+
+; |Block1|lpm_ram_io:inst13|altram:sram|content ;
++-----------------------------------------------+
+Memory report data cannot be output to ASCII.
+Please use Quartus II to view the memory report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      68.32 % ;
+; Total nodes checked                                 ; 94           ;
+; Total output ports checked                          ; 101          ;
+; Total output ports with complete 1/0-value coverage ; 69           ;
+; Total output ports with no 1/0-value coverage       ; 28           ;
+; Total output ports with no 1-value coverage         ; 29           ;
+; Total output ports with no 0-value coverage         ; 31           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                                   ;
++-------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                 ; Output Port Name                                                                               ; Output Port Type ;
++-------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------+
+; |Block1|cunchuqi:inst|bus_reg[7]~10                                                       ; |Block1|cunchuqi:inst|bus_reg[7]~10                                                            ; data_out0        ;
+; |Block1|cunchuqi:inst|bus_reg[7]~11                                                       ; |Block1|cunchuqi:inst|bus_reg[7]~11                                                            ; data_out0        ;
+; |Block1|lpm_ram_io:inst13|datatri[7]~10                                                   ; |Block1|lpm_ram_io:inst13|datatri[7]~10                                                        ; data_out0        ;
+; |Block1|lpm_ram_io:inst13|datatri[7]~11                                                   ; |Block1|lpm_ram_io:inst13|datatri[7]~11                                                        ; data_out0        ;
+; |Block1|cunchuqi:inst|bus_reg[6]~12                                                       ; |Block1|cunchuqi:inst|bus_reg[6]~12                                                            ; data_out0        ;
+; |Block1|lpm_ram_io:inst13|datatri[6]~12                                                   ; |Block1|lpm_ram_io:inst13|datatri[6]~12                                                        ; data_out0        ;
+; |Block1|lpm_ram_io:inst13|datatri[6]~13                                                   ; |Block1|lpm_ram_io:inst13|datatri[6]~13                                                        ; data_out0        ;
+; |Block1|cunchuqi:inst|bus_reg[5]~13                                                       ; |Block1|cunchuqi:inst|bus_reg[5]~13                                                            ; data_out0        ;
+; |Block1|lpm_ram_io:inst13|datatri[5]~14                                                   ; |Block1|lpm_ram_io:inst13|datatri[5]~14                                                        ; data_out0        ;
+; |Block1|lpm_ram_io:inst13|altram:sram|segment[0][5]                                       ; |Block1|lpm_ram_io:inst13|altram:sram|q[5]                                                     ; dataout          ;
+; |Block1|lpm_ram_io:inst13|datatri[5]~15                                                   ; |Block1|lpm_ram_io:inst13|datatri[5]~15                                                        ; data_out0        ;
+; |Block1|cunchuqi:inst|bus_reg[4]~14                                                       ; |Block1|cunchuqi:inst|bus_reg[4]~14                                                            ; data_out0        ;
+; |Block1|lpm_ram_io:inst13|datatri[4]~16                                                   ; |Block1|lpm_ram_io:inst13|datatri[4]~16                                                        ; data_out0        ;
+; |Block1|lpm_ram_io:inst13|altram:sram|segment[0][4]                                       ; |Block1|lpm_ram_io:inst13|altram:sram|q[4]                                                     ; dataout          ;
+; |Block1|lpm_ram_io:inst13|datatri[4]~17                                                   ; |Block1|lpm_ram_io:inst13|datatri[4]~17                                                        ; data_out0        ;
+; |Block1|cunchuqi:inst|bus_reg[3]~15                                                       ; |Block1|cunchuqi:inst|bus_reg[3]~15                                                            ; data_out0        ;
+; |Block1|lpm_ram_io:inst13|datatri[3]~18                                                   ; |Block1|lpm_ram_io:inst13|datatri[3]~18                                                        ; data_out0        ;
+; |Block1|lpm_ram_io:inst13|altram:sram|segment[0][3]                                       ; |Block1|lpm_ram_io:inst13|altram:sram|q[3]                                                     ; dataout          ;
+; |Block1|lpm_ram_io:inst13|datatri[3]~19                                                   ; |Block1|lpm_ram_io:inst13|datatri[3]~19                                                        ; data_out0        ;
+; |Block1|cunchuqi:inst|bus_reg[2]~16                                                       ; |Block1|cunchuqi:inst|bus_reg[2]~16                                                            ; data_out0        ;
+; |Block1|lpm_ram_io:inst13|datatri[2]~20                                                   ; |Block1|lpm_ram_io:inst13|datatri[2]~20                                                        ; data_out0        ;
+; |Block1|lpm_ram_io:inst13|altram:sram|segment[0][2]                                       ; |Block1|lpm_ram_io:inst13|altram:sram|q[2]                                                     ; dataout          ;
+; |Block1|lpm_ram_io:inst13|datatri[2]~21                                                   ; |Block1|lpm_ram_io:inst13|datatri[2]~21                                                        ; data_out0        ;
+; |Block1|cunchuqi:inst|lpm_counter:pc_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[1] ; |Block1|cunchuqi:inst|lpm_counter:pc_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[1]~COUT ; cout             ;
+; |Block1|cunchuqi:inst|bus_reg[1]~17                                                       ; |Block1|cunchuqi:inst|bus_reg[1]~17                                                            ; data_out0        ;
+; |Block1|lpm_ram_io:inst13|datatri[1]~22                                                   ; |Block1|lpm_ram_io:inst13|datatri[1]~22                                                        ; data_out0        ;
+; |Block1|lpm_ram_io:inst13|datatri[1]~23                                                   ; |Block1|lpm_ram_io:inst13|datatri[1]~23                                                        ; data_out0        ;
+; |Block1|cunchuqi:inst|lpm_counter:pc_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[0] ; |Block1|cunchuqi:inst|lpm_counter:pc_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[0]      ; data_out0        ;
+; |Block1|cunchuqi:inst|lpm_counter:pc_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[0] ; |Block1|cunchuqi:inst|lpm_counter:pc_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[0]~COUT ; cout             ;
+; |Block1|cunchuqi:inst|bus_reg[0]~18                                                       ; |Block1|cunchuqi:inst|bus_reg[0]~18                                                            ; data_out0        ;
+; |Block1|lpm_ram_io:inst13|datatri[0]~24                                                   ; |Block1|lpm_ram_io:inst13|datatri[0]~24                                                        ; data_out0        ;
+; |Block1|lpm_ram_io:inst13|altram:sram|segment[0][0]                                       ; |Block1|lpm_ram_io:inst13|altram:sram|q[0]                                                     ; dataout          ;
+; |Block1|lpm_ram_io:inst13|datatri[0]~25                                                   ; |Block1|lpm_ram_io:inst13|datatri[0]~25                                                        ; data_out0        ;
+; |Block1|lpm_ram_io:inst13|_~3                                                             ; |Block1|lpm_ram_io:inst13|_~3                                                                  ; data_out0        ;
+; |Block1|cunchuqi:inst|ar[0]                                                               ; |Block1|cunchuqi:inst|ar[0]                                                                    ; data_out0        ;
+; |Block1|cunchuqi:inst|second~1                                                            ; |Block1|cunchuqi:inst|second~1                                                                 ; data_out0        ;
+; |Block1|cunchuqi:inst|second~0                                                            ; |Block1|cunchuqi:inst|second~0                                                                 ; data_out0        ;
+; |Block1|cunchuqi:inst|bus_reg[6]~19                                                       ; |Block1|cunchuqi:inst|bus_reg[6]~19                                                            ; data_out0        ;
+; |Block1|cunchuqi:inst|bus_reg[5]~20                                                       ; |Block1|cunchuqi:inst|bus_reg[5]~20                                                            ; data_out0        ;
+; |Block1|cunchuqi:inst|bus_reg[4]~21                                                       ; |Block1|cunchuqi:inst|bus_reg[4]~21                                                            ; data_out0        ;
+; |Block1|cunchuqi:inst|bus_reg[3]~22                                                       ; |Block1|cunchuqi:inst|bus_reg[3]~22                                                            ; data_out0        ;
+; |Block1|cunchuqi:inst|bus_reg[2]~23                                                       ; |Block1|cunchuqi:inst|bus_reg[2]~23                                                            ; data_out0        ;
+; |Block1|cunchuqi:inst|bus_reg[1]~24                                                       ; |Block1|cunchuqi:inst|bus_reg[1]~24                                                            ; data_out0        ;
+; |Block1|cunchuqi:inst|bus_reg[0]~25                                                       ; |Block1|cunchuqi:inst|bus_reg[0]~25                                                            ; data_out0        ;
+; |Block1|rd                                                                                ; |Block1|rd~corein                                                                              ; dataout          ;
+; |Block1|sw_bus                                                                            ; |Block1|sw_bus~corein                                                                          ; dataout          ;
+; |Block1|pc_bus                                                                            ; |Block1|pc_bus~corein                                                                          ; dataout          ;
+; |Block1|intputd[0]                                                                        ; |Block1|intputd[0]~corein                                                                      ; dataout          ;
+; |Block1|clk                                                                               ; |Block1|clk~corein                                                                             ; dataout          ;
+; |Block1|we                                                                                ; |Block1|we~corein                                                                              ; dataout          ;
+; |Block1|pcld                                                                              ; |Block1|pcld~corein                                                                            ; dataout          ;
+; |Block1|pcen                                                                              ; |Block1|pcen~corein                                                                            ; dataout          ;
+; |Block1|ldar                                                                              ; |Block1|ldar~corein                                                                            ; dataout          ;
+; |Block1|d[7]                                                                              ; |Block1|d~0                                                                                    ; dataout          ;
+; |Block1|d[7]                                                                              ; |Block1|d[7]~output                                                                            ; padio            ;
+; |Block1|d[6]                                                                              ; |Block1|d~1                                                                                    ; dataout          ;
+; |Block1|d[6]                                                                              ; |Block1|d[6]~output                                                                            ; padio            ;
+; |Block1|d[5]                                                                              ; |Block1|d~2                                                                                    ; dataout          ;
+; |Block1|d[5]                                                                              ; |Block1|d[5]~output                                                                            ; padio            ;
+; |Block1|d[4]                                                                              ; |Block1|d~3                                                                                    ; dataout          ;
+; |Block1|d[4]                                                                              ; |Block1|d[4]~output                                                                            ; padio            ;
+; |Block1|d[3]                                                                              ; |Block1|d~4                                                                                    ; dataout          ;
+; |Block1|d[3]                                                                              ; |Block1|d[3]~output                                                                            ; padio            ;
+; |Block1|d[2]                                                                              ; |Block1|d~5                                                                                    ; dataout          ;
+; |Block1|d[2]                                                                              ; |Block1|d[2]~output                                                                            ; padio            ;
+; |Block1|d[1]                                                                              ; |Block1|d~6                                                                                    ; dataout          ;
+; |Block1|d[1]                                                                              ; |Block1|d[1]~output                                                                            ; padio            ;
+; |Block1|d[0]                                                                              ; |Block1|d~7                                                                                    ; dataout          ;
+; |Block1|d[0]                                                                              ; |Block1|d[0]~output                                                                            ; padio            ;
++-------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                                                      ;
++-------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                 ; Output Port Name                                                                               ; Output Port Type ;
++-------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------+
+; |Block1|lpm_ram_io:inst13|altram:sram|segment[0][7]                                       ; |Block1|lpm_ram_io:inst13|altram:sram|q[7]                                                     ; dataout          ;
+; |Block1|lpm_ram_io:inst13|datatri[7]~9                                                    ; |Block1|lpm_ram_io:inst13|datatri[7]~9                                                         ; data_out0        ;
+; |Block1|cunchuqi:inst|lpm_counter:pc_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[7] ; |Block1|cunchuqi:inst|lpm_counter:pc_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[7]      ; data_out0        ;
+; |Block1|cunchuqi:inst|lpm_counter:pc_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[6] ; |Block1|cunchuqi:inst|lpm_counter:pc_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[6]      ; data_out0        ;
+; |Block1|cunchuqi:inst|lpm_counter:pc_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[6] ; |Block1|cunchuqi:inst|lpm_counter:pc_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[6]~COUT ; cout             ;
+; |Block1|lpm_ram_io:inst13|altram:sram|segment[0][6]                                       ; |Block1|lpm_ram_io:inst13|altram:sram|q[6]                                                     ; dataout          ;
+; |Block1|cunchuqi:inst|lpm_counter:pc_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[5] ; |Block1|cunchuqi:inst|lpm_counter:pc_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[5]      ; data_out0        ;
+; |Block1|cunchuqi:inst|lpm_counter:pc_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[5] ; |Block1|cunchuqi:inst|lpm_counter:pc_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[5]~COUT ; cout             ;
+; |Block1|cunchuqi:inst|lpm_counter:pc_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[4] ; |Block1|cunchuqi:inst|lpm_counter:pc_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[4]      ; data_out0        ;
+; |Block1|cunchuqi:inst|lpm_counter:pc_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[4] ; |Block1|cunchuqi:inst|lpm_counter:pc_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[4]~COUT ; cout             ;
+; |Block1|cunchuqi:inst|lpm_counter:pc_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[3] ; |Block1|cunchuqi:inst|lpm_counter:pc_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[3]      ; data_out0        ;
+; |Block1|cunchuqi:inst|lpm_counter:pc_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[3] ; |Block1|cunchuqi:inst|lpm_counter:pc_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[3]~COUT ; cout             ;
+; |Block1|cunchuqi:inst|lpm_counter:pc_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[2] ; |Block1|cunchuqi:inst|lpm_counter:pc_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[2]      ; data_out0        ;
+; |Block1|cunchuqi:inst|lpm_counter:pc_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[2] ; |Block1|cunchuqi:inst|lpm_counter:pc_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[2]~COUT ; cout             ;
+; |Block1|cunchuqi:inst|ar[2]                                                               ; |Block1|cunchuqi:inst|ar[2]                                                                    ; data_out0        ;
+; |Block1|cunchuqi:inst|ar[3]                                                               ; |Block1|cunchuqi:inst|ar[3]                                                                    ; data_out0        ;
+; |Block1|cunchuqi:inst|ar[4]                                                               ; |Block1|cunchuqi:inst|ar[4]                                                                    ; data_out0        ;
+; |Block1|cunchuqi:inst|ar[5]                                                               ; |Block1|cunchuqi:inst|ar[5]                                                                    ; data_out0        ;
+; |Block1|cunchuqi:inst|ar[6]                                                               ; |Block1|cunchuqi:inst|ar[6]                                                                    ; data_out0        ;
+; |Block1|cunchuqi:inst|ar[7]                                                               ; |Block1|cunchuqi:inst|ar[7]                                                                    ; data_out0        ;
+; |Block1|memenab                                                                           ; |Block1|memenab~corein                                                                         ; dataout          ;
+; |Block1|intputd[7]                                                                        ; |Block1|intputd[7]~corein                                                                      ; dataout          ;
+; |Block1|intputd[6]                                                                        ; |Block1|intputd[6]~corein                                                                      ; dataout          ;
+; |Block1|intputd[5]                                                                        ; |Block1|intputd[5]~corein                                                                      ; dataout          ;
+; |Block1|intputd[4]                                                                        ; |Block1|intputd[4]~corein                                                                      ; dataout          ;
+; |Block1|intputd[3]                                                                        ; |Block1|intputd[3]~corein                                                                      ; dataout          ;
+; |Block1|intputd[2]                                                                        ; |Block1|intputd[2]~corein                                                                      ; dataout          ;
+; |Block1|intputd[1]                                                                        ; |Block1|intputd[1]~corein                                                                      ; dataout          ;
+; |Block1|pcclr                                                                             ; |Block1|pcclr~corein                                                                           ; dataout          ;
++-------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                                                      ;
++-------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                 ; Output Port Name                                                                               ; Output Port Type ;
++-------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------+
+; |Block1|lpm_ram_io:inst13|altram:sram|segment[0][7]                                       ; |Block1|lpm_ram_io:inst13|altram:sram|q[7]                                                     ; dataout          ;
+; |Block1|lpm_ram_io:inst13|datatri[7]~9                                                    ; |Block1|lpm_ram_io:inst13|datatri[7]~9                                                         ; data_out0        ;
+; |Block1|cunchuqi:inst|lpm_counter:pc_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[7] ; |Block1|cunchuqi:inst|lpm_counter:pc_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[7]      ; data_out0        ;
+; |Block1|cunchuqi:inst|lpm_counter:pc_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[6] ; |Block1|cunchuqi:inst|lpm_counter:pc_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[6]      ; data_out0        ;
+; |Block1|cunchuqi:inst|lpm_counter:pc_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[6] ; |Block1|cunchuqi:inst|lpm_counter:pc_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[6]~COUT ; cout             ;
+; |Block1|lpm_ram_io:inst13|altram:sram|segment[0][6]                                       ; |Block1|lpm_ram_io:inst13|altram:sram|q[6]                                                     ; dataout          ;
+; |Block1|cunchuqi:inst|lpm_counter:pc_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[5] ; |Block1|cunchuqi:inst|lpm_counter:pc_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[5]      ; data_out0        ;
+; |Block1|cunchuqi:inst|lpm_counter:pc_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[5] ; |Block1|cunchuqi:inst|lpm_counter:pc_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[5]~COUT ; cout             ;
+; |Block1|cunchuqi:inst|lpm_counter:pc_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[4] ; |Block1|cunchuqi:inst|lpm_counter:pc_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[4]      ; data_out0        ;
+; |Block1|cunchuqi:inst|lpm_counter:pc_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[4] ; |Block1|cunchuqi:inst|lpm_counter:pc_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[4]~COUT ; cout             ;
+; |Block1|cunchuqi:inst|lpm_counter:pc_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[3] ; |Block1|cunchuqi:inst|lpm_counter:pc_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[3]      ; data_out0        ;
+; |Block1|cunchuqi:inst|lpm_counter:pc_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[3] ; |Block1|cunchuqi:inst|lpm_counter:pc_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[3]~COUT ; cout             ;
+; |Block1|cunchuqi:inst|lpm_counter:pc_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[2] ; |Block1|cunchuqi:inst|lpm_counter:pc_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[2]      ; data_out0        ;
+; |Block1|cunchuqi:inst|lpm_counter:pc_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[2] ; |Block1|cunchuqi:inst|lpm_counter:pc_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[2]~COUT ; cout             ;
+; |Block1|cunchuqi:inst|lpm_counter:pc_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[1] ; |Block1|cunchuqi:inst|lpm_counter:pc_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[1]      ; data_out0        ;
+; |Block1|lpm_ram_io:inst13|altram:sram|segment[0][1]                                       ; |Block1|lpm_ram_io:inst13|altram:sram|q[1]                                                     ; dataout          ;
+; |Block1|cunchuqi:inst|ar[1]                                                               ; |Block1|cunchuqi:inst|ar[1]                                                                    ; data_out0        ;
+; |Block1|cunchuqi:inst|ar[2]                                                               ; |Block1|cunchuqi:inst|ar[2]                                                                    ; data_out0        ;
+; |Block1|cunchuqi:inst|ar[3]                                                               ; |Block1|cunchuqi:inst|ar[3]                                                                    ; data_out0        ;
+; |Block1|cunchuqi:inst|ar[4]                                                               ; |Block1|cunchuqi:inst|ar[4]                                                                    ; data_out0        ;
+; |Block1|cunchuqi:inst|ar[5]                                                               ; |Block1|cunchuqi:inst|ar[5]                                                                    ; data_out0        ;
+; |Block1|cunchuqi:inst|ar[6]                                                               ; |Block1|cunchuqi:inst|ar[6]                                                                    ; data_out0        ;
+; |Block1|cunchuqi:inst|ar[7]                                                               ; |Block1|cunchuqi:inst|ar[7]                                                                    ; data_out0        ;
+; |Block1|intputd[7]                                                                        ; |Block1|intputd[7]~corein                                                                      ; dataout          ;
+; |Block1|intputd[6]                                                                        ; |Block1|intputd[6]~corein                                                                      ; dataout          ;
+; |Block1|intputd[5]                                                                        ; |Block1|intputd[5]~corein                                                                      ; dataout          ;
+; |Block1|intputd[4]                                                                        ; |Block1|intputd[4]~corein                                                                      ; dataout          ;
+; |Block1|intputd[3]                                                                        ; |Block1|intputd[3]~corein                                                                      ; dataout          ;
+; |Block1|intputd[2]                                                                        ; |Block1|intputd[2]~corein                                                                      ; dataout          ;
+; |Block1|intputd[1]                                                                        ; |Block1|intputd[1]~corein                                                                      ; dataout          ;
+; |Block1|pcclr                                                                             ; |Block1|pcclr~corein                                                                           ; dataout          ;
++-------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+    Info: Processing started: Sun Mar 08 19:18:03 2020
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off cunchuqi -c cunchuqi
+Info: Using vector source file "D:/quartus/大二下/计算机系统基础实验/3.存储器/代码/cunchuqi.vwf"
+Warning: Ignored node in vector source file. Can't find corresponding node name "cunchuqi:inst|pc[7]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "cunchuqi:inst|pc[6]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "cunchuqi:inst|pc[5]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "cunchuqi:inst|pc[4]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "cunchuqi:inst|pc[3]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "cunchuqi:inst|pc[2]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "cunchuqi:inst|pc[1]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "cunchuqi:inst|pc[0]" in design.
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Warning: Found logic contention at time 300.0 ns on bus node "|Block1|d[5]~result"
+    Info: Node "d[5]~output" has logic level of 0
+    Info: Node "d[5]" has logic level of 1
+Warning: Found logic contention at time 300.0 ns on bus node "|Block1|d[4]~result"
+    Info: Node "d[4]~output" has logic level of 1
+    Info: Node "d[4]" has logic level of 0
+Warning: Found logic contention at time 300.0 ns on bus node "|Block1|d[3]~result"
+    Info: Node "d[3]~output" has logic level of 0
+    Info: Node "d[3]" has logic level of 1
+Warning: Found logic contention at time 300.0 ns on bus node "|Block1|d[2]~result"
+    Info: Node "d[2]~output" has logic level of 0
+    Info: Node "d[2]" has logic level of 1
+Warning: Found logic contention at time 314.7 ns on bus node "|Block1|d[0]~result"
+    Info: Node "d[0]~output" has logic level of 1
+    Info: Node "d[0]" has logic level of 0
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      68.32 %
+Info: Number of transitions in simulation is 712
+Info: Quartus II Simulator was successful. 0 errors, 13 warnings
+    Info: Peak virtual memory: 163 megabytes
+    Info: Processing ended: Sun Mar 08 19:18:03 2020
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

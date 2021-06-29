@@ -1,0 +1,213 @@
+Simulator report for ram
+Mon Mar 02 23:30:16 2020
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. |ram|lpm_ram_io:inst|altram:sram|content
+  6. Coverage Summary
+  7. Complete 1/0-Value Coverage
+  8. Missing 1-Value Coverage
+  9. Missing 0-Value Coverage
+ 10. Simulator INI Usage
+ 11. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-----------------------------------------------+
+; Simulator Summary                             ;
++-----------------------------+-----------------+
+; Type                        ; Value           ;
++-----------------------------+-----------------+
+; Simulation Start Time       ; 0 ps            ;
+; Simulation End Time         ; 1.0 us          ;
+; Simulation Netlist Size     ; 38 nodes        ;
+; Simulation Coverage         ;      73.68 %    ;
+; Total Number of Transitions ; 250             ;
+; Simulation Breakpoints      ; 0               ;
+; Family                      ; FLEX10K         ;
+; Device                      ; EPF10K20TC144-4 ;
++-----------------------------+-----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++------------------------------------------+
+; |ram|lpm_ram_io:inst|altram:sram|content ;
++------------------------------------------+
+Memory report data cannot be output to ASCII.
+Please use Quartus II to view the memory report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      73.68 % ;
+; Total nodes checked                                 ; 38           ;
+; Total output ports checked                          ; 38           ;
+; Total output ports with complete 1/0-value coverage ; 28           ;
+; Total output ports with no 1/0-value coverage       ; 6            ;
+; Total output ports with no 1-value coverage         ; 8            ;
+; Total output ports with no 0-value coverage         ; 8            ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++-----------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                               ;
++------------------------------------------------+---------------------------------------+------------------+
+; Node Name                                      ; Output Port Name                      ; Output Port Type ;
++------------------------------------------------+---------------------------------------+------------------+
+; |ram|lpm_ram_io:inst|altram:sram|segment[0][7] ; |ram|lpm_ram_io:inst|altram:sram|q[7] ; dataout          ;
+; |ram|lpm_ram_io:inst|datatri[7]~0              ; |ram|lpm_ram_io:inst|datatri[7]~0     ; data_out0        ;
+; |ram|lpm_ram_io:inst|altram:sram|segment[0][6] ; |ram|lpm_ram_io:inst|altram:sram|q[6] ; dataout          ;
+; |ram|lpm_ram_io:inst|altram:sram|segment[0][5] ; |ram|lpm_ram_io:inst|altram:sram|q[5] ; dataout          ;
+; |ram|lpm_ram_io:inst|altram:sram|segment[0][4] ; |ram|lpm_ram_io:inst|altram:sram|q[4] ; dataout          ;
+; |ram|lpm_ram_io:inst|altram:sram|segment[0][2] ; |ram|lpm_ram_io:inst|altram:sram|q[2] ; dataout          ;
+; |ram|lpm_ram_io:inst|altram:sram|segment[0][1] ; |ram|lpm_ram_io:inst|altram:sram|q[1] ; dataout          ;
+; |ram|lpm_ram_io:inst|altram:sram|segment[0][0] ; |ram|lpm_ram_io:inst|altram:sram|q[0] ; dataout          ;
+; |ram|lpm_ram_io:inst|_~3                       ; |ram|lpm_ram_io:inst|_~3              ; data_out0        ;
+; |ram|rd                                        ; |ram|rd~corein                        ; dataout          ;
+; |ram|mem                                       ; |ram|mem~corein                       ; dataout          ;
+; |ram|CLK                                       ; |ram|CLK~corein                       ; dataout          ;
+; |ram|we                                        ; |ram|we~corein                        ; dataout          ;
+; |ram|addr[0]                                   ; |ram|addr[0]~corein                   ; dataout          ;
+; |ram|addr[1]                                   ; |ram|addr[1]~corein                   ; dataout          ;
+; |ram|addr[2]                                   ; |ram|addr[2]~corein                   ; dataout          ;
+; |ram|d[6]                                      ; |ram|d~1                              ; dataout          ;
+; |ram|d[6]                                      ; |ram|d[6]~output                      ; padio            ;
+; |ram|d[5]                                      ; |ram|d~2                              ; dataout          ;
+; |ram|d[5]                                      ; |ram|d[5]~output                      ; padio            ;
+; |ram|d[4]                                      ; |ram|d~3                              ; dataout          ;
+; |ram|d[4]                                      ; |ram|d[4]~output                      ; padio            ;
+; |ram|d[2]                                      ; |ram|d~5                              ; dataout          ;
+; |ram|d[2]                                      ; |ram|d[2]~output                      ; padio            ;
+; |ram|d[1]                                      ; |ram|d~6                              ; dataout          ;
+; |ram|d[1]                                      ; |ram|d[1]~output                      ; padio            ;
+; |ram|d[0]                                      ; |ram|d~7                              ; dataout          ;
+; |ram|d[0]                                      ; |ram|d[0]~output                      ; padio            ;
++------------------------------------------------+---------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++-----------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                  ;
++------------------------------------------------+---------------------------------------+------------------+
+; Node Name                                      ; Output Port Name                      ; Output Port Type ;
++------------------------------------------------+---------------------------------------+------------------+
+; |ram|lpm_ram_io:inst|altram:sram|segment[0][3] ; |ram|lpm_ram_io:inst|altram:sram|q[3] ; dataout          ;
+; |ram|addr[3]                                   ; |ram|addr[3]~corein                   ; dataout          ;
+; |ram|addr[4]                                   ; |ram|addr[4]~corein                   ; dataout          ;
+; |ram|addr[5]                                   ; |ram|addr[5]~corein                   ; dataout          ;
+; |ram|addr[6]                                   ; |ram|addr[6]~corein                   ; dataout          ;
+; |ram|addr[7]                                   ; |ram|addr[7]~corein                   ; dataout          ;
+; |ram|d[3]                                      ; |ram|d~4                              ; dataout          ;
+; |ram|d[3]                                      ; |ram|d[3]~output                      ; padio            ;
++------------------------------------------------+---------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++-----------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                  ;
++------------------------------------------------+---------------------------------------+------------------+
+; Node Name                                      ; Output Port Name                      ; Output Port Type ;
++------------------------------------------------+---------------------------------------+------------------+
+; |ram|lpm_ram_io:inst|altram:sram|segment[0][3] ; |ram|lpm_ram_io:inst|altram:sram|q[3] ; dataout          ;
+; |ram|addr[3]                                   ; |ram|addr[3]~corein                   ; dataout          ;
+; |ram|addr[4]                                   ; |ram|addr[4]~corein                   ; dataout          ;
+; |ram|addr[5]                                   ; |ram|addr[5]~corein                   ; dataout          ;
+; |ram|addr[6]                                   ; |ram|addr[6]~corein                   ; dataout          ;
+; |ram|addr[7]                                   ; |ram|addr[7]~corein                   ; dataout          ;
+; |ram|d[7]                                      ; |ram|d~0                              ; dataout          ;
+; |ram|d[7]                                      ; |ram|d[7]~output                      ; padio            ;
++------------------------------------------------+---------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+    Info: Processing started: Mon Mar 02 23:30:16 2020
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off ram -c ram
+Info: Using vector source file "D:/quartus/大二下/计算机系统基础实验/3.存储器/图/ram.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      73.68 %
+Info: Number of transitions in simulation is 250
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 162 megabytes
+    Info: Processing ended: Mon Mar 02 23:30:16 2020
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

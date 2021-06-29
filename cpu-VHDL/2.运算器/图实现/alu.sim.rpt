@@ -1,0 +1,339 @@
+Simulator report for alu
+Fri Feb 28 15:27:59 2020
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 138 nodes    ;
+; Simulation Coverage         ;      73.19 % ;
+; Total Number of Transitions ; 877          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
+; Device                      ; EP2C70F896C6 ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      73.19 % ;
+; Total nodes checked                                 ; 138          ;
+; Total output ports checked                          ; 138          ;
+; Total output ports with complete 1/0-value coverage ; 101          ;
+; Total output ports with no 1/0-value coverage       ; 24           ;
+; Total output ports with no 1-value coverage         ; 27           ;
+; Total output ports with no 0-value coverage         ; 34           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                ;
++----------------------------+----------------------------+------------------+
+; Node Name                  ; Output Port Name           ; Output Port Type ;
++----------------------------+----------------------------+------------------+
+; |alu|74244:inst6|1~1       ; |alu|74244:inst6|1~1       ; combout          ;
+; |alu|74244:inst6|1~2       ; |alu|74244:inst6|1~2       ; combout          ;
+; |alu|74181:inst|46~0       ; |alu|74181:inst|46~0       ; combout          ;
+; |alu|74181:inst|80~0       ; |alu|74181:inst|80~0       ; combout          ;
+; |alu|74244:inst6|1~3       ; |alu|74244:inst6|1~3       ; combout          ;
+; |alu|74244:inst6|1~4       ; |alu|74244:inst6|1~4       ; combout          ;
+; |alu|74181:inst|79~0       ; |alu|74181:inst|79~0       ; combout          ;
+; |alu|74273:inst2|18        ; |alu|74273:inst2|18        ; regout           ;
+; |alu|74181:inst|47~0       ; |alu|74181:inst|47~0       ; combout          ;
+; |alu|74181:inst|44~0       ; |alu|74181:inst|44~0       ; combout          ;
+; |alu|74244:inst7|6~0       ; |alu|74244:inst7|6~0       ; combout          ;
+; |alu|74374:inst4|14        ; |alu|74374:inst4|14        ; regout           ;
+; |alu|74244:inst6|6~1       ; |alu|74244:inst6|6~1       ; combout          ;
+; |alu|74244:inst6|6~2       ; |alu|74244:inst6|6~2       ; combout          ;
+; |alu|74374:inst4|15        ; |alu|74374:inst4|15        ; regout           ;
+; |alu|74244:inst6|10~1      ; |alu|74244:inst6|10~1      ; combout          ;
+; |alu|74244:inst6|10~2      ; |alu|74244:inst6|10~2      ; combout          ;
+; |alu|74181:inst|75~0       ; |alu|74181:inst|75~0       ; combout          ;
+; |alu|74181:inst|75~1       ; |alu|74181:inst|75~1       ; combout          ;
+; |alu|74273:inst2|17        ; |alu|74273:inst2|17        ; regout           ;
+; |alu|74181:inst|45~0       ; |alu|74181:inst|45~0       ; combout          ;
+; |alu|74181:inst|82         ; |alu|74181:inst|82         ; combout          ;
+; |alu|74244:inst6|10~3      ; |alu|74244:inst6|10~3      ; combout          ;
+; |alu|74181:inst|74~0       ; |alu|74181:inst|74~0       ; combout          ;
+; |alu|74181:inst|52~0       ; |alu|74181:inst|52~0       ; combout          ;
+; |alu|74181:inst|51~0       ; |alu|74181:inst|51~0       ; combout          ;
+; |alu|74244:inst7|11~0      ; |alu|74244:inst7|11~0      ; combout          ;
+; |alu|74244:inst6|11~2      ; |alu|74244:inst6|11~2      ; combout          ;
+; |alu|74181:inst1|44~0      ; |alu|74181:inst1|44~0      ; combout          ;
+; |alu|74181:inst1|46~0      ; |alu|74181:inst1|46~0      ; combout          ;
+; |alu|74181:inst1|43~0      ; |alu|74181:inst1|43~0      ; combout          ;
+; |alu|74181:inst|78~0       ; |alu|74181:inst|78~0       ; combout          ;
+; |alu|74181:inst1|75~0      ; |alu|74181:inst1|75~0      ; combout          ;
+; |alu|74181:inst1|75~1      ; |alu|74181:inst1|75~1      ; combout          ;
+; |alu|74181:inst1|75~2      ; |alu|74181:inst1|75~2      ; combout          ;
+; |alu|74181:inst1|45~0      ; |alu|74181:inst1|45~0      ; combout          ;
+; |alu|74244:inst7|27~0      ; |alu|74244:inst7|27~0      ; combout          ;
+; |alu|74244:inst6|27~1      ; |alu|74244:inst6|27~1      ; combout          ;
+; |alu|74244:inst6|27~2      ; |alu|74244:inst6|27~2      ; combout          ;
+; |alu|74244:inst6|31~1      ; |alu|74244:inst6|31~1      ; combout          ;
+; |alu|74181:inst|78~1       ; |alu|74181:inst|78~1       ; combout          ;
+; |alu|74244:inst6|31~2      ; |alu|74244:inst6|31~2      ; combout          ;
+; |alu|74244:inst6|31~3      ; |alu|74244:inst6|31~3      ; combout          ;
+; |alu|74244:inst6|31~4      ; |alu|74244:inst6|31~4      ; combout          ;
+; |alu|74374:inst4|17        ; |alu|74374:inst4|17        ; regout           ;
+; |alu|74244:inst6|36~1      ; |alu|74244:inst6|36~1      ; combout          ;
+; |alu|74244:inst6|36~2      ; |alu|74244:inst6|36~2      ; combout          ;
+; |alu|74181:inst1|80        ; |alu|74181:inst1|80        ; combout          ;
+; |alu|74244:inst6|36~3      ; |alu|74244:inst6|36~3      ; combout          ;
+; |alu|74244:inst6|26~1      ; |alu|74244:inst6|26~1      ; combout          ;
+; |alu|74244:inst6|26~2      ; |alu|74244:inst6|26~2      ; combout          ;
+; |alu|74181:inst1|74~0      ; |alu|74181:inst1|74~0      ; combout          ;
+; |alu|74181:inst1|77~1      ; |alu|74181:inst1|77~1      ; combout          ;
+; |alu|74244:inst6|26~3      ; |alu|74244:inst6|26~3      ; combout          ;
+; |alu|inst38                ; |alu|inst38                ; combout          ;
+; |alu|inst37                ; |alu|inst37                ; combout          ;
+; |alu|inst34                ; |alu|inst34                ; combout          ;
+; |alu|inst36                ; |alu|inst36                ; combout          ;
+; |alu|L0                    ; |alu|L0~0                  ; combout          ;
+; |alu|L0                    ; |alu|L0~output             ; padio            ;
+; |alu|L1                    ; |alu|L1~0                  ; combout          ;
+; |alu|L1                    ; |alu|L1~output             ; padio            ;
+; |alu|L2                    ; |alu|L2~0                  ; combout          ;
+; |alu|L2                    ; |alu|L2~output             ; padio            ;
+; |alu|L3                    ; |alu|L3~0                  ; combout          ;
+; |alu|L3                    ; |alu|L3~output             ; padio            ;
+; |alu|L6                    ; |alu|L6~0                  ; combout          ;
+; |alu|L6                    ; |alu|L6~output             ; padio            ;
+; |alu|L5                    ; |alu|L5~0                  ; combout          ;
+; |alu|L5                    ; |alu|L5~output             ; padio            ;
+; |alu|L4                    ; |alu|L4~0                  ; combout          ;
+; |alu|L4                    ; |alu|L4~output             ; padio            ;
+; |alu|L7                    ; |alu|L7~0                  ; combout          ;
+; |alu|L7                    ; |alu|L7~output             ; padio            ;
+; |alu|R4_BUS                ; |alu|R4_BUS~corein         ; combout          ;
+; |alu|R5_BUS                ; |alu|R5_BUS~corein         ; combout          ;
+; |alu|SW_BUS                ; |alu|SW_BUS~corein         ; combout          ;
+; |alu|K0                    ; |alu|K0~corein             ; combout          ;
+; |alu|ALU_BUS               ; |alu|ALU_BUS~corein        ; combout          ;
+; |alu|S3                    ; |alu|S3~corein             ; combout          ;
+; |alu|S2                    ; |alu|S2~corein             ; combout          ;
+; |alu|S0                    ; |alu|S0~corein             ; combout          ;
+; |alu|S1                    ; |alu|S1~corein             ; combout          ;
+; |alu|m                     ; |alu|m~corein              ; combout          ;
+; |alu|cn                    ; |alu|cn~corein             ; combout          ;
+; |alu|K1                    ; |alu|K1~corein             ; combout          ;
+; |alu|K2                    ; |alu|K2~corein             ; combout          ;
+; |alu|K3                    ; |alu|K3~corein             ; combout          ;
+; |alu|CLOCK                 ; |alu|CLOCK~corein          ; combout          ;
+; |alu|LDR4                  ; |alu|LDR4~corein           ; combout          ;
+; |alu|LDR5                  ; |alu|LDR5~corein           ; combout          ;
+; |alu|LDDR1                 ; |alu|LDDR1~corein          ; combout          ;
+; |alu|LDDR2                 ; |alu|LDDR2~corein          ; combout          ;
+; |alu|inst38~clkctrl        ; |alu|inst38~clkctrl        ; outclk           ;
+; |alu|inst36~clkctrl        ; |alu|inst36~clkctrl        ; outclk           ;
+; |alu|inst34~clkctrl        ; |alu|inst34~clkctrl        ; outclk           ;
+; |alu|inst37~clkctrl        ; |alu|inst37~clkctrl        ; outclk           ;
+; |alu|74374:inst5|13~feeder ; |alu|74374:inst5|13~feeder ; combout          ;
+; |alu|74374:inst5|14~feeder ; |alu|74374:inst5|14~feeder ; combout          ;
+; |alu|74374:inst5|15~feeder ; |alu|74374:inst5|15~feeder ; combout          ;
+; |alu|74374:inst5|19~feeder ; |alu|74374:inst5|19~feeder ; combout          ;
++----------------------------+----------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------+
+; Missing 1-Value Coverage                                         ;
++-----------------------+-----------------------+------------------+
+; Node Name             ; Output Port Name      ; Output Port Type ;
++-----------------------+-----------------------+------------------+
+; |alu|74374:inst5|13   ; |alu|74374:inst5|13   ; regout           ;
+; |alu|74273:inst3|19   ; |alu|74273:inst3|19   ; regout           ;
+; |alu|74374:inst5|15   ; |alu|74374:inst5|15   ; regout           ;
+; |alu|74273:inst3|17   ; |alu|74273:inst3|17   ; regout           ;
+; |alu|74181:inst|48~0  ; |alu|74181:inst|48~0  ; combout          ;
+; |alu|74244:inst6|11~1 ; |alu|74244:inst6|11~1 ; combout          ;
+; |alu|74273:inst2|14   ; |alu|74273:inst2|14   ; regout           ;
+; |alu|74273:inst3|14   ; |alu|74273:inst3|14   ; regout           ;
+; |alu|74181:inst1|47~0 ; |alu|74181:inst1|47~0 ; combout          ;
+; |alu|74273:inst3|15   ; |alu|74273:inst3|15   ; regout           ;
+; |alu|74273:inst2|13   ; |alu|74273:inst2|13   ; regout           ;
+; |alu|74273:inst3|13   ; |alu|74273:inst3|13   ; regout           ;
+; |alu|74181:inst1|48~0 ; |alu|74181:inst1|48~0 ; combout          ;
+; |alu|74374:inst4|19   ; |alu|74374:inst4|19   ; regout           ;
+; |alu|74374:inst5|19   ; |alu|74374:inst5|19   ; regout           ;
+; |alu|74374:inst4|18   ; |alu|74374:inst4|18   ; regout           ;
+; |alu|74374:inst5|18   ; |alu|74374:inst5|18   ; regout           ;
+; |alu|74374:inst5|17   ; |alu|74374:inst5|17   ; regout           ;
+; |alu|74374:inst4|20   ; |alu|74374:inst4|20   ; regout           ;
+; |alu|74374:inst5|20   ; |alu|74374:inst5|20   ; regout           ;
+; |alu|74273:inst2|12   ; |alu|74273:inst2|12   ; regout           ;
+; |alu|74273:inst3|12   ; |alu|74273:inst3|12   ; regout           ;
+; |alu|74181:inst1|77~0 ; |alu|74181:inst1|77~0 ; combout          ;
+; |alu|K6               ; |alu|K6~corein        ; combout          ;
+; |alu|K5               ; |alu|K5~corein        ; combout          ;
+; |alu|K4               ; |alu|K4~corein        ; combout          ;
+; |alu|K7               ; |alu|K7~corein        ; combout          ;
++-----------------------+-----------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------+
+; Missing 0-Value Coverage                                         ;
++-----------------------+-----------------------+------------------+
+; Node Name             ; Output Port Name      ; Output Port Type ;
++-----------------------+-----------------------+------------------+
+; |alu|74374:inst4|13   ; |alu|74374:inst4|13   ; regout           ;
+; |alu|74374:inst5|13   ; |alu|74374:inst5|13   ; regout           ;
+; |alu|74273:inst2|19   ; |alu|74273:inst2|19   ; regout           ;
+; |alu|74273:inst3|19   ; |alu|74273:inst3|19   ; regout           ;
+; |alu|74181:inst|43~0  ; |alu|74181:inst|43~0  ; combout          ;
+; |alu|74273:inst3|18   ; |alu|74273:inst3|18   ; regout           ;
+; |alu|74374:inst5|14   ; |alu|74374:inst5|14   ; regout           ;
+; |alu|74374:inst5|15   ; |alu|74374:inst5|15   ; regout           ;
+; |alu|74273:inst3|17   ; |alu|74273:inst3|17   ; regout           ;
+; |alu|74181:inst|48~0  ; |alu|74181:inst|48~0  ; combout          ;
+; |alu|74273:inst2|16   ; |alu|74273:inst2|16   ; regout           ;
+; |alu|74273:inst3|16   ; |alu|74273:inst3|16   ; regout           ;
+; |alu|74374:inst4|16   ; |alu|74374:inst4|16   ; regout           ;
+; |alu|74374:inst5|16   ; |alu|74374:inst5|16   ; regout           ;
+; |alu|74244:inst6|11~1 ; |alu|74244:inst6|11~1 ; combout          ;
+; |alu|74273:inst2|14   ; |alu|74273:inst2|14   ; regout           ;
+; |alu|74273:inst3|14   ; |alu|74273:inst3|14   ; regout           ;
+; |alu|74181:inst1|47~0 ; |alu|74181:inst1|47~0 ; combout          ;
+; |alu|74273:inst2|15   ; |alu|74273:inst2|15   ; regout           ;
+; |alu|74273:inst3|15   ; |alu|74273:inst3|15   ; regout           ;
+; |alu|74273:inst2|13   ; |alu|74273:inst2|13   ; regout           ;
+; |alu|74273:inst3|13   ; |alu|74273:inst3|13   ; regout           ;
+; |alu|74181:inst1|48~0 ; |alu|74181:inst1|48~0 ; combout          ;
+; |alu|74374:inst5|19   ; |alu|74374:inst5|19   ; regout           ;
+; |alu|74374:inst5|18   ; |alu|74374:inst5|18   ; regout           ;
+; |alu|74374:inst5|17   ; |alu|74374:inst5|17   ; regout           ;
+; |alu|74374:inst5|20   ; |alu|74374:inst5|20   ; regout           ;
+; |alu|74273:inst2|12   ; |alu|74273:inst2|12   ; regout           ;
+; |alu|74273:inst3|12   ; |alu|74273:inst3|12   ; regout           ;
+; |alu|74181:inst1|77~0 ; |alu|74181:inst1|77~0 ; combout          ;
+; |alu|K6               ; |alu|K6~corein        ; combout          ;
+; |alu|K5               ; |alu|K5~corein        ; combout          ;
+; |alu|K4               ; |alu|K4~corein        ; combout          ;
+; |alu|K7               ; |alu|K7~corein        ; combout          ;
++-----------------------+-----------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+    Info: Processing started: Fri Feb 28 15:27:59 2020
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off alu -c alu
+Info: Using vector source file "D:/quartus/大二下/计算机系统基础实验/2.运算器/图/alu.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Warning: Found clock high time violation at 155.16 ns on register "|alu|74374:inst4|17"
+Warning: Found clock high time violation at 155.16 ns on register "|alu|74374:inst4|20"
+Warning: Found clock high time violation at 155.17 ns on register "|alu|74374:inst4|13"
+Warning: Found clock high time violation at 155.17 ns on register "|alu|74374:inst4|14"
+Warning: Found clock high time violation at 155.17 ns on register "|alu|74374:inst4|15"
+Warning: Found clock high time violation at 155.17 ns on register "|alu|74374:inst4|16"
+Warning: Found clock high time violation at 155.17 ns on register "|alu|74374:inst4|19"
+Warning: Found clock high time violation at 155.17 ns on register "|alu|74374:inst4|18"
+Warning: Found clock high time violation at 304.94 ns on register "|alu|74374:inst4|17"
+Warning: Found clock high time violation at 304.94 ns on register "|alu|74374:inst4|20"
+Warning: Found clock high time violation at 304.95 ns on register "|alu|74374:inst4|13"
+Warning: Found clock high time violation at 304.95 ns on register "|alu|74374:inst4|14"
+Warning: Found clock high time violation at 304.95 ns on register "|alu|74374:inst4|15"
+Warning: Found clock high time violation at 304.95 ns on register "|alu|74374:inst4|16"
+Warning: Found clock high time violation at 304.95 ns on register "|alu|74374:inst4|19"
+Warning: Found clock high time violation at 304.95 ns on register "|alu|74374:inst4|18"
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      73.19 %
+Info: Number of transitions in simulation is 877
+Info: Quartus II Simulator was successful. 0 errors, 16 warnings
+    Info: Peak virtual memory: 169 megabytes
+    Info: Processing ended: Fri Feb 28 15:27:59 2020
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

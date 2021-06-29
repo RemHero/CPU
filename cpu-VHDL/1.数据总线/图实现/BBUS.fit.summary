@@ -1,0 +1,16 @@
+Fitter Status : Successful - Wed Mar 04 12:15:24 2020
+Quartus II Version : 9.0 Build 184 04/29/2009 SP 1 SJ Web Edition
+Revision Name : BBUS
+Top-level Entity Name : Block1
+Family : Cyclone II
+Device : EP2C70F896C6
+Timing Models : Final
+Total logic elements : 36 / 68,416 ( < 1 % )
+    Total combinational functions : 28 / 68,416 ( < 1 % )
+    Dedicated logic registers : 24 / 68,416 ( < 1 % )
+Total registers : 24
+Total pins : 32 / 622 ( 5 % )
+Total virtual pins : 0
+Total memory bits : 0 / 1,152,000 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 300 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

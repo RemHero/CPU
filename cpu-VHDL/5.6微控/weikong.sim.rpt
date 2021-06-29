@@ -1,0 +1,1029 @@
+Simulator report for weikong
+Sun Mar 15 08:47:47 2020
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 3.0 us       ;
+; Simulation Netlist Size     ; 745 nodes    ;
+; Simulation Coverage         ;      82.15 % ;
+; Total Number of Transitions ; 19971        ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; FLEX10K      ;
++-----------------------------+--------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                       ;
++--------------------------------------------------------------------------------------------+-------------+---------------+
+; Option                                                                                     ; Setting     ; Default Value ;
++--------------------------------------------------------------------------------------------+-------------+---------------+
+; Simulation mode                                                                            ; Functional  ; Timing        ;
+; Start time                                                                                 ; 0 ns        ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF        ;               ;
+; Vector input source                                                                        ; weikong.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On          ; On            ;
+; Check outputs                                                                              ; Off         ; Off           ;
+; Report simulation coverage                                                                 ; On          ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On          ; On            ;
+; Display missing 1-value coverage report                                                    ; On          ; On            ;
+; Display missing 0-value coverage report                                                    ; On          ; On            ;
+; Detect setup and hold time violations                                                      ; Off         ; Off           ;
+; Detect glitches                                                                            ; Off         ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off         ; Off           ;
+; Generate Signal Activity File                                                              ; Off         ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off         ; Off           ;
+; Group bus channels in simulation results                                                   ; Off         ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On          ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE  ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off         ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off         ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto        ; Auto          ;
++--------------------------------------------------------------------------------------------+-------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      82.15 % ;
+; Total nodes checked                                 ; 745          ;
+; Total output ports checked                          ; 745          ;
+; Total output ports with complete 1/0-value coverage ; 612          ;
+; Total output ports with no 1/0-value coverage       ; 123          ;
+; Total output ports with no 1-value coverage         ; 128          ;
+; Total output ports with no 0-value coverage         ; 128          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                            ;
++----------------------------------+----------------------------------+------------------+
+; Node Name                        ; Output Port Name                 ; Output Port Type ;
++----------------------------------+----------------------------------+------------------+
+; |weikong|t1                      ; |weikong|t1                      ; pin_out          ;
+; |weikong|clk                     ; |weikong|clk                     ; out              ;
+; |weikong|qd                      ; |weikong|qd                      ; out              ;
+; |weikong|t2                      ; |weikong|t2                      ; pin_out          ;
+; |weikong|t3                      ; |weikong|t3                      ; pin_out          ;
+; |weikong|t4                      ; |weikong|t4                      ; pin_out          ;
+; |weikong|inst16                  ; |weikong|inst16                  ; out0             ;
+; |weikong|P1                      ; |weikong|P1                      ; pin_out          ;
+; |weikong|IR6                     ; |weikong|IR6                     ; out              ;
+; |weikong|IR7                     ; |weikong|IR7                     ; out              ;
+; |weikong|IR5                     ; |weikong|IR5                     ; out              ;
+; |weikong|inst14                  ; |weikong|inst14                  ; out0             ;
+; |weikong|LDIR                    ; |weikong|LDIR                    ; pin_out          ;
+; |weikong|inst17                  ; |weikong|inst17                  ; out0             ;
+; |weikong|inst15                  ; |weikong|inst15                  ; out0             ;
+; |weikong|LOAD                    ; |weikong|LOAD                    ; pin_out          ;
+; |weikong|161LDPC                 ; |weikong|161LDPC                 ; pin_out          ;
+; |weikong|SW_BUS                  ; |weikong|SW_BUS                  ; pin_out          ;
+; |weikong|R5_BUS                  ; |weikong|R5_BUS                  ; pin_out          ;
+; |weikong|ALU_BUS                 ; |weikong|ALU_BUS                 ; pin_out          ;
+; |weikong|PC_BUS                  ; |weikong|PC_BUS                  ; pin_out          ;
+; |weikong|LDR5                    ; |weikong|LDR5                    ; pin_out          ;
+; |weikong|LDDR2                   ; |weikong|LDDR2                   ; pin_out          ;
+; |weikong|LDDR1                   ; |weikong|LDDR1                   ; pin_out          ;
+; |weikong|LDAR                    ; |weikong|LDAR                    ; pin_out          ;
+; |weikong|M                       ; |weikong|M                       ; pin_out          ;
+; |weikong|CN                      ; |weikong|CN                      ; pin_out          ;
+; |weikong|RD                      ; |weikong|RD                      ; pin_out          ;
+; |weikong|WE                      ; |weikong|WE                      ; pin_out          ;
+; |weikong|S0                      ; |weikong|S0                      ; pin_out          ;
+; |weikong|S1                      ; |weikong|S1                      ; pin_out          ;
+; |weikong|S3                      ; |weikong|S3                      ; pin_out          ;
+; |weikong|A4                      ; |weikong|A4                      ; pin_out          ;
+; |weikong|A3                      ; |weikong|A3                      ; pin_out          ;
+; |weikong|A2                      ; |weikong|A2                      ; pin_out          ;
+; |weikong|A1                      ; |weikong|A1                      ; pin_out          ;
+; |weikong|A0                      ; |weikong|A0                      ; pin_out          ;
+; |weikong|7474:inst20|9           ; |weikong|7474:inst20|9           ; regout           ;
+; |weikong|74273:inst4|19          ; |weikong|74273:inst4|19          ; regout           ;
+; |weikong|74273:inst4|17          ; |weikong|74273:inst4|17          ; regout           ;
+; |weikong|74273:inst4|16          ; |weikong|74273:inst4|16          ; regout           ;
+; |weikong|74273:inst4|15          ; |weikong|74273:inst4|15          ; regout           ;
+; |weikong|74273:inst4|14          ; |weikong|74273:inst4|14          ; regout           ;
+; |weikong|74273:inst4|13          ; |weikong|74273:inst4|13          ; regout           ;
+; |weikong|74273:inst4|12          ; |weikong|74273:inst4|12          ; regout           ;
+; |weikong|74273:inst13|14         ; |weikong|74273:inst13|14         ; regout           ;
+; |weikong|74273:inst13|13         ; |weikong|74273:inst13|13         ; regout           ;
+; |weikong|74273:inst13|12         ; |weikong|74273:inst13|12         ; regout           ;
+; |weikong|74273:inst3|19          ; |weikong|74273:inst3|19          ; regout           ;
+; |weikong|74273:inst3|17          ; |weikong|74273:inst3|17          ; regout           ;
+; |weikong|74273:inst3|16          ; |weikong|74273:inst3|16          ; regout           ;
+; |weikong|74273:inst3|15          ; |weikong|74273:inst3|15          ; regout           ;
+; |weikong|74273:inst3|14          ; |weikong|74273:inst3|14          ; regout           ;
+; |weikong|74273:inst3|13          ; |weikong|74273:inst3|13          ; regout           ;
+; |weikong|7474:inst18|9           ; |weikong|7474:inst18|9           ; regout           ;
+; |weikong|7474:inst18|10          ; |weikong|7474:inst18|10          ; regout           ;
+; |weikong|7474:inst19|9           ; |weikong|7474:inst19|9           ; regout           ;
+; |weikong|7474:inst19|10          ; |weikong|7474:inst19|10          ; regout           ;
+; |weikong|74244:inst21|36         ; |weikong|74244:inst21|36         ; out              ;
+; |weikong|74244:inst21|1          ; |weikong|74244:inst21|1          ; out              ;
+; |weikong|74244:inst21|6          ; |weikong|74244:inst21|6          ; out              ;
+; |weikong|74244:inst21|10         ; |weikong|74244:inst21|10         ; out              ;
+; |weikong|74244:inst21|11         ; |weikong|74244:inst21|11         ; out              ;
+; |weikong|rom:inst1|sub_wire0~17  ; |weikong|rom:inst1|sub_wire0~17  ; out              ;
+; |weikong|rom:inst1|sub_wire0~18  ; |weikong|rom:inst1|sub_wire0~18  ; out              ;
+; |weikong|rom:inst1|sub_wire0~19  ; |weikong|rom:inst1|sub_wire0~19  ; out              ;
+; |weikong|rom:inst1|sub_wire0~20  ; |weikong|rom:inst1|sub_wire0~20  ; out              ;
+; |weikong|rom:inst1|sub_wire0~21  ; |weikong|rom:inst1|sub_wire0~21  ; out              ;
+; |weikong|rom:inst1|sub_wire0~24  ; |weikong|rom:inst1|sub_wire0~24  ; out              ;
+; |weikong|rom:inst1|sub_wire0~26  ; |weikong|rom:inst1|sub_wire0~26  ; out              ;
+; |weikong|rom:inst1|sub_wire0~27  ; |weikong|rom:inst1|sub_wire0~27  ; out              ;
+; |weikong|rom:inst1|sub_wire0~28  ; |weikong|rom:inst1|sub_wire0~28  ; out              ;
+; |weikong|rom:inst1|sub_wire0~29  ; |weikong|rom:inst1|sub_wire0~29  ; out              ;
+; |weikong|rom:inst1|sub_wire0~30  ; |weikong|rom:inst1|sub_wire0~30  ; out              ;
+; |weikong|rom:inst1|sub_wire0~31  ; |weikong|rom:inst1|sub_wire0~31  ; out              ;
+; |weikong|rom:inst1|sub_wire0~34  ; |weikong|rom:inst1|sub_wire0~34  ; out              ;
+; |weikong|rom:inst1|sub_wire0~35  ; |weikong|rom:inst1|sub_wire0~35  ; out              ;
+; |weikong|rom:inst1|sub_wire0~37  ; |weikong|rom:inst1|sub_wire0~37  ; out              ;
+; |weikong|rom:inst1|sub_wire0~38  ; |weikong|rom:inst1|sub_wire0~38  ; out              ;
+; |weikong|rom:inst1|sub_wire0~39  ; |weikong|rom:inst1|sub_wire0~39  ; out              ;
+; |weikong|rom:inst1|sub_wire0~40  ; |weikong|rom:inst1|sub_wire0~40  ; out              ;
+; |weikong|rom:inst1|sub_wire0~41  ; |weikong|rom:inst1|sub_wire0~41  ; out              ;
+; |weikong|rom:inst1|sub_wire0~42  ; |weikong|rom:inst1|sub_wire0~42  ; out              ;
+; |weikong|rom:inst1|sub_wire0~43  ; |weikong|rom:inst1|sub_wire0~43  ; out              ;
+; |weikong|rom:inst1|sub_wire0~46  ; |weikong|rom:inst1|sub_wire0~46  ; out              ;
+; |weikong|rom:inst1|sub_wire0~47  ; |weikong|rom:inst1|sub_wire0~47  ; out              ;
+; |weikong|rom:inst1|sub_wire0~48  ; |weikong|rom:inst1|sub_wire0~48  ; out              ;
+; |weikong|rom:inst1|sub_wire0~49  ; |weikong|rom:inst1|sub_wire0~49  ; out              ;
+; |weikong|rom:inst1|sub_wire0~51  ; |weikong|rom:inst1|sub_wire0~51  ; out              ;
+; |weikong|rom:inst1|sub_wire0~52  ; |weikong|rom:inst1|sub_wire0~52  ; out              ;
+; |weikong|rom:inst1|sub_wire0~53  ; |weikong|rom:inst1|sub_wire0~53  ; out              ;
+; |weikong|rom:inst1|sub_wire0~54  ; |weikong|rom:inst1|sub_wire0~54  ; out              ;
+; |weikong|rom:inst1|sub_wire0~55  ; |weikong|rom:inst1|sub_wire0~55  ; out              ;
+; |weikong|rom:inst1|sub_wire0~56  ; |weikong|rom:inst1|sub_wire0~56  ; out              ;
+; |weikong|rom:inst1|sub_wire0~57  ; |weikong|rom:inst1|sub_wire0~57  ; out              ;
+; |weikong|rom:inst1|sub_wire0~60  ; |weikong|rom:inst1|sub_wire0~60  ; out              ;
+; |weikong|rom:inst1|sub_wire0~61  ; |weikong|rom:inst1|sub_wire0~61  ; out              ;
+; |weikong|rom:inst1|sub_wire0~62  ; |weikong|rom:inst1|sub_wire0~62  ; out              ;
+; |weikong|rom:inst1|sub_wire0~63  ; |weikong|rom:inst1|sub_wire0~63  ; out              ;
+; |weikong|rom:inst1|sub_wire0~64  ; |weikong|rom:inst1|sub_wire0~64  ; out              ;
+; |weikong|rom:inst1|sub_wire0~66  ; |weikong|rom:inst1|sub_wire0~66  ; out              ;
+; |weikong|rom:inst1|sub_wire0~67  ; |weikong|rom:inst1|sub_wire0~67  ; out              ;
+; |weikong|rom:inst1|sub_wire0~68  ; |weikong|rom:inst1|sub_wire0~68  ; out              ;
+; |weikong|rom:inst1|sub_wire0~69  ; |weikong|rom:inst1|sub_wire0~69  ; out              ;
+; |weikong|rom:inst1|sub_wire0~70  ; |weikong|rom:inst1|sub_wire0~70  ; out              ;
+; |weikong|rom:inst1|sub_wire0~71  ; |weikong|rom:inst1|sub_wire0~71  ; out              ;
+; |weikong|rom:inst1|sub_wire0~72  ; |weikong|rom:inst1|sub_wire0~72  ; out              ;
+; |weikong|rom:inst1|sub_wire0~75  ; |weikong|rom:inst1|sub_wire0~75  ; out              ;
+; |weikong|rom:inst1|sub_wire0~76  ; |weikong|rom:inst1|sub_wire0~76  ; out              ;
+; |weikong|rom:inst1|sub_wire0~77  ; |weikong|rom:inst1|sub_wire0~77  ; out              ;
+; |weikong|rom:inst1|sub_wire0~78  ; |weikong|rom:inst1|sub_wire0~78  ; out              ;
+; |weikong|rom:inst1|sub_wire0~79  ; |weikong|rom:inst1|sub_wire0~79  ; out              ;
+; |weikong|rom:inst1|sub_wire0~80  ; |weikong|rom:inst1|sub_wire0~80  ; out              ;
+; |weikong|rom:inst1|sub_wire0~81  ; |weikong|rom:inst1|sub_wire0~81  ; out              ;
+; |weikong|rom:inst1|sub_wire0~83  ; |weikong|rom:inst1|sub_wire0~83  ; out              ;
+; |weikong|rom:inst1|sub_wire0~84  ; |weikong|rom:inst1|sub_wire0~84  ; out              ;
+; |weikong|rom:inst1|sub_wire0~85  ; |weikong|rom:inst1|sub_wire0~85  ; out              ;
+; |weikong|rom:inst1|sub_wire0~86  ; |weikong|rom:inst1|sub_wire0~86  ; out              ;
+; |weikong|rom:inst1|sub_wire0~87  ; |weikong|rom:inst1|sub_wire0~87  ; out              ;
+; |weikong|rom:inst1|sub_wire0~88  ; |weikong|rom:inst1|sub_wire0~88  ; out              ;
+; |weikong|rom:inst1|sub_wire0~89  ; |weikong|rom:inst1|sub_wire0~89  ; out              ;
+; |weikong|rom:inst1|sub_wire0~90  ; |weikong|rom:inst1|sub_wire0~90  ; out              ;
+; |weikong|rom:inst1|sub_wire0~93  ; |weikong|rom:inst1|sub_wire0~93  ; out              ;
+; |weikong|rom:inst1|sub_wire0~94  ; |weikong|rom:inst1|sub_wire0~94  ; out              ;
+; |weikong|rom:inst1|sub_wire0~95  ; |weikong|rom:inst1|sub_wire0~95  ; out              ;
+; |weikong|rom:inst1|sub_wire0~96  ; |weikong|rom:inst1|sub_wire0~96  ; out              ;
+; |weikong|rom:inst1|sub_wire0~97  ; |weikong|rom:inst1|sub_wire0~97  ; out              ;
+; |weikong|rom:inst1|sub_wire0~98  ; |weikong|rom:inst1|sub_wire0~98  ; out              ;
+; |weikong|rom:inst1|sub_wire0~99  ; |weikong|rom:inst1|sub_wire0~99  ; out              ;
+; |weikong|rom:inst1|sub_wire0~101 ; |weikong|rom:inst1|sub_wire0~101 ; out              ;
+; |weikong|rom:inst1|sub_wire0~102 ; |weikong|rom:inst1|sub_wire0~102 ; out              ;
+; |weikong|rom:inst1|sub_wire0~103 ; |weikong|rom:inst1|sub_wire0~103 ; out              ;
+; |weikong|rom:inst1|sub_wire0~104 ; |weikong|rom:inst1|sub_wire0~104 ; out              ;
+; |weikong|rom:inst1|sub_wire0~105 ; |weikong|rom:inst1|sub_wire0~105 ; out              ;
+; |weikong|rom:inst1|sub_wire0~106 ; |weikong|rom:inst1|sub_wire0~106 ; out              ;
+; |weikong|rom:inst1|sub_wire0~107 ; |weikong|rom:inst1|sub_wire0~107 ; out              ;
+; |weikong|rom:inst1|sub_wire0~108 ; |weikong|rom:inst1|sub_wire0~108 ; out              ;
+; |weikong|rom:inst1|sub_wire0~111 ; |weikong|rom:inst1|sub_wire0~111 ; out              ;
+; |weikong|rom:inst1|sub_wire0~112 ; |weikong|rom:inst1|sub_wire0~112 ; out              ;
+; |weikong|rom:inst1|sub_wire0~113 ; |weikong|rom:inst1|sub_wire0~113 ; out              ;
+; |weikong|rom:inst1|sub_wire0~114 ; |weikong|rom:inst1|sub_wire0~114 ; out              ;
+; |weikong|rom:inst1|sub_wire0~115 ; |weikong|rom:inst1|sub_wire0~115 ; out              ;
+; |weikong|rom:inst1|sub_wire0~116 ; |weikong|rom:inst1|sub_wire0~116 ; out              ;
+; |weikong|rom:inst1|sub_wire0~117 ; |weikong|rom:inst1|sub_wire0~117 ; out              ;
+; |weikong|rom:inst1|sub_wire0~118 ; |weikong|rom:inst1|sub_wire0~118 ; out              ;
+; |weikong|rom:inst1|sub_wire0~120 ; |weikong|rom:inst1|sub_wire0~120 ; out              ;
+; |weikong|rom:inst1|sub_wire0~121 ; |weikong|rom:inst1|sub_wire0~121 ; out              ;
+; |weikong|rom:inst1|sub_wire0~122 ; |weikong|rom:inst1|sub_wire0~122 ; out              ;
+; |weikong|rom:inst1|sub_wire0~123 ; |weikong|rom:inst1|sub_wire0~123 ; out              ;
+; |weikong|rom:inst1|sub_wire0~124 ; |weikong|rom:inst1|sub_wire0~124 ; out              ;
+; |weikong|rom:inst1|sub_wire0~125 ; |weikong|rom:inst1|sub_wire0~125 ; out              ;
+; |weikong|rom:inst1|sub_wire0~126 ; |weikong|rom:inst1|sub_wire0~126 ; out              ;
+; |weikong|rom:inst1|sub_wire0~127 ; |weikong|rom:inst1|sub_wire0~127 ; out              ;
+; |weikong|rom:inst1|sub_wire0~130 ; |weikong|rom:inst1|sub_wire0~130 ; out              ;
+; |weikong|rom:inst1|sub_wire0~131 ; |weikong|rom:inst1|sub_wire0~131 ; out              ;
+; |weikong|rom:inst1|sub_wire0~132 ; |weikong|rom:inst1|sub_wire0~132 ; out              ;
+; |weikong|rom:inst1|sub_wire0~133 ; |weikong|rom:inst1|sub_wire0~133 ; out              ;
+; |weikong|rom:inst1|sub_wire0~134 ; |weikong|rom:inst1|sub_wire0~134 ; out              ;
+; |weikong|rom:inst1|sub_wire0~135 ; |weikong|rom:inst1|sub_wire0~135 ; out              ;
+; |weikong|rom:inst1|sub_wire0~136 ; |weikong|rom:inst1|sub_wire0~136 ; out              ;
+; |weikong|rom:inst1|sub_wire0~137 ; |weikong|rom:inst1|sub_wire0~137 ; out              ;
+; |weikong|rom:inst1|sub_wire0~138 ; |weikong|rom:inst1|sub_wire0~138 ; out              ;
+; |weikong|rom:inst1|sub_wire0~140 ; |weikong|rom:inst1|sub_wire0~140 ; out              ;
+; |weikong|rom:inst1|sub_wire0~141 ; |weikong|rom:inst1|sub_wire0~141 ; out              ;
+; |weikong|rom:inst1|sub_wire0~142 ; |weikong|rom:inst1|sub_wire0~142 ; out              ;
+; |weikong|rom:inst1|sub_wire0~143 ; |weikong|rom:inst1|sub_wire0~143 ; out              ;
+; |weikong|rom:inst1|sub_wire0~144 ; |weikong|rom:inst1|sub_wire0~144 ; out              ;
+; |weikong|rom:inst1|sub_wire0~145 ; |weikong|rom:inst1|sub_wire0~145 ; out              ;
+; |weikong|rom:inst1|sub_wire0~146 ; |weikong|rom:inst1|sub_wire0~146 ; out              ;
+; |weikong|rom:inst1|sub_wire0~147 ; |weikong|rom:inst1|sub_wire0~147 ; out              ;
+; |weikong|rom:inst1|sub_wire0~150 ; |weikong|rom:inst1|sub_wire0~150 ; out              ;
+; |weikong|rom:inst1|sub_wire0~151 ; |weikong|rom:inst1|sub_wire0~151 ; out              ;
+; |weikong|rom:inst1|sub_wire0~152 ; |weikong|rom:inst1|sub_wire0~152 ; out              ;
+; |weikong|rom:inst1|sub_wire0~153 ; |weikong|rom:inst1|sub_wire0~153 ; out              ;
+; |weikong|rom:inst1|sub_wire0~154 ; |weikong|rom:inst1|sub_wire0~154 ; out              ;
+; |weikong|rom:inst1|sub_wire0~155 ; |weikong|rom:inst1|sub_wire0~155 ; out              ;
+; |weikong|rom:inst1|sub_wire0~156 ; |weikong|rom:inst1|sub_wire0~156 ; out              ;
+; |weikong|rom:inst1|sub_wire0~157 ; |weikong|rom:inst1|sub_wire0~157 ; out              ;
+; |weikong|rom:inst1|sub_wire0~158 ; |weikong|rom:inst1|sub_wire0~158 ; out              ;
+; |weikong|rom:inst1|sub_wire0~160 ; |weikong|rom:inst1|sub_wire0~160 ; out              ;
+; |weikong|rom:inst1|sub_wire0~161 ; |weikong|rom:inst1|sub_wire0~161 ; out              ;
+; |weikong|rom:inst1|sub_wire0~162 ; |weikong|rom:inst1|sub_wire0~162 ; out              ;
+; |weikong|rom:inst1|sub_wire0~163 ; |weikong|rom:inst1|sub_wire0~163 ; out              ;
+; |weikong|rom:inst1|sub_wire0~164 ; |weikong|rom:inst1|sub_wire0~164 ; out              ;
+; |weikong|rom:inst1|sub_wire0~165 ; |weikong|rom:inst1|sub_wire0~165 ; out              ;
+; |weikong|rom:inst1|sub_wire0~166 ; |weikong|rom:inst1|sub_wire0~166 ; out              ;
+; |weikong|rom:inst1|sub_wire0~167 ; |weikong|rom:inst1|sub_wire0~167 ; out              ;
+; |weikong|rom:inst1|sub_wire0~170 ; |weikong|rom:inst1|sub_wire0~170 ; out              ;
+; |weikong|rom:inst1|sub_wire0~171 ; |weikong|rom:inst1|sub_wire0~171 ; out              ;
+; |weikong|rom:inst1|sub_wire0~172 ; |weikong|rom:inst1|sub_wire0~172 ; out              ;
+; |weikong|rom:inst1|sub_wire0~173 ; |weikong|rom:inst1|sub_wire0~173 ; out              ;
+; |weikong|rom:inst1|sub_wire0~174 ; |weikong|rom:inst1|sub_wire0~174 ; out              ;
+; |weikong|rom:inst1|sub_wire0~175 ; |weikong|rom:inst1|sub_wire0~175 ; out              ;
+; |weikong|rom:inst1|sub_wire0~176 ; |weikong|rom:inst1|sub_wire0~176 ; out              ;
+; |weikong|rom:inst1|sub_wire0~177 ; |weikong|rom:inst1|sub_wire0~177 ; out              ;
+; |weikong|rom:inst1|sub_wire0~178 ; |weikong|rom:inst1|sub_wire0~178 ; out              ;
+; |weikong|rom:inst1|sub_wire0~180 ; |weikong|rom:inst1|sub_wire0~180 ; out              ;
+; |weikong|rom:inst1|sub_wire0~181 ; |weikong|rom:inst1|sub_wire0~181 ; out              ;
+; |weikong|rom:inst1|sub_wire0~182 ; |weikong|rom:inst1|sub_wire0~182 ; out              ;
+; |weikong|rom:inst1|sub_wire0~183 ; |weikong|rom:inst1|sub_wire0~183 ; out              ;
+; |weikong|rom:inst1|sub_wire0~184 ; |weikong|rom:inst1|sub_wire0~184 ; out              ;
+; |weikong|rom:inst1|sub_wire0~185 ; |weikong|rom:inst1|sub_wire0~185 ; out              ;
+; |weikong|rom:inst1|sub_wire0~186 ; |weikong|rom:inst1|sub_wire0~186 ; out              ;
+; |weikong|rom:inst1|sub_wire0~187 ; |weikong|rom:inst1|sub_wire0~187 ; out              ;
+; |weikong|rom:inst1|sub_wire0~190 ; |weikong|rom:inst1|sub_wire0~190 ; out              ;
+; |weikong|rom:inst1|sub_wire0~191 ; |weikong|rom:inst1|sub_wire0~191 ; out              ;
+; |weikong|rom:inst1|sub_wire0~192 ; |weikong|rom:inst1|sub_wire0~192 ; out              ;
+; |weikong|rom:inst1|sub_wire0~193 ; |weikong|rom:inst1|sub_wire0~193 ; out              ;
+; |weikong|rom:inst1|sub_wire0~194 ; |weikong|rom:inst1|sub_wire0~194 ; out              ;
+; |weikong|rom:inst1|sub_wire0~195 ; |weikong|rom:inst1|sub_wire0~195 ; out              ;
+; |weikong|rom:inst1|sub_wire0~196 ; |weikong|rom:inst1|sub_wire0~196 ; out              ;
+; |weikong|rom:inst1|sub_wire0~197 ; |weikong|rom:inst1|sub_wire0~197 ; out              ;
+; |weikong|rom:inst1|sub_wire0~198 ; |weikong|rom:inst1|sub_wire0~198 ; out              ;
+; |weikong|rom:inst1|sub_wire0~200 ; |weikong|rom:inst1|sub_wire0~200 ; out              ;
+; |weikong|rom:inst1|sub_wire0~201 ; |weikong|rom:inst1|sub_wire0~201 ; out              ;
+; |weikong|rom:inst1|sub_wire0~202 ; |weikong|rom:inst1|sub_wire0~202 ; out              ;
+; |weikong|rom:inst1|sub_wire0~203 ; |weikong|rom:inst1|sub_wire0~203 ; out              ;
+; |weikong|rom:inst1|sub_wire0~204 ; |weikong|rom:inst1|sub_wire0~204 ; out              ;
+; |weikong|rom:inst1|sub_wire0~205 ; |weikong|rom:inst1|sub_wire0~205 ; out              ;
+; |weikong|rom:inst1|sub_wire0~206 ; |weikong|rom:inst1|sub_wire0~206 ; out              ;
+; |weikong|rom:inst1|sub_wire0~207 ; |weikong|rom:inst1|sub_wire0~207 ; out              ;
+; |weikong|rom:inst1|sub_wire0~210 ; |weikong|rom:inst1|sub_wire0~210 ; out              ;
+; |weikong|rom:inst1|sub_wire0~211 ; |weikong|rom:inst1|sub_wire0~211 ; out              ;
+; |weikong|rom:inst1|sub_wire0~212 ; |weikong|rom:inst1|sub_wire0~212 ; out              ;
+; |weikong|rom:inst1|sub_wire0~213 ; |weikong|rom:inst1|sub_wire0~213 ; out              ;
+; |weikong|rom:inst1|sub_wire0~214 ; |weikong|rom:inst1|sub_wire0~214 ; out              ;
+; |weikong|rom:inst1|sub_wire0~215 ; |weikong|rom:inst1|sub_wire0~215 ; out              ;
+; |weikong|rom:inst1|sub_wire0~216 ; |weikong|rom:inst1|sub_wire0~216 ; out              ;
+; |weikong|rom:inst1|sub_wire0~217 ; |weikong|rom:inst1|sub_wire0~217 ; out              ;
+; |weikong|rom:inst1|sub_wire0~218 ; |weikong|rom:inst1|sub_wire0~218 ; out              ;
+; |weikong|rom:inst1|sub_wire0~220 ; |weikong|rom:inst1|sub_wire0~220 ; out              ;
+; |weikong|rom:inst1|sub_wire0~221 ; |weikong|rom:inst1|sub_wire0~221 ; out              ;
+; |weikong|rom:inst1|sub_wire0~222 ; |weikong|rom:inst1|sub_wire0~222 ; out              ;
+; |weikong|rom:inst1|sub_wire0~223 ; |weikong|rom:inst1|sub_wire0~223 ; out              ;
+; |weikong|rom:inst1|sub_wire0~224 ; |weikong|rom:inst1|sub_wire0~224 ; out              ;
+; |weikong|rom:inst1|sub_wire0~225 ; |weikong|rom:inst1|sub_wire0~225 ; out              ;
+; |weikong|rom:inst1|sub_wire0~226 ; |weikong|rom:inst1|sub_wire0~226 ; out              ;
+; |weikong|rom:inst1|sub_wire0~227 ; |weikong|rom:inst1|sub_wire0~227 ; out              ;
+; |weikong|rom:inst1|sub_wire0~230 ; |weikong|rom:inst1|sub_wire0~230 ; out              ;
+; |weikong|rom:inst1|sub_wire0~231 ; |weikong|rom:inst1|sub_wire0~231 ; out              ;
+; |weikong|rom:inst1|sub_wire0~232 ; |weikong|rom:inst1|sub_wire0~232 ; out              ;
+; |weikong|rom:inst1|sub_wire0~233 ; |weikong|rom:inst1|sub_wire0~233 ; out              ;
+; |weikong|rom:inst1|sub_wire0~234 ; |weikong|rom:inst1|sub_wire0~234 ; out              ;
+; |weikong|rom:inst1|sub_wire0~235 ; |weikong|rom:inst1|sub_wire0~235 ; out              ;
+; |weikong|rom:inst1|sub_wire0~236 ; |weikong|rom:inst1|sub_wire0~236 ; out              ;
+; |weikong|rom:inst1|sub_wire0~237 ; |weikong|rom:inst1|sub_wire0~237 ; out              ;
+; |weikong|rom:inst1|sub_wire0~238 ; |weikong|rom:inst1|sub_wire0~238 ; out              ;
+; |weikong|rom:inst1|sub_wire0~240 ; |weikong|rom:inst1|sub_wire0~240 ; out              ;
+; |weikong|rom:inst1|sub_wire0~241 ; |weikong|rom:inst1|sub_wire0~241 ; out              ;
+; |weikong|rom:inst1|sub_wire0~242 ; |weikong|rom:inst1|sub_wire0~242 ; out              ;
+; |weikong|rom:inst1|sub_wire0~243 ; |weikong|rom:inst1|sub_wire0~243 ; out              ;
+; |weikong|rom:inst1|sub_wire0~244 ; |weikong|rom:inst1|sub_wire0~244 ; out              ;
+; |weikong|rom:inst1|sub_wire0~245 ; |weikong|rom:inst1|sub_wire0~245 ; out              ;
+; |weikong|rom:inst1|sub_wire0~246 ; |weikong|rom:inst1|sub_wire0~246 ; out              ;
+; |weikong|rom:inst1|sub_wire0~247 ; |weikong|rom:inst1|sub_wire0~247 ; out              ;
+; |weikong|rom:inst1|sub_wire0~250 ; |weikong|rom:inst1|sub_wire0~250 ; out              ;
+; |weikong|rom:inst1|sub_wire0~251 ; |weikong|rom:inst1|sub_wire0~251 ; out              ;
+; |weikong|rom:inst1|sub_wire0~252 ; |weikong|rom:inst1|sub_wire0~252 ; out              ;
+; |weikong|rom:inst1|sub_wire0~253 ; |weikong|rom:inst1|sub_wire0~253 ; out              ;
+; |weikong|rom:inst1|sub_wire0~254 ; |weikong|rom:inst1|sub_wire0~254 ; out              ;
+; |weikong|rom:inst1|sub_wire0~255 ; |weikong|rom:inst1|sub_wire0~255 ; out              ;
+; |weikong|rom:inst1|sub_wire0~256 ; |weikong|rom:inst1|sub_wire0~256 ; out              ;
+; |weikong|rom:inst1|sub_wire0~257 ; |weikong|rom:inst1|sub_wire0~257 ; out              ;
+; |weikong|rom:inst1|sub_wire0~258 ; |weikong|rom:inst1|sub_wire0~258 ; out              ;
+; |weikong|rom:inst1|sub_wire0~259 ; |weikong|rom:inst1|sub_wire0~259 ; out              ;
+; |weikong|rom:inst1|sub_wire0~260 ; |weikong|rom:inst1|sub_wire0~260 ; out              ;
+; |weikong|rom:inst1|sub_wire0~262 ; |weikong|rom:inst1|sub_wire0~262 ; out              ;
+; |weikong|rom:inst1|sub_wire0~263 ; |weikong|rom:inst1|sub_wire0~263 ; out              ;
+; |weikong|rom:inst1|sub_wire0~264 ; |weikong|rom:inst1|sub_wire0~264 ; out              ;
+; |weikong|rom:inst1|sub_wire0~265 ; |weikong|rom:inst1|sub_wire0~265 ; out              ;
+; |weikong|rom:inst1|sub_wire0~266 ; |weikong|rom:inst1|sub_wire0~266 ; out              ;
+; |weikong|rom:inst1|sub_wire0~267 ; |weikong|rom:inst1|sub_wire0~267 ; out              ;
+; |weikong|rom:inst1|sub_wire0~268 ; |weikong|rom:inst1|sub_wire0~268 ; out              ;
+; |weikong|rom:inst1|sub_wire0~269 ; |weikong|rom:inst1|sub_wire0~269 ; out              ;
+; |weikong|rom:inst1|sub_wire0~272 ; |weikong|rom:inst1|sub_wire0~272 ; out              ;
+; |weikong|rom:inst1|sub_wire0~273 ; |weikong|rom:inst1|sub_wire0~273 ; out              ;
+; |weikong|rom:inst1|sub_wire0~274 ; |weikong|rom:inst1|sub_wire0~274 ; out              ;
+; |weikong|rom:inst1|sub_wire0~275 ; |weikong|rom:inst1|sub_wire0~275 ; out              ;
+; |weikong|rom:inst1|sub_wire0~276 ; |weikong|rom:inst1|sub_wire0~276 ; out              ;
+; |weikong|rom:inst1|sub_wire0~277 ; |weikong|rom:inst1|sub_wire0~277 ; out              ;
+; |weikong|rom:inst1|sub_wire0~278 ; |weikong|rom:inst1|sub_wire0~278 ; out              ;
+; |weikong|rom:inst1|sub_wire0~279 ; |weikong|rom:inst1|sub_wire0~279 ; out              ;
+; |weikong|rom:inst1|sub_wire0~280 ; |weikong|rom:inst1|sub_wire0~280 ; out              ;
+; |weikong|rom:inst1|sub_wire0~281 ; |weikong|rom:inst1|sub_wire0~281 ; out              ;
+; |weikong|rom:inst1|sub_wire0~282 ; |weikong|rom:inst1|sub_wire0~282 ; out              ;
+; |weikong|rom:inst1|sub_wire0~284 ; |weikong|rom:inst1|sub_wire0~284 ; out              ;
+; |weikong|rom:inst1|sub_wire0~285 ; |weikong|rom:inst1|sub_wire0~285 ; out              ;
+; |weikong|rom:inst1|sub_wire0~286 ; |weikong|rom:inst1|sub_wire0~286 ; out              ;
+; |weikong|rom:inst1|sub_wire0~287 ; |weikong|rom:inst1|sub_wire0~287 ; out              ;
+; |weikong|rom:inst1|sub_wire0~288 ; |weikong|rom:inst1|sub_wire0~288 ; out              ;
+; |weikong|rom:inst1|sub_wire0~289 ; |weikong|rom:inst1|sub_wire0~289 ; out              ;
+; |weikong|rom:inst1|sub_wire0~290 ; |weikong|rom:inst1|sub_wire0~290 ; out              ;
+; |weikong|rom:inst1|sub_wire0~291 ; |weikong|rom:inst1|sub_wire0~291 ; out              ;
+; |weikong|rom:inst1|sub_wire0~294 ; |weikong|rom:inst1|sub_wire0~294 ; out              ;
+; |weikong|rom:inst1|sub_wire0~295 ; |weikong|rom:inst1|sub_wire0~295 ; out              ;
+; |weikong|rom:inst1|sub_wire0~296 ; |weikong|rom:inst1|sub_wire0~296 ; out              ;
+; |weikong|rom:inst1|sub_wire0~297 ; |weikong|rom:inst1|sub_wire0~297 ; out              ;
+; |weikong|rom:inst1|sub_wire0~298 ; |weikong|rom:inst1|sub_wire0~298 ; out              ;
+; |weikong|rom:inst1|sub_wire0~299 ; |weikong|rom:inst1|sub_wire0~299 ; out              ;
+; |weikong|rom:inst1|sub_wire0~300 ; |weikong|rom:inst1|sub_wire0~300 ; out              ;
+; |weikong|rom:inst1|sub_wire0~301 ; |weikong|rom:inst1|sub_wire0~301 ; out              ;
+; |weikong|rom:inst1|sub_wire0~302 ; |weikong|rom:inst1|sub_wire0~302 ; out              ;
+; |weikong|rom:inst1|sub_wire0~303 ; |weikong|rom:inst1|sub_wire0~303 ; out              ;
+; |weikong|rom:inst1|sub_wire0~304 ; |weikong|rom:inst1|sub_wire0~304 ; out              ;
+; |weikong|rom:inst1|sub_wire0~306 ; |weikong|rom:inst1|sub_wire0~306 ; out              ;
+; |weikong|rom:inst1|sub_wire0~307 ; |weikong|rom:inst1|sub_wire0~307 ; out              ;
+; |weikong|rom:inst1|sub_wire0~308 ; |weikong|rom:inst1|sub_wire0~308 ; out              ;
+; |weikong|rom:inst1|sub_wire0~309 ; |weikong|rom:inst1|sub_wire0~309 ; out              ;
+; |weikong|rom:inst1|sub_wire0~310 ; |weikong|rom:inst1|sub_wire0~310 ; out              ;
+; |weikong|rom:inst1|sub_wire0~311 ; |weikong|rom:inst1|sub_wire0~311 ; out              ;
+; |weikong|rom:inst1|sub_wire0~312 ; |weikong|rom:inst1|sub_wire0~312 ; out              ;
+; |weikong|rom:inst1|sub_wire0~313 ; |weikong|rom:inst1|sub_wire0~313 ; out              ;
+; |weikong|rom:inst1|sub_wire0~316 ; |weikong|rom:inst1|sub_wire0~316 ; out              ;
+; |weikong|rom:inst1|sub_wire0~317 ; |weikong|rom:inst1|sub_wire0~317 ; out              ;
+; |weikong|rom:inst1|sub_wire0~318 ; |weikong|rom:inst1|sub_wire0~318 ; out              ;
+; |weikong|rom:inst1|sub_wire0~319 ; |weikong|rom:inst1|sub_wire0~319 ; out              ;
+; |weikong|rom:inst1|sub_wire0~320 ; |weikong|rom:inst1|sub_wire0~320 ; out              ;
+; |weikong|rom:inst1|sub_wire0~321 ; |weikong|rom:inst1|sub_wire0~321 ; out              ;
+; |weikong|rom:inst1|sub_wire0~322 ; |weikong|rom:inst1|sub_wire0~322 ; out              ;
+; |weikong|rom:inst1|sub_wire0~323 ; |weikong|rom:inst1|sub_wire0~323 ; out              ;
+; |weikong|rom:inst1|sub_wire0~324 ; |weikong|rom:inst1|sub_wire0~324 ; out              ;
+; |weikong|rom:inst1|sub_wire0~325 ; |weikong|rom:inst1|sub_wire0~325 ; out              ;
+; |weikong|rom:inst1|sub_wire0~326 ; |weikong|rom:inst1|sub_wire0~326 ; out              ;
+; |weikong|rom:inst1|sub_wire0~328 ; |weikong|rom:inst1|sub_wire0~328 ; out              ;
+; |weikong|rom:inst1|sub_wire0~329 ; |weikong|rom:inst1|sub_wire0~329 ; out              ;
+; |weikong|rom:inst1|sub_wire0~330 ; |weikong|rom:inst1|sub_wire0~330 ; out              ;
+; |weikong|rom:inst1|sub_wire0~331 ; |weikong|rom:inst1|sub_wire0~331 ; out              ;
+; |weikong|rom:inst1|sub_wire0~332 ; |weikong|rom:inst1|sub_wire0~332 ; out              ;
+; |weikong|rom:inst1|sub_wire0~333 ; |weikong|rom:inst1|sub_wire0~333 ; out              ;
+; |weikong|rom:inst1|sub_wire0~334 ; |weikong|rom:inst1|sub_wire0~334 ; out              ;
+; |weikong|rom:inst1|sub_wire0~335 ; |weikong|rom:inst1|sub_wire0~335 ; out              ;
+; |weikong|rom:inst1|sub_wire0~338 ; |weikong|rom:inst1|sub_wire0~338 ; out              ;
+; |weikong|rom:inst1|sub_wire0~339 ; |weikong|rom:inst1|sub_wire0~339 ; out              ;
+; |weikong|rom:inst1|sub_wire0~340 ; |weikong|rom:inst1|sub_wire0~340 ; out              ;
+; |weikong|rom:inst1|sub_wire0~341 ; |weikong|rom:inst1|sub_wire0~341 ; out              ;
+; |weikong|rom:inst1|sub_wire0~342 ; |weikong|rom:inst1|sub_wire0~342 ; out              ;
+; |weikong|rom:inst1|sub_wire0~343 ; |weikong|rom:inst1|sub_wire0~343 ; out              ;
+; |weikong|rom:inst1|sub_wire0~344 ; |weikong|rom:inst1|sub_wire0~344 ; out              ;
+; |weikong|rom:inst1|sub_wire0~345 ; |weikong|rom:inst1|sub_wire0~345 ; out              ;
+; |weikong|rom:inst1|sub_wire0~346 ; |weikong|rom:inst1|sub_wire0~346 ; out              ;
+; |weikong|rom:inst1|sub_wire0~347 ; |weikong|rom:inst1|sub_wire0~347 ; out              ;
+; |weikong|rom:inst1|sub_wire0~348 ; |weikong|rom:inst1|sub_wire0~348 ; out              ;
+; |weikong|rom:inst1|sub_wire0~350 ; |weikong|rom:inst1|sub_wire0~350 ; out              ;
+; |weikong|rom:inst1|sub_wire0~351 ; |weikong|rom:inst1|sub_wire0~351 ; out              ;
+; |weikong|rom:inst1|sub_wire0~352 ; |weikong|rom:inst1|sub_wire0~352 ; out              ;
+; |weikong|rom:inst1|sub_wire0~353 ; |weikong|rom:inst1|sub_wire0~353 ; out              ;
+; |weikong|rom:inst1|sub_wire0~354 ; |weikong|rom:inst1|sub_wire0~354 ; out              ;
+; |weikong|rom:inst1|sub_wire0~355 ; |weikong|rom:inst1|sub_wire0~355 ; out              ;
+; |weikong|rom:inst1|sub_wire0~356 ; |weikong|rom:inst1|sub_wire0~356 ; out              ;
+; |weikong|rom:inst1|sub_wire0~357 ; |weikong|rom:inst1|sub_wire0~357 ; out              ;
+; |weikong|rom:inst1|sub_wire0~360 ; |weikong|rom:inst1|sub_wire0~360 ; out              ;
+; |weikong|rom:inst1|sub_wire0~361 ; |weikong|rom:inst1|sub_wire0~361 ; out              ;
+; |weikong|rom:inst1|sub_wire0~362 ; |weikong|rom:inst1|sub_wire0~362 ; out              ;
+; |weikong|rom:inst1|sub_wire0~363 ; |weikong|rom:inst1|sub_wire0~363 ; out              ;
+; |weikong|rom:inst1|sub_wire0~364 ; |weikong|rom:inst1|sub_wire0~364 ; out              ;
+; |weikong|rom:inst1|sub_wire0~365 ; |weikong|rom:inst1|sub_wire0~365 ; out              ;
+; |weikong|rom:inst1|sub_wire0~366 ; |weikong|rom:inst1|sub_wire0~366 ; out              ;
+; |weikong|rom:inst1|sub_wire0~367 ; |weikong|rom:inst1|sub_wire0~367 ; out              ;
+; |weikong|rom:inst1|sub_wire0~368 ; |weikong|rom:inst1|sub_wire0~368 ; out              ;
+; |weikong|rom:inst1|sub_wire0~369 ; |weikong|rom:inst1|sub_wire0~369 ; out              ;
+; |weikong|rom:inst1|sub_wire0~370 ; |weikong|rom:inst1|sub_wire0~370 ; out              ;
+; |weikong|rom:inst1|sub_wire0~371 ; |weikong|rom:inst1|sub_wire0~371 ; out              ;
+; |weikong|rom:inst1|sub_wire0~372 ; |weikong|rom:inst1|sub_wire0~372 ; out              ;
+; |weikong|rom:inst1|sub_wire0~373 ; |weikong|rom:inst1|sub_wire0~373 ; out              ;
+; |weikong|rom:inst1|sub_wire0~374 ; |weikong|rom:inst1|sub_wire0~374 ; out              ;
+; |weikong|rom:inst1|sub_wire0~375 ; |weikong|rom:inst1|sub_wire0~375 ; out              ;
+; |weikong|rom:inst1|sub_wire0~376 ; |weikong|rom:inst1|sub_wire0~376 ; out              ;
+; |weikong|rom:inst1|sub_wire0~377 ; |weikong|rom:inst1|sub_wire0~377 ; out              ;
+; |weikong|rom:inst1|sub_wire0~378 ; |weikong|rom:inst1|sub_wire0~378 ; out              ;
+; |weikong|rom:inst1|sub_wire0~379 ; |weikong|rom:inst1|sub_wire0~379 ; out              ;
+; |weikong|rom:inst1|sub_wire0~382 ; |weikong|rom:inst1|sub_wire0~382 ; out              ;
+; |weikong|rom:inst1|sub_wire0~383 ; |weikong|rom:inst1|sub_wire0~383 ; out              ;
+; |weikong|rom:inst1|sub_wire0~384 ; |weikong|rom:inst1|sub_wire0~384 ; out              ;
+; |weikong|rom:inst1|sub_wire0~385 ; |weikong|rom:inst1|sub_wire0~385 ; out              ;
+; |weikong|rom:inst1|sub_wire0~386 ; |weikong|rom:inst1|sub_wire0~386 ; out              ;
+; |weikong|rom:inst1|sub_wire0~387 ; |weikong|rom:inst1|sub_wire0~387 ; out              ;
+; |weikong|rom:inst1|sub_wire0~388 ; |weikong|rom:inst1|sub_wire0~388 ; out              ;
+; |weikong|rom:inst1|sub_wire0~389 ; |weikong|rom:inst1|sub_wire0~389 ; out              ;
+; |weikong|rom:inst1|sub_wire0~390 ; |weikong|rom:inst1|sub_wire0~390 ; out              ;
+; |weikong|rom:inst1|sub_wire0~391 ; |weikong|rom:inst1|sub_wire0~391 ; out              ;
+; |weikong|rom:inst1|sub_wire0~392 ; |weikong|rom:inst1|sub_wire0~392 ; out              ;
+; |weikong|rom:inst1|sub_wire0~393 ; |weikong|rom:inst1|sub_wire0~393 ; out              ;
+; |weikong|rom:inst1|sub_wire0~394 ; |weikong|rom:inst1|sub_wire0~394 ; out              ;
+; |weikong|rom:inst1|sub_wire0~395 ; |weikong|rom:inst1|sub_wire0~395 ; out              ;
+; |weikong|rom:inst1|sub_wire0~396 ; |weikong|rom:inst1|sub_wire0~396 ; out              ;
+; |weikong|rom:inst1|sub_wire0~397 ; |weikong|rom:inst1|sub_wire0~397 ; out              ;
+; |weikong|rom:inst1|sub_wire0~398 ; |weikong|rom:inst1|sub_wire0~398 ; out              ;
+; |weikong|rom:inst1|sub_wire0~399 ; |weikong|rom:inst1|sub_wire0~399 ; out              ;
+; |weikong|rom:inst1|sub_wire0~400 ; |weikong|rom:inst1|sub_wire0~400 ; out              ;
+; |weikong|rom:inst1|sub_wire0~401 ; |weikong|rom:inst1|sub_wire0~401 ; out              ;
+; |weikong|rom:inst1|sub_wire0~404 ; |weikong|rom:inst1|sub_wire0~404 ; out              ;
+; |weikong|rom:inst1|sub_wire0~405 ; |weikong|rom:inst1|sub_wire0~405 ; out              ;
+; |weikong|rom:inst1|sub_wire0~406 ; |weikong|rom:inst1|sub_wire0~406 ; out              ;
+; |weikong|rom:inst1|sub_wire0~407 ; |weikong|rom:inst1|sub_wire0~407 ; out              ;
+; |weikong|rom:inst1|sub_wire0~408 ; |weikong|rom:inst1|sub_wire0~408 ; out              ;
+; |weikong|rom:inst1|sub_wire0~409 ; |weikong|rom:inst1|sub_wire0~409 ; out              ;
+; |weikong|rom:inst1|sub_wire0~410 ; |weikong|rom:inst1|sub_wire0~410 ; out              ;
+; |weikong|rom:inst1|sub_wire0~411 ; |weikong|rom:inst1|sub_wire0~411 ; out              ;
+; |weikong|rom:inst1|sub_wire0~412 ; |weikong|rom:inst1|sub_wire0~412 ; out              ;
+; |weikong|rom:inst1|sub_wire0~413 ; |weikong|rom:inst1|sub_wire0~413 ; out              ;
+; |weikong|rom:inst1|sub_wire0~414 ; |weikong|rom:inst1|sub_wire0~414 ; out              ;
+; |weikong|rom:inst1|sub_wire0~415 ; |weikong|rom:inst1|sub_wire0~415 ; out              ;
+; |weikong|rom:inst1|sub_wire0~416 ; |weikong|rom:inst1|sub_wire0~416 ; out              ;
+; |weikong|rom:inst1|sub_wire0~417 ; |weikong|rom:inst1|sub_wire0~417 ; out              ;
+; |weikong|rom:inst1|sub_wire0~418 ; |weikong|rom:inst1|sub_wire0~418 ; out              ;
+; |weikong|rom:inst1|sub_wire0~419 ; |weikong|rom:inst1|sub_wire0~419 ; out              ;
+; |weikong|rom:inst1|sub_wire0~420 ; |weikong|rom:inst1|sub_wire0~420 ; out              ;
+; |weikong|rom:inst1|sub_wire0~421 ; |weikong|rom:inst1|sub_wire0~421 ; out              ;
+; |weikong|rom:inst1|sub_wire0~422 ; |weikong|rom:inst1|sub_wire0~422 ; out              ;
+; |weikong|rom:inst1|sub_wire0~423 ; |weikong|rom:inst1|sub_wire0~423 ; out              ;
+; |weikong|rom:inst1|sub_wire0~426 ; |weikong|rom:inst1|sub_wire0~426 ; out              ;
+; |weikong|rom:inst1|sub_wire0~427 ; |weikong|rom:inst1|sub_wire0~427 ; out              ;
+; |weikong|rom:inst1|sub_wire0~428 ; |weikong|rom:inst1|sub_wire0~428 ; out              ;
+; |weikong|rom:inst1|sub_wire0~429 ; |weikong|rom:inst1|sub_wire0~429 ; out              ;
+; |weikong|rom:inst1|sub_wire0~430 ; |weikong|rom:inst1|sub_wire0~430 ; out              ;
+; |weikong|rom:inst1|sub_wire0~431 ; |weikong|rom:inst1|sub_wire0~431 ; out              ;
+; |weikong|rom:inst1|sub_wire0~432 ; |weikong|rom:inst1|sub_wire0~432 ; out              ;
+; |weikong|rom:inst1|sub_wire0~433 ; |weikong|rom:inst1|sub_wire0~433 ; out              ;
+; |weikong|rom:inst1|sub_wire0~434 ; |weikong|rom:inst1|sub_wire0~434 ; out              ;
+; |weikong|rom:inst1|sub_wire0~435 ; |weikong|rom:inst1|sub_wire0~435 ; out              ;
+; |weikong|rom:inst1|sub_wire0~436 ; |weikong|rom:inst1|sub_wire0~436 ; out              ;
+; |weikong|rom:inst1|sub_wire0~437 ; |weikong|rom:inst1|sub_wire0~437 ; out              ;
+; |weikong|rom:inst1|sub_wire0~438 ; |weikong|rom:inst1|sub_wire0~438 ; out              ;
+; |weikong|rom:inst1|sub_wire0~439 ; |weikong|rom:inst1|sub_wire0~439 ; out              ;
+; |weikong|rom:inst1|sub_wire0~440 ; |weikong|rom:inst1|sub_wire0~440 ; out              ;
+; |weikong|rom:inst1|sub_wire0~441 ; |weikong|rom:inst1|sub_wire0~441 ; out              ;
+; |weikong|rom:inst1|sub_wire0~442 ; |weikong|rom:inst1|sub_wire0~442 ; out              ;
+; |weikong|rom:inst1|sub_wire0~443 ; |weikong|rom:inst1|sub_wire0~443 ; out              ;
+; |weikong|rom:inst1|sub_wire0~444 ; |weikong|rom:inst1|sub_wire0~444 ; out              ;
+; |weikong|rom:inst1|sub_wire0~445 ; |weikong|rom:inst1|sub_wire0~445 ; out              ;
+; |weikong|rom:inst1|sub_wire0~448 ; |weikong|rom:inst1|sub_wire0~448 ; out              ;
+; |weikong|rom:inst1|sub_wire0~449 ; |weikong|rom:inst1|sub_wire0~449 ; out              ;
+; |weikong|rom:inst1|sub_wire0~450 ; |weikong|rom:inst1|sub_wire0~450 ; out              ;
+; |weikong|rom:inst1|sub_wire0~451 ; |weikong|rom:inst1|sub_wire0~451 ; out              ;
+; |weikong|rom:inst1|sub_wire0~452 ; |weikong|rom:inst1|sub_wire0~452 ; out              ;
+; |weikong|rom:inst1|sub_wire0~453 ; |weikong|rom:inst1|sub_wire0~453 ; out              ;
+; |weikong|rom:inst1|sub_wire0~454 ; |weikong|rom:inst1|sub_wire0~454 ; out              ;
+; |weikong|rom:inst1|sub_wire0~455 ; |weikong|rom:inst1|sub_wire0~455 ; out              ;
+; |weikong|rom:inst1|sub_wire0~456 ; |weikong|rom:inst1|sub_wire0~456 ; out              ;
+; |weikong|rom:inst1|sub_wire0~457 ; |weikong|rom:inst1|sub_wire0~457 ; out              ;
+; |weikong|rom:inst1|sub_wire0~458 ; |weikong|rom:inst1|sub_wire0~458 ; out              ;
+; |weikong|rom:inst1|sub_wire0~459 ; |weikong|rom:inst1|sub_wire0~459 ; out              ;
+; |weikong|rom:inst1|sub_wire0~460 ; |weikong|rom:inst1|sub_wire0~460 ; out              ;
+; |weikong|rom:inst1|sub_wire0~461 ; |weikong|rom:inst1|sub_wire0~461 ; out              ;
+; |weikong|rom:inst1|sub_wire0~462 ; |weikong|rom:inst1|sub_wire0~462 ; out              ;
+; |weikong|rom:inst1|sub_wire0~463 ; |weikong|rom:inst1|sub_wire0~463 ; out              ;
+; |weikong|rom:inst1|sub_wire0~464 ; |weikong|rom:inst1|sub_wire0~464 ; out              ;
+; |weikong|rom:inst1|sub_wire0~465 ; |weikong|rom:inst1|sub_wire0~465 ; out              ;
+; |weikong|rom:inst1|sub_wire0~466 ; |weikong|rom:inst1|sub_wire0~466 ; out              ;
+; |weikong|rom:inst1|sub_wire0~467 ; |weikong|rom:inst1|sub_wire0~467 ; out              ;
+; |weikong|rom:inst1|sub_wire0~470 ; |weikong|rom:inst1|sub_wire0~470 ; out              ;
+; |weikong|rom:inst1|sub_wire0~471 ; |weikong|rom:inst1|sub_wire0~471 ; out              ;
+; |weikong|rom:inst1|sub_wire0~472 ; |weikong|rom:inst1|sub_wire0~472 ; out              ;
+; |weikong|rom:inst1|sub_wire0~473 ; |weikong|rom:inst1|sub_wire0~473 ; out              ;
+; |weikong|rom:inst1|sub_wire0~474 ; |weikong|rom:inst1|sub_wire0~474 ; out              ;
+; |weikong|rom:inst1|sub_wire0~475 ; |weikong|rom:inst1|sub_wire0~475 ; out              ;
+; |weikong|rom:inst1|sub_wire0~476 ; |weikong|rom:inst1|sub_wire0~476 ; out              ;
+; |weikong|rom:inst1|sub_wire0~477 ; |weikong|rom:inst1|sub_wire0~477 ; out              ;
+; |weikong|rom:inst1|sub_wire0~478 ; |weikong|rom:inst1|sub_wire0~478 ; out              ;
+; |weikong|rom:inst1|sub_wire0~479 ; |weikong|rom:inst1|sub_wire0~479 ; out              ;
+; |weikong|rom:inst1|sub_wire0~480 ; |weikong|rom:inst1|sub_wire0~480 ; out              ;
+; |weikong|rom:inst1|sub_wire0~481 ; |weikong|rom:inst1|sub_wire0~481 ; out              ;
+; |weikong|rom:inst1|sub_wire0~482 ; |weikong|rom:inst1|sub_wire0~482 ; out              ;
+; |weikong|rom:inst1|sub_wire0~483 ; |weikong|rom:inst1|sub_wire0~483 ; out              ;
+; |weikong|rom:inst1|sub_wire0~484 ; |weikong|rom:inst1|sub_wire0~484 ; out              ;
+; |weikong|rom:inst1|sub_wire0~485 ; |weikong|rom:inst1|sub_wire0~485 ; out              ;
+; |weikong|rom:inst1|sub_wire0~486 ; |weikong|rom:inst1|sub_wire0~486 ; out              ;
+; |weikong|rom:inst1|sub_wire0~487 ; |weikong|rom:inst1|sub_wire0~487 ; out              ;
+; |weikong|rom:inst1|sub_wire0~488 ; |weikong|rom:inst1|sub_wire0~488 ; out              ;
+; |weikong|rom:inst1|sub_wire0~489 ; |weikong|rom:inst1|sub_wire0~489 ; out              ;
+; |weikong|rom:inst1|sub_wire0~490 ; |weikong|rom:inst1|sub_wire0~490 ; out              ;
+; |weikong|rom:inst1|sub_wire0~492 ; |weikong|rom:inst1|sub_wire0~492 ; out              ;
+; |weikong|rom:inst1|sub_wire0~493 ; |weikong|rom:inst1|sub_wire0~493 ; out              ;
+; |weikong|rom:inst1|sub_wire0~494 ; |weikong|rom:inst1|sub_wire0~494 ; out              ;
+; |weikong|rom:inst1|sub_wire0~495 ; |weikong|rom:inst1|sub_wire0~495 ; out              ;
+; |weikong|rom:inst1|sub_wire0~496 ; |weikong|rom:inst1|sub_wire0~496 ; out              ;
+; |weikong|rom:inst1|sub_wire0~497 ; |weikong|rom:inst1|sub_wire0~497 ; out              ;
+; |weikong|rom:inst1|sub_wire0~498 ; |weikong|rom:inst1|sub_wire0~498 ; out              ;
+; |weikong|rom:inst1|sub_wire0~499 ; |weikong|rom:inst1|sub_wire0~499 ; out              ;
+; |weikong|rom:inst1|sub_wire0~500 ; |weikong|rom:inst1|sub_wire0~500 ; out              ;
+; |weikong|rom:inst1|sub_wire0~501 ; |weikong|rom:inst1|sub_wire0~501 ; out              ;
+; |weikong|rom:inst1|sub_wire0~502 ; |weikong|rom:inst1|sub_wire0~502 ; out              ;
+; |weikong|rom:inst1|sub_wire0~503 ; |weikong|rom:inst1|sub_wire0~503 ; out              ;
+; |weikong|rom:inst1|sub_wire0~504 ; |weikong|rom:inst1|sub_wire0~504 ; out              ;
+; |weikong|rom:inst1|sub_wire0~505 ; |weikong|rom:inst1|sub_wire0~505 ; out              ;
+; |weikong|rom:inst1|sub_wire0~506 ; |weikong|rom:inst1|sub_wire0~506 ; out              ;
+; |weikong|rom:inst1|sub_wire0~507 ; |weikong|rom:inst1|sub_wire0~507 ; out              ;
+; |weikong|rom:inst1|sub_wire0~508 ; |weikong|rom:inst1|sub_wire0~508 ; out              ;
+; |weikong|rom:inst1|sub_wire0~509 ; |weikong|rom:inst1|sub_wire0~509 ; out              ;
+; |weikong|rom:inst1|sub_wire0~510 ; |weikong|rom:inst1|sub_wire0~510 ; out              ;
+; |weikong|rom:inst1|sub_wire0~511 ; |weikong|rom:inst1|sub_wire0~511 ; out              ;
+; |weikong|rom:inst1|sub_wire0~512 ; |weikong|rom:inst1|sub_wire0~512 ; out              ;
+; |weikong|rom:inst1|sub_wire0~514 ; |weikong|rom:inst1|sub_wire0~514 ; out              ;
+; |weikong|rom:inst1|sub_wire0~515 ; |weikong|rom:inst1|sub_wire0~515 ; out              ;
+; |weikong|rom:inst1|sub_wire0~516 ; |weikong|rom:inst1|sub_wire0~516 ; out              ;
+; |weikong|rom:inst1|sub_wire0~517 ; |weikong|rom:inst1|sub_wire0~517 ; out              ;
+; |weikong|rom:inst1|sub_wire0~518 ; |weikong|rom:inst1|sub_wire0~518 ; out              ;
+; |weikong|rom:inst1|sub_wire0~519 ; |weikong|rom:inst1|sub_wire0~519 ; out              ;
+; |weikong|rom:inst1|sub_wire0~520 ; |weikong|rom:inst1|sub_wire0~520 ; out              ;
+; |weikong|rom:inst1|sub_wire0~521 ; |weikong|rom:inst1|sub_wire0~521 ; out              ;
+; |weikong|rom:inst1|sub_wire0~522 ; |weikong|rom:inst1|sub_wire0~522 ; out              ;
+; |weikong|rom:inst1|sub_wire0~523 ; |weikong|rom:inst1|sub_wire0~523 ; out              ;
+; |weikong|rom:inst1|sub_wire0~524 ; |weikong|rom:inst1|sub_wire0~524 ; out              ;
+; |weikong|rom:inst1|sub_wire0~525 ; |weikong|rom:inst1|sub_wire0~525 ; out              ;
+; |weikong|rom:inst1|sub_wire0~526 ; |weikong|rom:inst1|sub_wire0~526 ; out              ;
+; |weikong|rom:inst1|sub_wire0~527 ; |weikong|rom:inst1|sub_wire0~527 ; out              ;
+; |weikong|rom:inst1|sub_wire0~528 ; |weikong|rom:inst1|sub_wire0~528 ; out              ;
+; |weikong|rom:inst1|sub_wire0~529 ; |weikong|rom:inst1|sub_wire0~529 ; out              ;
+; |weikong|rom:inst1|sub_wire0~530 ; |weikong|rom:inst1|sub_wire0~530 ; out              ;
+; |weikong|rom:inst1|sub_wire0~531 ; |weikong|rom:inst1|sub_wire0~531 ; out              ;
+; |weikong|rom:inst1|sub_wire0~532 ; |weikong|rom:inst1|sub_wire0~532 ; out              ;
+; |weikong|rom:inst1|sub_wire0~533 ; |weikong|rom:inst1|sub_wire0~533 ; out              ;
+; |weikong|rom:inst1|sub_wire0~534 ; |weikong|rom:inst1|sub_wire0~534 ; out              ;
+; |weikong|rom:inst1|sub_wire0~536 ; |weikong|rom:inst1|sub_wire0~536 ; out              ;
+; |weikong|rom:inst1|sub_wire0~537 ; |weikong|rom:inst1|sub_wire0~537 ; out              ;
+; |weikong|rom:inst1|sub_wire0~538 ; |weikong|rom:inst1|sub_wire0~538 ; out              ;
+; |weikong|rom:inst1|sub_wire0~539 ; |weikong|rom:inst1|sub_wire0~539 ; out              ;
+; |weikong|rom:inst1|sub_wire0~540 ; |weikong|rom:inst1|sub_wire0~540 ; out              ;
+; |weikong|rom:inst1|sub_wire0~541 ; |weikong|rom:inst1|sub_wire0~541 ; out              ;
+; |weikong|rom:inst1|sub_wire0~542 ; |weikong|rom:inst1|sub_wire0~542 ; out              ;
+; |weikong|rom:inst1|sub_wire0~543 ; |weikong|rom:inst1|sub_wire0~543 ; out              ;
+; |weikong|rom:inst1|sub_wire0~544 ; |weikong|rom:inst1|sub_wire0~544 ; out              ;
+; |weikong|rom:inst1|sub_wire0~545 ; |weikong|rom:inst1|sub_wire0~545 ; out              ;
+; |weikong|rom:inst1|sub_wire0~546 ; |weikong|rom:inst1|sub_wire0~546 ; out              ;
+; |weikong|rom:inst1|sub_wire0~547 ; |weikong|rom:inst1|sub_wire0~547 ; out              ;
+; |weikong|rom:inst1|sub_wire0~548 ; |weikong|rom:inst1|sub_wire0~548 ; out              ;
+; |weikong|rom:inst1|sub_wire0~549 ; |weikong|rom:inst1|sub_wire0~549 ; out              ;
+; |weikong|rom:inst1|sub_wire0~550 ; |weikong|rom:inst1|sub_wire0~550 ; out              ;
+; |weikong|rom:inst1|sub_wire0~551 ; |weikong|rom:inst1|sub_wire0~551 ; out              ;
+; |weikong|rom:inst1|sub_wire0~552 ; |weikong|rom:inst1|sub_wire0~552 ; out              ;
+; |weikong|rom:inst1|sub_wire0~553 ; |weikong|rom:inst1|sub_wire0~553 ; out              ;
+; |weikong|rom:inst1|sub_wire0~554 ; |weikong|rom:inst1|sub_wire0~554 ; out              ;
+; |weikong|rom:inst1|q[26]         ; |weikong|rom:inst1|q[26]         ; out              ;
+; |weikong|rom:inst1|q[25]         ; |weikong|rom:inst1|q[25]         ; out              ;
+; |weikong|rom:inst1|q[24]         ; |weikong|rom:inst1|q[24]         ; out              ;
+; |weikong|rom:inst1|q[22]         ; |weikong|rom:inst1|q[22]         ; out              ;
+; |weikong|rom:inst1|q[21]         ; |weikong|rom:inst1|q[21]         ; out              ;
+; |weikong|rom:inst1|q[20]         ; |weikong|rom:inst1|q[20]         ; out              ;
+; |weikong|rom:inst1|q[19]         ; |weikong|rom:inst1|q[19]         ; out              ;
+; |weikong|rom:inst1|q[17]         ; |weikong|rom:inst1|q[17]         ; out              ;
+; |weikong|rom:inst1|q[16]         ; |weikong|rom:inst1|q[16]         ; out              ;
+; |weikong|rom:inst1|q[15]         ; |weikong|rom:inst1|q[15]         ; out              ;
+; |weikong|rom:inst1|q[14]         ; |weikong|rom:inst1|q[14]         ; out              ;
+; |weikong|rom:inst1|q[13]         ; |weikong|rom:inst1|q[13]         ; out              ;
+; |weikong|rom:inst1|q[12]         ; |weikong|rom:inst1|q[12]         ; out              ;
+; |weikong|rom:inst1|q[11]         ; |weikong|rom:inst1|q[11]         ; out              ;
+; |weikong|rom:inst1|q[9]          ; |weikong|rom:inst1|q[9]          ; out              ;
+; |weikong|rom:inst1|q[8]          ; |weikong|rom:inst1|q[8]          ; out              ;
+; |weikong|rom:inst1|q[7]          ; |weikong|rom:inst1|q[7]          ; out              ;
+; |weikong|rom:inst1|q[6]          ; |weikong|rom:inst1|q[6]          ; out              ;
+; |weikong|rom:inst1|q[5]          ; |weikong|rom:inst1|q[5]          ; out              ;
+; |weikong|rom:inst1|q[4]          ; |weikong|rom:inst1|q[4]          ; out              ;
+; |weikong|rom:inst1|q[3]          ; |weikong|rom:inst1|q[3]          ; out              ;
+; |weikong|rom:inst1|q[2]          ; |weikong|rom:inst1|q[2]          ; out              ;
+; |weikong|rom:inst1|q[1]          ; |weikong|rom:inst1|q[1]          ; out              ;
+; |weikong|rom:inst1|q[0]          ; |weikong|rom:inst1|q[0]          ; out              ;
+; |weikong|74273:inst5|18          ; |weikong|74273:inst5|18          ; regout           ;
+; |weikong|74273:inst5|17          ; |weikong|74273:inst5|17          ; regout           ;
+; |weikong|74273:inst5|16          ; |weikong|74273:inst5|16          ; regout           ;
+; |weikong|74273:inst5|14          ; |weikong|74273:inst5|14          ; regout           ;
+; |weikong|74273:inst5|13          ; |weikong|74273:inst5|13          ; regout           ;
+; |weikong|74273:inst5|12          ; |weikong|74273:inst5|12          ; regout           ;
+; |weikong|shixu:inst|fstate.st1   ; |weikong|shixu:inst|fstate.st1   ; regout           ;
+; |weikong|shixu:inst|fstate.st4   ; |weikong|shixu:inst|fstate.st4   ; regout           ;
+; |weikong|shixu:inst|fstate.st2   ; |weikong|shixu:inst|fstate.st2   ; regout           ;
+; |weikong|shixu:inst|fstate.st3   ; |weikong|shixu:inst|fstate.st3   ; regout           ;
+; |weikong|shixu:inst|t2~0         ; |weikong|shixu:inst|t2~0         ; out0             ;
+; |weikong|shixu:inst|t3~0         ; |weikong|shixu:inst|t3~0         ; out0             ;
+; |weikong|shixu:inst|t4~0         ; |weikong|shixu:inst|t4~0         ; out0             ;
+; |weikong|shixu:inst|fstate~0     ; |weikong|shixu:inst|fstate~0     ; out0             ;
+; |weikong|shixu:inst|t1~2         ; |weikong|shixu:inst|t1~2         ; out0             ;
+; |weikong|shixu:inst|t4~4         ; |weikong|shixu:inst|t4~4         ; out0             ;
+; |weikong|shixu:inst|t2~5         ; |weikong|shixu:inst|t2~5         ; out0             ;
+; |weikong|shixu:inst|t3~4         ; |weikong|shixu:inst|t3~4         ; out0             ;
+; |weikong|shixu:inst|fstate~4     ; |weikong|shixu:inst|fstate~4     ; out0             ;
+; |weikong|shixu:inst|Selector1~0  ; |weikong|shixu:inst|Selector1~0  ; out0             ;
+; |weikong|shixu:inst|Selector1~1  ; |weikong|shixu:inst|Selector1~1  ; out0             ;
+; |weikong|shixu:inst|Selector1~3  ; |weikong|shixu:inst|Selector1~3  ; out0             ;
+; |weikong|shixu:inst|Selector3~0  ; |weikong|shixu:inst|Selector3~0  ; out0             ;
+; |weikong|shixu:inst|Selector3~1  ; |weikong|shixu:inst|Selector3~1  ; out0             ;
+; |weikong|shixu:inst|Selector4~0  ; |weikong|shixu:inst|Selector4~0  ; out0             ;
+; |weikong|shixu:inst|Selector4~2  ; |weikong|shixu:inst|Selector4~2  ; out0             ;
+; |weikong|shixu:inst|Selector5~0  ; |weikong|shixu:inst|Selector5~0  ; out0             ;
+; |weikong|shixu:inst|Selector5~2  ; |weikong|shixu:inst|Selector5~2  ; out0             ;
+; |weikong|rom:inst1|Equal3~0      ; |weikong|rom:inst1|Equal3~0      ; out0             ;
+; |weikong|rom:inst1|Equal4~0      ; |weikong|rom:inst1|Equal4~0      ; out0             ;
+; |weikong|rom:inst1|Equal5~0      ; |weikong|rom:inst1|Equal5~0      ; out0             ;
+; |weikong|rom:inst1|Equal6~0      ; |weikong|rom:inst1|Equal6~0      ; out0             ;
+; |weikong|rom:inst1|Equal7~0      ; |weikong|rom:inst1|Equal7~0      ; out0             ;
+; |weikong|rom:inst1|Equal8~0      ; |weikong|rom:inst1|Equal8~0      ; out0             ;
+; |weikong|rom:inst1|Equal9~0      ; |weikong|rom:inst1|Equal9~0      ; out0             ;
+; |weikong|rom:inst1|Equal10~0     ; |weikong|rom:inst1|Equal10~0     ; out0             ;
+; |weikong|rom:inst1|Equal11~0     ; |weikong|rom:inst1|Equal11~0     ; out0             ;
+; |weikong|rom:inst1|Equal12~0     ; |weikong|rom:inst1|Equal12~0     ; out0             ;
+; |weikong|rom:inst1|Equal13~0     ; |weikong|rom:inst1|Equal13~0     ; out0             ;
+; |weikong|rom:inst1|Equal14~0     ; |weikong|rom:inst1|Equal14~0     ; out0             ;
+; |weikong|rom:inst1|Equal15~0     ; |weikong|rom:inst1|Equal15~0     ; out0             ;
+; |weikong|rom:inst1|Equal16~0     ; |weikong|rom:inst1|Equal16~0     ; out0             ;
+; |weikong|rom:inst1|Equal17~0     ; |weikong|rom:inst1|Equal17~0     ; out0             ;
+; |weikong|rom:inst1|Equal18~0     ; |weikong|rom:inst1|Equal18~0     ; out0             ;
+; |weikong|rom:inst1|Equal19~0     ; |weikong|rom:inst1|Equal19~0     ; out0             ;
+; |weikong|rom:inst1|Equal20~0     ; |weikong|rom:inst1|Equal20~0     ; out0             ;
+; |weikong|rom:inst1|Equal21~0     ; |weikong|rom:inst1|Equal21~0     ; out0             ;
+; |weikong|rom:inst1|Equal22~0     ; |weikong|rom:inst1|Equal22~0     ; out0             ;
+; |weikong|rom:inst1|Equal23~0     ; |weikong|rom:inst1|Equal23~0     ; out0             ;
+; |weikong|rom:inst1|Equal24~0     ; |weikong|rom:inst1|Equal24~0     ; out0             ;
+; |weikong|rom:inst1|Equal25~0     ; |weikong|rom:inst1|Equal25~0     ; out0             ;
+; |weikong|rom:inst1|Equal26~0     ; |weikong|rom:inst1|Equal26~0     ; out0             ;
+; |weikong|rom:inst1|Equal27~0     ; |weikong|rom:inst1|Equal27~0     ; out0             ;
+; |weikong|rom:inst1|Equal28~0     ; |weikong|rom:inst1|Equal28~0     ; out0             ;
+; |weikong|rom:inst1|Equal29~0     ; |weikong|rom:inst1|Equal29~0     ; out0             ;
+; |weikong|rom:inst1|Equal30~0     ; |weikong|rom:inst1|Equal30~0     ; out0             ;
++----------------------------------+----------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                               ;
++----------------------------------+----------------------------------+------------------+
+; Node Name                        ; Output Port Name                 ; Output Port Type ;
++----------------------------------+----------------------------------+------------------+
+; |weikong|tj                      ; |weikong|tj                      ; out              ;
+; |weikong|dp                      ; |weikong|dp                      ; out              ;
+; |weikong|KRD                     ; |weikong|KRD                     ; out              ;
+; |weikong|KWE                     ; |weikong|KWE                     ; out              ;
+; |weikong|LDR4                    ; |weikong|LDR4                    ; pin_out          ;
+; |weikong|S2                      ; |weikong|S2                      ; pin_out          ;
+; |weikong|rom:inst1|sub_wire0~0   ; |weikong|rom:inst1|sub_wire0~0   ; out              ;
+; |weikong|rom:inst1|sub_wire0~1   ; |weikong|rom:inst1|sub_wire0~1   ; out              ;
+; |weikong|rom:inst1|sub_wire0~2   ; |weikong|rom:inst1|sub_wire0~2   ; out              ;
+; |weikong|rom:inst1|sub_wire0~3   ; |weikong|rom:inst1|sub_wire0~3   ; out              ;
+; |weikong|rom:inst1|sub_wire0~4   ; |weikong|rom:inst1|sub_wire0~4   ; out              ;
+; |weikong|rom:inst1|sub_wire0~5   ; |weikong|rom:inst1|sub_wire0~5   ; out              ;
+; |weikong|rom:inst1|sub_wire0~6   ; |weikong|rom:inst1|sub_wire0~6   ; out              ;
+; |weikong|rom:inst1|sub_wire0~7   ; |weikong|rom:inst1|sub_wire0~7   ; out              ;
+; |weikong|rom:inst1|sub_wire0~8   ; |weikong|rom:inst1|sub_wire0~8   ; out              ;
+; |weikong|rom:inst1|sub_wire0~9   ; |weikong|rom:inst1|sub_wire0~9   ; out              ;
+; |weikong|rom:inst1|sub_wire0~10  ; |weikong|rom:inst1|sub_wire0~10  ; out              ;
+; |weikong|rom:inst1|sub_wire0~11  ; |weikong|rom:inst1|sub_wire0~11  ; out              ;
+; |weikong|rom:inst1|sub_wire0~12  ; |weikong|rom:inst1|sub_wire0~12  ; out              ;
+; |weikong|rom:inst1|sub_wire0~13  ; |weikong|rom:inst1|sub_wire0~13  ; out              ;
+; |weikong|rom:inst1|sub_wire0~14  ; |weikong|rom:inst1|sub_wire0~14  ; out              ;
+; |weikong|rom:inst1|sub_wire0~15  ; |weikong|rom:inst1|sub_wire0~15  ; out              ;
+; |weikong|rom:inst1|sub_wire0~16  ; |weikong|rom:inst1|sub_wire0~16  ; out              ;
+; |weikong|rom:inst1|sub_wire0~22  ; |weikong|rom:inst1|sub_wire0~22  ; out              ;
+; |weikong|rom:inst1|sub_wire0~23  ; |weikong|rom:inst1|sub_wire0~23  ; out              ;
+; |weikong|rom:inst1|sub_wire0~25  ; |weikong|rom:inst1|sub_wire0~25  ; out              ;
+; |weikong|rom:inst1|sub_wire0~32  ; |weikong|rom:inst1|sub_wire0~32  ; out              ;
+; |weikong|rom:inst1|sub_wire0~33  ; |weikong|rom:inst1|sub_wire0~33  ; out              ;
+; |weikong|rom:inst1|sub_wire0~36  ; |weikong|rom:inst1|sub_wire0~36  ; out              ;
+; |weikong|rom:inst1|sub_wire0~44  ; |weikong|rom:inst1|sub_wire0~44  ; out              ;
+; |weikong|rom:inst1|sub_wire0~45  ; |weikong|rom:inst1|sub_wire0~45  ; out              ;
+; |weikong|rom:inst1|sub_wire0~50  ; |weikong|rom:inst1|sub_wire0~50  ; out              ;
+; |weikong|rom:inst1|sub_wire0~58  ; |weikong|rom:inst1|sub_wire0~58  ; out              ;
+; |weikong|rom:inst1|sub_wire0~59  ; |weikong|rom:inst1|sub_wire0~59  ; out              ;
+; |weikong|rom:inst1|sub_wire0~65  ; |weikong|rom:inst1|sub_wire0~65  ; out              ;
+; |weikong|rom:inst1|sub_wire0~73  ; |weikong|rom:inst1|sub_wire0~73  ; out              ;
+; |weikong|rom:inst1|sub_wire0~74  ; |weikong|rom:inst1|sub_wire0~74  ; out              ;
+; |weikong|rom:inst1|sub_wire0~82  ; |weikong|rom:inst1|sub_wire0~82  ; out              ;
+; |weikong|rom:inst1|sub_wire0~91  ; |weikong|rom:inst1|sub_wire0~91  ; out              ;
+; |weikong|rom:inst1|sub_wire0~92  ; |weikong|rom:inst1|sub_wire0~92  ; out              ;
+; |weikong|rom:inst1|sub_wire0~100 ; |weikong|rom:inst1|sub_wire0~100 ; out              ;
+; |weikong|rom:inst1|sub_wire0~109 ; |weikong|rom:inst1|sub_wire0~109 ; out              ;
+; |weikong|rom:inst1|sub_wire0~110 ; |weikong|rom:inst1|sub_wire0~110 ; out              ;
+; |weikong|rom:inst1|sub_wire0~119 ; |weikong|rom:inst1|sub_wire0~119 ; out              ;
+; |weikong|rom:inst1|sub_wire0~128 ; |weikong|rom:inst1|sub_wire0~128 ; out              ;
+; |weikong|rom:inst1|sub_wire0~129 ; |weikong|rom:inst1|sub_wire0~129 ; out              ;
+; |weikong|rom:inst1|sub_wire0~139 ; |weikong|rom:inst1|sub_wire0~139 ; out              ;
+; |weikong|rom:inst1|sub_wire0~148 ; |weikong|rom:inst1|sub_wire0~148 ; out              ;
+; |weikong|rom:inst1|sub_wire0~149 ; |weikong|rom:inst1|sub_wire0~149 ; out              ;
+; |weikong|rom:inst1|sub_wire0~159 ; |weikong|rom:inst1|sub_wire0~159 ; out              ;
+; |weikong|rom:inst1|sub_wire0~168 ; |weikong|rom:inst1|sub_wire0~168 ; out              ;
+; |weikong|rom:inst1|sub_wire0~169 ; |weikong|rom:inst1|sub_wire0~169 ; out              ;
+; |weikong|rom:inst1|sub_wire0~179 ; |weikong|rom:inst1|sub_wire0~179 ; out              ;
+; |weikong|rom:inst1|sub_wire0~188 ; |weikong|rom:inst1|sub_wire0~188 ; out              ;
+; |weikong|rom:inst1|sub_wire0~189 ; |weikong|rom:inst1|sub_wire0~189 ; out              ;
+; |weikong|rom:inst1|sub_wire0~199 ; |weikong|rom:inst1|sub_wire0~199 ; out              ;
+; |weikong|rom:inst1|sub_wire0~208 ; |weikong|rom:inst1|sub_wire0~208 ; out              ;
+; |weikong|rom:inst1|sub_wire0~209 ; |weikong|rom:inst1|sub_wire0~209 ; out              ;
+; |weikong|rom:inst1|sub_wire0~219 ; |weikong|rom:inst1|sub_wire0~219 ; out              ;
+; |weikong|rom:inst1|sub_wire0~228 ; |weikong|rom:inst1|sub_wire0~228 ; out              ;
+; |weikong|rom:inst1|sub_wire0~229 ; |weikong|rom:inst1|sub_wire0~229 ; out              ;
+; |weikong|rom:inst1|sub_wire0~239 ; |weikong|rom:inst1|sub_wire0~239 ; out              ;
+; |weikong|rom:inst1|sub_wire0~248 ; |weikong|rom:inst1|sub_wire0~248 ; out              ;
+; |weikong|rom:inst1|sub_wire0~249 ; |weikong|rom:inst1|sub_wire0~249 ; out              ;
+; |weikong|rom:inst1|sub_wire0~261 ; |weikong|rom:inst1|sub_wire0~261 ; out              ;
+; |weikong|rom:inst1|sub_wire0~270 ; |weikong|rom:inst1|sub_wire0~270 ; out              ;
+; |weikong|rom:inst1|sub_wire0~271 ; |weikong|rom:inst1|sub_wire0~271 ; out              ;
+; |weikong|rom:inst1|sub_wire0~283 ; |weikong|rom:inst1|sub_wire0~283 ; out              ;
+; |weikong|rom:inst1|sub_wire0~292 ; |weikong|rom:inst1|sub_wire0~292 ; out              ;
+; |weikong|rom:inst1|sub_wire0~293 ; |weikong|rom:inst1|sub_wire0~293 ; out              ;
+; |weikong|rom:inst1|sub_wire0~305 ; |weikong|rom:inst1|sub_wire0~305 ; out              ;
+; |weikong|rom:inst1|sub_wire0~314 ; |weikong|rom:inst1|sub_wire0~314 ; out              ;
+; |weikong|rom:inst1|sub_wire0~315 ; |weikong|rom:inst1|sub_wire0~315 ; out              ;
+; |weikong|rom:inst1|sub_wire0~327 ; |weikong|rom:inst1|sub_wire0~327 ; out              ;
+; |weikong|rom:inst1|sub_wire0~336 ; |weikong|rom:inst1|sub_wire0~336 ; out              ;
+; |weikong|rom:inst1|sub_wire0~337 ; |weikong|rom:inst1|sub_wire0~337 ; out              ;
+; |weikong|rom:inst1|sub_wire0~349 ; |weikong|rom:inst1|sub_wire0~349 ; out              ;
+; |weikong|rom:inst1|sub_wire0~358 ; |weikong|rom:inst1|sub_wire0~358 ; out              ;
+; |weikong|rom:inst1|sub_wire0~359 ; |weikong|rom:inst1|sub_wire0~359 ; out              ;
+; |weikong|rom:inst1|sub_wire0~380 ; |weikong|rom:inst1|sub_wire0~380 ; out              ;
+; |weikong|rom:inst1|sub_wire0~381 ; |weikong|rom:inst1|sub_wire0~381 ; out              ;
+; |weikong|rom:inst1|sub_wire0~402 ; |weikong|rom:inst1|sub_wire0~402 ; out              ;
+; |weikong|rom:inst1|sub_wire0~403 ; |weikong|rom:inst1|sub_wire0~403 ; out              ;
+; |weikong|rom:inst1|sub_wire0~424 ; |weikong|rom:inst1|sub_wire0~424 ; out              ;
+; |weikong|rom:inst1|sub_wire0~425 ; |weikong|rom:inst1|sub_wire0~425 ; out              ;
+; |weikong|rom:inst1|sub_wire0~446 ; |weikong|rom:inst1|sub_wire0~446 ; out              ;
+; |weikong|rom:inst1|sub_wire0~447 ; |weikong|rom:inst1|sub_wire0~447 ; out              ;
+; |weikong|rom:inst1|sub_wire0~468 ; |weikong|rom:inst1|sub_wire0~468 ; out              ;
+; |weikong|rom:inst1|sub_wire0~469 ; |weikong|rom:inst1|sub_wire0~469 ; out              ;
+; |weikong|rom:inst1|sub_wire0~491 ; |weikong|rom:inst1|sub_wire0~491 ; out              ;
+; |weikong|rom:inst1|sub_wire0~513 ; |weikong|rom:inst1|sub_wire0~513 ; out              ;
+; |weikong|rom:inst1|sub_wire0~535 ; |weikong|rom:inst1|sub_wire0~535 ; out              ;
+; |weikong|rom:inst1|q[23]         ; |weikong|rom:inst1|q[23]         ; out              ;
+; |weikong|shixu:inst|process_1~0  ; |weikong|shixu:inst|process_1~0  ; out0             ;
+; |weikong|shixu:inst|process_1~1  ; |weikong|shixu:inst|process_1~1  ; out0             ;
+; |weikong|shixu:inst|reg_fstate~0 ; |weikong|shixu:inst|reg_fstate~0 ; out              ;
+; |weikong|shixu:inst|reg_fstate~1 ; |weikong|shixu:inst|reg_fstate~1 ; out              ;
+; |weikong|shixu:inst|fstate.idle  ; |weikong|shixu:inst|fstate.idle  ; regout           ;
+; |weikong|shixu:inst|fstate.s_st2 ; |weikong|shixu:inst|fstate.s_st2 ; regout           ;
+; |weikong|shixu:inst|fstate.s_st4 ; |weikong|shixu:inst|fstate.s_st4 ; regout           ;
+; |weikong|shixu:inst|fstate.s_st3 ; |weikong|shixu:inst|fstate.s_st3 ; regout           ;
+; |weikong|shixu:inst|WideOr7~0    ; |weikong|shixu:inst|WideOr7~0    ; out0             ;
+; |weikong|shixu:inst|t2~4         ; |weikong|shixu:inst|t2~4         ; out0             ;
+; |weikong|shixu:inst|t4~5         ; |weikong|shixu:inst|t4~5         ; out0             ;
+; |weikong|shixu:inst|t3~5         ; |weikong|shixu:inst|t3~5         ; out0             ;
+; |weikong|shixu:inst|Selector0~0  ; |weikong|shixu:inst|Selector0~0  ; out0             ;
+; |weikong|shixu:inst|Selector0~1  ; |weikong|shixu:inst|Selector0~1  ; out0             ;
+; |weikong|shixu:inst|Selector0~2  ; |weikong|shixu:inst|Selector0~2  ; out0             ;
+; |weikong|shixu:inst|Selector0~3  ; |weikong|shixu:inst|Selector0~3  ; out0             ;
+; |weikong|shixu:inst|Selector1~2  ; |weikong|shixu:inst|Selector1~2  ; out0             ;
+; |weikong|shixu:inst|Selector2~0  ; |weikong|shixu:inst|Selector2~0  ; out0             ;
+; |weikong|shixu:inst|Selector2~1  ; |weikong|shixu:inst|Selector2~1  ; out0             ;
+; |weikong|shixu:inst|Selector2~2  ; |weikong|shixu:inst|Selector2~2  ; out0             ;
+; |weikong|shixu:inst|Selector3~2  ; |weikong|shixu:inst|Selector3~2  ; out0             ;
+; |weikong|shixu:inst|Selector4~1  ; |weikong|shixu:inst|Selector4~1  ; out0             ;
+; |weikong|shixu:inst|Selector5~1  ; |weikong|shixu:inst|Selector5~1  ; out0             ;
+; |weikong|shixu:inst|Selector6~0  ; |weikong|shixu:inst|Selector6~0  ; out0             ;
+; |weikong|shixu:inst|Selector6~1  ; |weikong|shixu:inst|Selector6~1  ; out0             ;
+; |weikong|shixu:inst|Selector6~2  ; |weikong|shixu:inst|Selector6~2  ; out0             ;
+; |weikong|shixu:inst|Selector6~3  ; |weikong|shixu:inst|Selector6~3  ; out0             ;
+; |weikong|shixu:inst|Selector7~0  ; |weikong|shixu:inst|Selector7~0  ; out0             ;
+; |weikong|shixu:inst|Selector7~1  ; |weikong|shixu:inst|Selector7~1  ; out0             ;
+; |weikong|shixu:inst|Selector7~2  ; |weikong|shixu:inst|Selector7~2  ; out0             ;
+; |weikong|shixu:inst|Selector7~3  ; |weikong|shixu:inst|Selector7~3  ; out0             ;
+; |weikong|rom:inst1|Equal0~0      ; |weikong|rom:inst1|Equal0~0      ; out0             ;
+; |weikong|rom:inst1|Equal1~0      ; |weikong|rom:inst1|Equal1~0      ; out0             ;
+; |weikong|rom:inst1|Equal2~0      ; |weikong|rom:inst1|Equal2~0      ; out0             ;
+; |weikong|rom:inst1|Equal31~0     ; |weikong|rom:inst1|Equal31~0     ; out0             ;
++----------------------------------+----------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                               ;
++----------------------------------+----------------------------------+------------------+
+; Node Name                        ; Output Port Name                 ; Output Port Type ;
++----------------------------------+----------------------------------+------------------+
+; |weikong|tj                      ; |weikong|tj                      ; out              ;
+; |weikong|dp                      ; |weikong|dp                      ; out              ;
+; |weikong|161CLRN                 ; |weikong|161CLRN                 ; pin_out          ;
+; |weikong|KRD                     ; |weikong|KRD                     ; out              ;
+; |weikong|KWE                     ; |weikong|KWE                     ; out              ;
+; |weikong|CLR                     ; |weikong|CLR                     ; out              ;
+; |weikong|R4_BUS                  ; |weikong|R4_BUS                  ; pin_out          ;
+; |weikong|LDR4                    ; |weikong|LDR4                    ; pin_out          ;
+; |weikong|S2                      ; |weikong|S2                      ; pin_out          ;
+; |weikong|rom:inst1|sub_wire0~0   ; |weikong|rom:inst1|sub_wire0~0   ; out              ;
+; |weikong|rom:inst1|sub_wire0~1   ; |weikong|rom:inst1|sub_wire0~1   ; out              ;
+; |weikong|rom:inst1|sub_wire0~2   ; |weikong|rom:inst1|sub_wire0~2   ; out              ;
+; |weikong|rom:inst1|sub_wire0~3   ; |weikong|rom:inst1|sub_wire0~3   ; out              ;
+; |weikong|rom:inst1|sub_wire0~4   ; |weikong|rom:inst1|sub_wire0~4   ; out              ;
+; |weikong|rom:inst1|sub_wire0~5   ; |weikong|rom:inst1|sub_wire0~5   ; out              ;
+; |weikong|rom:inst1|sub_wire0~6   ; |weikong|rom:inst1|sub_wire0~6   ; out              ;
+; |weikong|rom:inst1|sub_wire0~7   ; |weikong|rom:inst1|sub_wire0~7   ; out              ;
+; |weikong|rom:inst1|sub_wire0~8   ; |weikong|rom:inst1|sub_wire0~8   ; out              ;
+; |weikong|rom:inst1|sub_wire0~9   ; |weikong|rom:inst1|sub_wire0~9   ; out              ;
+; |weikong|rom:inst1|sub_wire0~10  ; |weikong|rom:inst1|sub_wire0~10  ; out              ;
+; |weikong|rom:inst1|sub_wire0~11  ; |weikong|rom:inst1|sub_wire0~11  ; out              ;
+; |weikong|rom:inst1|sub_wire0~12  ; |weikong|rom:inst1|sub_wire0~12  ; out              ;
+; |weikong|rom:inst1|sub_wire0~13  ; |weikong|rom:inst1|sub_wire0~13  ; out              ;
+; |weikong|rom:inst1|sub_wire0~14  ; |weikong|rom:inst1|sub_wire0~14  ; out              ;
+; |weikong|rom:inst1|sub_wire0~15  ; |weikong|rom:inst1|sub_wire0~15  ; out              ;
+; |weikong|rom:inst1|sub_wire0~16  ; |weikong|rom:inst1|sub_wire0~16  ; out              ;
+; |weikong|rom:inst1|sub_wire0~22  ; |weikong|rom:inst1|sub_wire0~22  ; out              ;
+; |weikong|rom:inst1|sub_wire0~23  ; |weikong|rom:inst1|sub_wire0~23  ; out              ;
+; |weikong|rom:inst1|sub_wire0~25  ; |weikong|rom:inst1|sub_wire0~25  ; out              ;
+; |weikong|rom:inst1|sub_wire0~32  ; |weikong|rom:inst1|sub_wire0~32  ; out              ;
+; |weikong|rom:inst1|sub_wire0~33  ; |weikong|rom:inst1|sub_wire0~33  ; out              ;
+; |weikong|rom:inst1|sub_wire0~36  ; |weikong|rom:inst1|sub_wire0~36  ; out              ;
+; |weikong|rom:inst1|sub_wire0~44  ; |weikong|rom:inst1|sub_wire0~44  ; out              ;
+; |weikong|rom:inst1|sub_wire0~45  ; |weikong|rom:inst1|sub_wire0~45  ; out              ;
+; |weikong|rom:inst1|sub_wire0~50  ; |weikong|rom:inst1|sub_wire0~50  ; out              ;
+; |weikong|rom:inst1|sub_wire0~58  ; |weikong|rom:inst1|sub_wire0~58  ; out              ;
+; |weikong|rom:inst1|sub_wire0~59  ; |weikong|rom:inst1|sub_wire0~59  ; out              ;
+; |weikong|rom:inst1|sub_wire0~65  ; |weikong|rom:inst1|sub_wire0~65  ; out              ;
+; |weikong|rom:inst1|sub_wire0~73  ; |weikong|rom:inst1|sub_wire0~73  ; out              ;
+; |weikong|rom:inst1|sub_wire0~74  ; |weikong|rom:inst1|sub_wire0~74  ; out              ;
+; |weikong|rom:inst1|sub_wire0~82  ; |weikong|rom:inst1|sub_wire0~82  ; out              ;
+; |weikong|rom:inst1|sub_wire0~91  ; |weikong|rom:inst1|sub_wire0~91  ; out              ;
+; |weikong|rom:inst1|sub_wire0~92  ; |weikong|rom:inst1|sub_wire0~92  ; out              ;
+; |weikong|rom:inst1|sub_wire0~100 ; |weikong|rom:inst1|sub_wire0~100 ; out              ;
+; |weikong|rom:inst1|sub_wire0~109 ; |weikong|rom:inst1|sub_wire0~109 ; out              ;
+; |weikong|rom:inst1|sub_wire0~110 ; |weikong|rom:inst1|sub_wire0~110 ; out              ;
+; |weikong|rom:inst1|sub_wire0~119 ; |weikong|rom:inst1|sub_wire0~119 ; out              ;
+; |weikong|rom:inst1|sub_wire0~128 ; |weikong|rom:inst1|sub_wire0~128 ; out              ;
+; |weikong|rom:inst1|sub_wire0~129 ; |weikong|rom:inst1|sub_wire0~129 ; out              ;
+; |weikong|rom:inst1|sub_wire0~139 ; |weikong|rom:inst1|sub_wire0~139 ; out              ;
+; |weikong|rom:inst1|sub_wire0~148 ; |weikong|rom:inst1|sub_wire0~148 ; out              ;
+; |weikong|rom:inst1|sub_wire0~149 ; |weikong|rom:inst1|sub_wire0~149 ; out              ;
+; |weikong|rom:inst1|sub_wire0~159 ; |weikong|rom:inst1|sub_wire0~159 ; out              ;
+; |weikong|rom:inst1|sub_wire0~168 ; |weikong|rom:inst1|sub_wire0~168 ; out              ;
+; |weikong|rom:inst1|sub_wire0~169 ; |weikong|rom:inst1|sub_wire0~169 ; out              ;
+; |weikong|rom:inst1|sub_wire0~179 ; |weikong|rom:inst1|sub_wire0~179 ; out              ;
+; |weikong|rom:inst1|sub_wire0~188 ; |weikong|rom:inst1|sub_wire0~188 ; out              ;
+; |weikong|rom:inst1|sub_wire0~189 ; |weikong|rom:inst1|sub_wire0~189 ; out              ;
+; |weikong|rom:inst1|sub_wire0~199 ; |weikong|rom:inst1|sub_wire0~199 ; out              ;
+; |weikong|rom:inst1|sub_wire0~208 ; |weikong|rom:inst1|sub_wire0~208 ; out              ;
+; |weikong|rom:inst1|sub_wire0~209 ; |weikong|rom:inst1|sub_wire0~209 ; out              ;
+; |weikong|rom:inst1|sub_wire0~219 ; |weikong|rom:inst1|sub_wire0~219 ; out              ;
+; |weikong|rom:inst1|sub_wire0~228 ; |weikong|rom:inst1|sub_wire0~228 ; out              ;
+; |weikong|rom:inst1|sub_wire0~229 ; |weikong|rom:inst1|sub_wire0~229 ; out              ;
+; |weikong|rom:inst1|sub_wire0~239 ; |weikong|rom:inst1|sub_wire0~239 ; out              ;
+; |weikong|rom:inst1|sub_wire0~248 ; |weikong|rom:inst1|sub_wire0~248 ; out              ;
+; |weikong|rom:inst1|sub_wire0~249 ; |weikong|rom:inst1|sub_wire0~249 ; out              ;
+; |weikong|rom:inst1|sub_wire0~261 ; |weikong|rom:inst1|sub_wire0~261 ; out              ;
+; |weikong|rom:inst1|sub_wire0~270 ; |weikong|rom:inst1|sub_wire0~270 ; out              ;
+; |weikong|rom:inst1|sub_wire0~271 ; |weikong|rom:inst1|sub_wire0~271 ; out              ;
+; |weikong|rom:inst1|sub_wire0~283 ; |weikong|rom:inst1|sub_wire0~283 ; out              ;
+; |weikong|rom:inst1|sub_wire0~292 ; |weikong|rom:inst1|sub_wire0~292 ; out              ;
+; |weikong|rom:inst1|sub_wire0~293 ; |weikong|rom:inst1|sub_wire0~293 ; out              ;
+; |weikong|rom:inst1|sub_wire0~305 ; |weikong|rom:inst1|sub_wire0~305 ; out              ;
+; |weikong|rom:inst1|sub_wire0~314 ; |weikong|rom:inst1|sub_wire0~314 ; out              ;
+; |weikong|rom:inst1|sub_wire0~315 ; |weikong|rom:inst1|sub_wire0~315 ; out              ;
+; |weikong|rom:inst1|sub_wire0~327 ; |weikong|rom:inst1|sub_wire0~327 ; out              ;
+; |weikong|rom:inst1|sub_wire0~336 ; |weikong|rom:inst1|sub_wire0~336 ; out              ;
+; |weikong|rom:inst1|sub_wire0~337 ; |weikong|rom:inst1|sub_wire0~337 ; out              ;
+; |weikong|rom:inst1|sub_wire0~349 ; |weikong|rom:inst1|sub_wire0~349 ; out              ;
+; |weikong|rom:inst1|sub_wire0~358 ; |weikong|rom:inst1|sub_wire0~358 ; out              ;
+; |weikong|rom:inst1|sub_wire0~359 ; |weikong|rom:inst1|sub_wire0~359 ; out              ;
+; |weikong|rom:inst1|sub_wire0~380 ; |weikong|rom:inst1|sub_wire0~380 ; out              ;
+; |weikong|rom:inst1|sub_wire0~381 ; |weikong|rom:inst1|sub_wire0~381 ; out              ;
+; |weikong|rom:inst1|sub_wire0~402 ; |weikong|rom:inst1|sub_wire0~402 ; out              ;
+; |weikong|rom:inst1|sub_wire0~403 ; |weikong|rom:inst1|sub_wire0~403 ; out              ;
+; |weikong|rom:inst1|sub_wire0~424 ; |weikong|rom:inst1|sub_wire0~424 ; out              ;
+; |weikong|rom:inst1|sub_wire0~425 ; |weikong|rom:inst1|sub_wire0~425 ; out              ;
+; |weikong|rom:inst1|sub_wire0~446 ; |weikong|rom:inst1|sub_wire0~446 ; out              ;
+; |weikong|rom:inst1|sub_wire0~447 ; |weikong|rom:inst1|sub_wire0~447 ; out              ;
+; |weikong|rom:inst1|sub_wire0~468 ; |weikong|rom:inst1|sub_wire0~468 ; out              ;
+; |weikong|rom:inst1|sub_wire0~469 ; |weikong|rom:inst1|sub_wire0~469 ; out              ;
+; |weikong|rom:inst1|sub_wire0~491 ; |weikong|rom:inst1|sub_wire0~491 ; out              ;
+; |weikong|rom:inst1|sub_wire0~513 ; |weikong|rom:inst1|sub_wire0~513 ; out              ;
+; |weikong|rom:inst1|sub_wire0~535 ; |weikong|rom:inst1|sub_wire0~535 ; out              ;
+; |weikong|rom:inst1|q[23]         ; |weikong|rom:inst1|q[23]         ; out              ;
+; |weikong|74273:inst5|19          ; |weikong|74273:inst5|19          ; regout           ;
+; |weikong|74273:inst5|15          ; |weikong|74273:inst5|15          ; regout           ;
+; |weikong|shixu:inst|process_1~0  ; |weikong|shixu:inst|process_1~0  ; out0             ;
+; |weikong|shixu:inst|process_1~1  ; |weikong|shixu:inst|process_1~1  ; out0             ;
+; |weikong|shixu:inst|reg_fstate~0 ; |weikong|shixu:inst|reg_fstate~0 ; out              ;
+; |weikong|shixu:inst|reg_fstate~1 ; |weikong|shixu:inst|reg_fstate~1 ; out              ;
+; |weikong|shixu:inst|fstate.s_st2 ; |weikong|shixu:inst|fstate.s_st2 ; regout           ;
+; |weikong|shixu:inst|fstate.s_st4 ; |weikong|shixu:inst|fstate.s_st4 ; regout           ;
+; |weikong|shixu:inst|fstate.s_st3 ; |weikong|shixu:inst|fstate.s_st3 ; regout           ;
+; |weikong|shixu:inst|t2~4         ; |weikong|shixu:inst|t2~4         ; out0             ;
+; |weikong|shixu:inst|t4~5         ; |weikong|shixu:inst|t4~5         ; out0             ;
+; |weikong|shixu:inst|t3~5         ; |weikong|shixu:inst|t3~5         ; out0             ;
+; |weikong|shixu:inst|Selector0~1  ; |weikong|shixu:inst|Selector0~1  ; out0             ;
+; |weikong|shixu:inst|Selector0~2  ; |weikong|shixu:inst|Selector0~2  ; out0             ;
+; |weikong|shixu:inst|Selector1~2  ; |weikong|shixu:inst|Selector1~2  ; out0             ;
+; |weikong|shixu:inst|Selector2~0  ; |weikong|shixu:inst|Selector2~0  ; out0             ;
+; |weikong|shixu:inst|Selector2~1  ; |weikong|shixu:inst|Selector2~1  ; out0             ;
+; |weikong|shixu:inst|Selector2~2  ; |weikong|shixu:inst|Selector2~2  ; out0             ;
+; |weikong|shixu:inst|Selector3~2  ; |weikong|shixu:inst|Selector3~2  ; out0             ;
+; |weikong|shixu:inst|Selector4~1  ; |weikong|shixu:inst|Selector4~1  ; out0             ;
+; |weikong|shixu:inst|Selector5~1  ; |weikong|shixu:inst|Selector5~1  ; out0             ;
+; |weikong|shixu:inst|Selector6~0  ; |weikong|shixu:inst|Selector6~0  ; out0             ;
+; |weikong|shixu:inst|Selector6~1  ; |weikong|shixu:inst|Selector6~1  ; out0             ;
+; |weikong|shixu:inst|Selector6~2  ; |weikong|shixu:inst|Selector6~2  ; out0             ;
+; |weikong|shixu:inst|Selector6~3  ; |weikong|shixu:inst|Selector6~3  ; out0             ;
+; |weikong|shixu:inst|Selector7~0  ; |weikong|shixu:inst|Selector7~0  ; out0             ;
+; |weikong|shixu:inst|Selector7~1  ; |weikong|shixu:inst|Selector7~1  ; out0             ;
+; |weikong|shixu:inst|Selector7~2  ; |weikong|shixu:inst|Selector7~2  ; out0             ;
+; |weikong|shixu:inst|Selector7~3  ; |weikong|shixu:inst|Selector7~3  ; out0             ;
+; |weikong|rom:inst1|Equal0~0      ; |weikong|rom:inst1|Equal0~0      ; out0             ;
+; |weikong|rom:inst1|Equal1~0      ; |weikong|rom:inst1|Equal1~0      ; out0             ;
+; |weikong|rom:inst1|Equal2~0      ; |weikong|rom:inst1|Equal2~0      ; out0             ;
++----------------------------------+----------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+    Info: Processing started: Sun Mar 15 08:47:47 2020
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off weikong -c weikong
+Info: Using vector source file "D:/quartus/大二下/计算机系统基础实验/5.6微控/weikong.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      82.15 %
+Info: Number of transitions in simulation is 19971
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 163 megabytes
+    Info: Processing ended: Sun Mar 15 08:47:47 2020
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

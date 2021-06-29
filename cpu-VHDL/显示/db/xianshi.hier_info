@@ -1,0 +1,9 @@
+|mod6
+clk => ex[2].CLK
+clk => ex[1].CLK
+clk => ex[0].CLK
+aout[0] <= ex[0].DB_MAX_OUTPUT_PORT_TYPE
+aout[1] <= ex[1].DB_MAX_OUTPUT_PORT_TYPE
+aout[2] <= ex[2].DB_MAX_OUTPUT_PORT_TYPE
+
+
